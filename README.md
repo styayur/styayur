@@ -4,7 +4,7 @@ I build small or ambitious tools as real products: **local-first where that matt
 
 My work centers on desktop/web hybrids, Rust and Python tooling, information exploration, explainable interfaces, and practical developer utilities.
 
-## Featured work
+## Featured projects
 
 ### [Developer Security Workspace](https://github.com/styayur/developer-security-workspace)
 
@@ -30,15 +30,21 @@ Tiny, offline text-to-speech for Windows.
 
 Rust · Kokoro · sherpa-onnx · portable Windows utility · explicit model provenance
 
+## Tools
+
+- [LGXT Assistant](https://github.com/styayur/LGXT-Assistant) — Windows and Android learning assistant for courses, assignments, AI study chat, and local exports.
+
 ## Experiments
 
 - [mini-market](https://github.com/styayur/mini-market) — a simulation-only AI capability marketplace and speculative design prototype.
 - [musical-spinningtop](https://github.com/styayur/musical-spinningtop) — daily musical discovery backed by a sourced Wikipedia catalogue.
+
+## Digital Humanities
+
 - [Nickspeare](https://github.com/styayur/Nickspeare) — a source-grounded Shakespearean nickname generator and computational-humanities experiment.
 
-## Tools and automation
+## Automation
 
-- [LGXT Assistant](https://github.com/styayur/LGXT-Assistant) — Windows and Android learning assistant for courses, assignments, AI study chat, and local exports.
 - [windows-new-pc-setup](https://github.com/styayur/windows-new-pc-setup) — previewable Windows 11 provisioning with PowerShell, WinGet, and optional DSC v3.
 
 ## Writing and digital garden
