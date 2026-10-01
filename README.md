@@ -1,55 +1,56 @@
-# Hi, I’m Stya Yur
+# Stya Yur
 
-I build small or ambitious tools as real products: **local-first where that matters, explicit about boundaries, easy to run, easy to inspect, reproducible, and maintainable by somebody other than the original author.**
+**Local-first software, knowledge systems and developer tools.**
 
-My work centers on desktop/web hybrids, Rust and Python tooling, information exploration, explainable interfaces, and practical developer utilities.
+I build small or ambitious tools as real products: local-first where that matters, explicit about boundaries, easy to run, easy to inspect, reproducible, and maintainable by somebody other than the original author. My work centers on desktop/web hybrids, Rust and Python tooling, information exploration, explainable interfaces, and practical developer utilities.
 
-## Featured projects
+## Open Source Studio
 
-### [Developer Security Workspace](https://github.com/styayur/developer-security-workspace)
+### Security
 
-A local-first SARIF vulnerability explorer, debugger, and scanner runtime.
+**[Developer Security Workspace](https://github.com/styayur/developer-security-workspace)** — a local-first SARIF vulnerability explorer, debugger, and scanner runtime.
 
-Rust · Tauri · SQLite · Security IR · SARIF · scanner adapters · AppSec workflows
+Rust · Tauri · SQLite · SARIF · scanner adapters · security IR
 
-### [STEM Visual Explorer](https://github.com/styayur/stem-visual-explorer)
+### Knowledge & Research
 
-Search, compare, preview, and collect mathematics and physics resources without turning into a general-purpose browser.
+**[STEM Visual Explorer](https://github.com/styayur/stem-visual-explorer)** — visual search and comparison for mathematics and physics resources.
 
-React · TypeScript · Rust · Tauri · multilingual search · provider contracts · preview capabilities
+React · TypeScript · Rust · Tauri · multilingual search · preview capabilities
 
-### [Calligraphy Studio](https://github.com/styayur/calligraphy-studio)
+**[Digital Garden Engine](https://github.com/styayur/digital-garden-engine)** — an open-source, static-first engine for personal knowledge publishing.
 
-An offline Chinese calligraphy studio for glyph selection, visual comparison, long-scroll composition, and export.
+Next.js · React · MDX · static export · Cloudflare Pages
 
-React · TypeScript · Konva · Electron · Capacitor · FastAPI · OFL font provenance
+### Creative Tools
 
-### [TinyTTS](https://github.com/styayur/TinyTTS)
+**[Calligraphy Studio](https://github.com/styayur/calligraphy-studio)** — an offline Chinese calligraphy studio for glyph selection, composition, and export.
 
-Tiny, offline text-to-speech for Windows.
+React · TypeScript · Konva · Electron · Capacitor · FastAPI
 
-Rust · Kokoro · sherpa-onnx · portable Windows utility · explicit model provenance
+**[TinyTTS](https://github.com/styayur/TinyTTS)** — tiny, offline text-to-speech for Windows.
 
-## Tools
+Rust · Kokoro · sherpa-onnx · portable Windows utility
 
-- [LGXT Assistant](https://github.com/styayur/LGXT-Assistant) — Windows and Android learning assistant for courses, assignments, AI study chat, and local exports.
+### Education
 
-## Experiments
+**[LGXT Assistant](https://github.com/styayur/LGXT-Assistant)** — a local-first learning assistant for courses, assignments, and study workflows.
 
-- [mini-market](https://github.com/styayur/mini-market) — a simulation-only AI capability marketplace and speculative design prototype.
-- [musical-spinningtop](https://github.com/styayur/musical-spinningtop) — daily musical discovery backed by a sourced Wikipedia catalogue.
+Python · Windows · Android
 
-## Digital Humanities
+### Utilities
 
-- [Nickspeare](https://github.com/styayur/Nickspeare) — a source-grounded Shakespearean nickname generator and computational-humanities experiment.
+**[Windows New PC Setup](https://github.com/styayur/windows-new-pc-setup)** — previewable Windows 11 provisioning with PowerShell, WinGet, and optional DSC v3.
 
-## Automation
+PowerShell · WinGet · reproducibility
 
-- [windows-new-pc-setup](https://github.com/styayur/windows-new-pc-setup) — previewable Windows 11 provisioning with PowerShell, WinGet, and optional DSC v3.
+### Research Experiments
 
-## Writing and digital garden
+**[Nickspeare](https://github.com/styayur/Nickspeare)** — a source-grounded Shakespearean nickname generator and computational-humanities experiment.
 
-- [styayur.github.io](https://styayur.github.io/) — essays, systems, marginalia, projects, and a growing knowledge graph.
+**[Musical Spinningtop](https://github.com/styayur/musical-spinningtop)** — daily musical discovery backed by a sourced Wikipedia catalogue.
+
+**[mini-market](https://github.com/styayur/mini-market)** — a simulation-only AI capability marketplace and speculative design prototype.
 
 ## Working principles
 
@@ -59,8 +60,12 @@ Rust · Kokoro · sherpa-onnx · portable Windows utility · explicit model prov
 - Offline tools should remain useful without accounts, telemetry, or hidden cloud dependencies.
 - A new maintainer should be able to understand the architecture, run the tests, and ship a release.
 
+## Writing and digital garden
+
+- [styayur.github.io](https://styayur.github.io/) — essays, systems, marginalia, projects, and a growing knowledge graph.
+
 ## Community
 
 Questions, design discussions, and early feedback are welcome on [Discord](https://discord.gg/wA2xy6VPK). It is an informal community channel, not an SLA support channel.
 
-Security issues should use the affected repository’s private vulnerability reporting path, never a public issue or Discord.
+Security issues should use the affected repository's private vulnerability reporting path, never a public issue or Discord.
