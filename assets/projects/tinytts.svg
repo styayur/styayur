@@ -1,0 +1,5 @@
+<svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="TinyTTS">
+  <rect width="96" height="96" rx="20" fill="#0f172a"/>
+  <rect x="3.5" y="3.5" width="89" height="89" rx="17.5" fill="none" stroke="#22c55e" stroke-width="3"/>
+  <rect x="20" y="24" width="34" height="28" rx="8" fill="#22c55e"/><path d="M23 34 L30 34 L36 42 L40 22 L44 34 L50 34" stroke="#0f172a" stroke-width="3" fill="none"/><path d="M62 32 v12 M70 27 v22 M78 21 v34" stroke="#22c55e" stroke-width="4" stroke-linecap="round"/>
+</svg>

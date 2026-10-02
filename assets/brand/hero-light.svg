@@ -1,0 +1,7 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stya Yur — Building local-first software, developer tools and knowledge systems.">
+  <rect width="1200" height="360" fill="#FAF9F6"/>
+  <text x="60" y="148" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="600" fill="#1C1F24">Stya Yur</text>
+  <text x="62" y="214" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="27" fill="#545D68">Building local-first software,</text>
+  <text x="62" y="250" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="27" fill="#545D68">developer tools and knowledge systems.</text>
+  <text x="62" y="308" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="15" letter-spacing="1.5" fill="#0284C7">Rust · Tauri · Security · Search · Code Intelligence · Creative Computing</text>
+</svg>
