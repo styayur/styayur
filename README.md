@@ -116,3 +116,7 @@ Technical articles and field notes live at [styayur.co.uk/writing](https://styay
 ## Community
 
 Questions and design discussion on [Discord](https://discord.gg/wA2xy6VPK). Security issues use the affected repository's private vulnerability reporting — never Discord or a public issue.
+
+## License
+
+Profile text and graphics are licensed under [CC BY 4.0](LICENSE). Project and third-party names are trademarks of their respective owners.
