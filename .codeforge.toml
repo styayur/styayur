@@ -1,0 +1,3 @@
+# Documentation/config review profile:
+# Markdown, JSON/TOML/YAML, links, configuration, and scripts are reviewed read-only.
+# No formatting, refactoring, dependency, or source-verification command is configured.
