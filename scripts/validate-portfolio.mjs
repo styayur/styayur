@@ -17,4 +17,4 @@ for (const p of data.projects) {
   }
   for (const link of p.evidence) assert.equal(new URL(link).protocol, 'https:');
 }
-console.log(`Validated ${seen.size} evidence-based maturity records.`);
+process.stdout.write(`Validated ${seen.size} evidence-based maturity records.\n`);
