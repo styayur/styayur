@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "repository": "styayur/publishing-workbench",
+      "maturity": "Alpha",
+      "sourceCommit": "1a6d668c6448c7fa1ba8ac63469f56d07f8aa34c",
+      "reviewedAt": "2026-10-08",
+      "evidence": [
+        "https://github.com/styayur/publishing-workbench/tree/1a6d668c6448c7fa1ba8ac63469f56d07f8aa34c",
+        "https://github.com/styayur/publishing-workbench/blob/1a6d668c6448c7fa1ba8ac63469f56d07f8aa34c/README.md",
+        "https://github.com/styayur/publishing-workbench/releases/tag/v0.2.1",
+        "https://github.com/styayur/publishing-workbench/actions/runs/37701891755"
+      ],
+      "knownLimitations": [
+        "MVP preview; Windows release validated, macOS/Linux release validation incomplete",
+        "Remote outcomes may need reconciliation; no automatic updater or signing"
+      ],
+      "unmetConditions": [
+        "Independent installation, upgrade and recovery evidence has not been audited for a Beta assessment"
+      ],
+      "nextGradeRequirements": [
+        "Audit release installation and primary user workflow on supported platforms",
+        "Record recovery and upgrade results and unresolved defects"
+      ]
+    },
+    {
+      "repository": "styayur/local-context-engine",
+      "maturity": "Alpha",
+      "sourceCommit": "0c47535ffe9be75a50386227ef91783f1826904f",
+      "reviewedAt": "2026-10-08",
+      "evidence": [
+        "https://github.com/styayur/local-context-engine/tree/0c47535ffe9be75a50386227ef91783f1826904f",
+        "https://github.com/styayur/local-context-engine/blob/0c47535ffe9be75a50386227ef91783f1826904f/README.md",
+        "https://github.com/styayur/local-context-engine/releases/tag/v0.1.0",
+        "https://github.com/styayur/local-context-engine/actions/runs/37119183009"
+      ],
+      "knownLimitations": [
+        "Windows-specific indexing and permissions",
+        "No sustained independent user validation recorded"
+      ],
+      "unmetConditions": [
+        "Independent installation, upgrade and recovery evidence has not been audited for a Beta assessment"
+      ],
+      "nextGradeRequirements": [
+        "Audit release installation and primary user workflow on supported platforms",
+        "Record recovery and upgrade results and unresolved defects"
+      ]
+    },
+    {
+      "repository": "styayur/codeforge-engine",
+      "maturity": "Alpha",
+      "sourceCommit": "517553d492f84ce334062c8bab1241be5a864137",
+      "reviewedAt": "2026-10-08",
+      "evidence": [
+        "https://github.com/styayur/codeforge-engine/tree/517553d492f84ce334062c8bab1241be5a864137",
+        "https://github.com/styayur/codeforge-engine/blob/517553d492f84ce334062c8bab1241be5a864137/README.md",
+        "https://github.com/styayur/codeforge-engine/releases/tag/v0.2.1",
+        "https://github.com/styayur/codeforge-engine/actions/runs/37263909340"
+      ],
+      "knownLimitations": [
+        "Automated verification does not establish transformation correctness for every language",
+        "GitHub license detection is NOASSERTION although LICENSE contains Apache-2.0"
+      ],
+      "unmetConditions": [
+        "Independent installation, upgrade and recovery evidence has not been audited for a Beta assessment"
+      ],
+      "nextGradeRequirements": [
+        "Audit release installation and primary user workflow on supported platforms",
+        "Record recovery and upgrade results and unresolved defects"
+      ]
+    },
+    {
+      "repository": "styayur/stem-visual-explorer",
+      "maturity": "Alpha",
+      "sourceCommit": "a9279400557980bff69e4877725fe3a891add1a2",
+      "reviewedAt": "2026-10-08",
+      "evidence": [
+        "https://github.com/styayur/stem-visual-explorer/tree/a9279400557980bff69e4877725fe3a891add1a2",
+        "https://github.com/styayur/stem-visual-explorer/blob/a9279400557980bff69e4877725fe3a891add1a2/README.md",
+        "https://github.com/styayur/stem-visual-explorer/releases/tag/v0.2.0",
+        "https://github.com/styayur/stem-visual-explorer/actions/runs/37647830524"
+      ],
+      "knownLimitations": [
+        "Current source and release versions must be checked separately",
+        "No sustained independent user validation recorded"
+      ],
+      "unmetConditions": [
+        "Independent installation, upgrade and recovery evidence has not been audited for a Beta assessment"
+      ],
+      "nextGradeRequirements": [
+        "Audit release installation and primary user workflow on supported platforms",
+        "Record recovery and upgrade results and unresolved defects"
+      ]
+    },
+    {
+      "repository": "styayur/calligraphy-studio",
+      "maturity": "Alpha",
+      "sourceCommit": "926a032af0d2a64c6573303cd8a1ef160a55f6a2",
+      "reviewedAt": "2026-10-08",
+      "evidence": [
+        "https://github.com/styayur/calligraphy-studio/tree/926a032af0d2a64c6573303cd8a1ef160a55f6a2",
+        "https://github.com/styayur/calligraphy-studio/blob/926a032af0d2a64c6573303cd8a1ef160a55f6a2/README.md",
+        "https://github.com/styayur/calligraphy-studio/releases/tag/v0.7.1",
+        "https://github.com/styayur/calligraphy-studio/actions/runs/37736493209"
+      ],
+      "knownLimitations": [
+        "Third-party font and glyph rights remain separate from MIT application code",
+        "No sustained independent user validation recorded"
+      ],
+      "unmetConditions": [
+        "Independent installation, upgrade and recovery evidence has not been audited for a Beta assessment"
+      ],
+      "nextGradeRequirements": [
+        "Audit release installation and primary user workflow on supported platforms",
+        "Record recovery and upgrade results and unresolved defects"
+      ]
+    },
+    {
+      "repository": "styayur/translation-kernel",
+      "maturity": "Alpha",
+      "sourceCommit": "69474a5a0d96a094915b3881eb280fe0efbdc76c",
+      "reviewedAt": "2026-10-08",
+      "evidence": [
+        "https://github.com/styayur/translation-kernel/tree/69474a5a0d96a094915b3881eb280fe0efbdc76c",
+        "https://github.com/styayur/translation-kernel/blob/69474a5a0d96a094915b3881eb280fe0efbdc76c/README.md",
+        "https://github.com/styayur/translation-kernel/releases/tag/v0.1.0",
+        "https://github.com/styayur/translation-kernel/actions/runs/37696395079"
+      ],
+      "knownLimitations": [
+        "Chromium unpacked release; Firefox packaging not validated",
+        "Provider availability is external; no Chrome Web Store release"
+      ],
+      "unmetConditions": [
+        "Independent installation, upgrade and recovery evidence has not been audited for a Beta assessment"
+      ],
+      "nextGradeRequirements": [
+        "Audit release installation and primary user workflow on supported platforms",
+        "Record recovery and upgrade results and unresolved defects"
+      ]
+    }
+  ]
+}
