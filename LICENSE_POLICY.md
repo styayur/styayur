@@ -1,6 +1,6 @@
 # License Policy
 
-Stya Yur Open Source Studio licenses each project by its actual use, not by
+Stya Yur licenses each project by its actual use, not by
 ideological uniformity. License decisions are project-specific.
 
 - **Applications (full apps / self-hostable services)** — strong copyleft: AGPL-3.0-only or GPL-3.0-or-later.
@@ -16,3 +16,5 @@ dataset licences).
 
 See each repository's LICENSE and NOTICE/THIRD_PARTY files for the
 project-specific terms.
+
+This policy describes preferences for future decisions. It does not override an existing LICENSE or relicense any work. Calligraphy Studio and TinyTTS currently use MIT; CodeForge Engine uses Apache-2.0. Changes require an explicit, legally supported decision.
