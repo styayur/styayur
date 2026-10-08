@@ -182,3 +182,52 @@ Asset origin is first-party repository unless separately attributed; copyright o
 Source: `5b18ed5662041fc254e9ca5c13de9280548578ca`. GitHub license detection: `MIT`. Latest listed release: `v0.1.0-alpha.1`. Open PRs: 0. Local README image paths checked: 0; missing: 0.
 
 Asset origin is first-party repository unless separately attributed; copyright ownership and third-party terms must be confirmed before replacement/publication. Existing license is preserved. Screenshot refresh cost includes running a supported build, using sample data, recording source version and reviewing for privacy.
+
+
+## Implementation outcomes — 2026-10-08
+
+The inventory above is the pinned pre-change audit, not a claim that every listed
+asset was changed. Eight targeted PRs passed their repository checks and merged.
+Packaged Android/Tauri/Electron icons, third-party marks, licenses and brand files
+were preserved. No logo redraw or simulated software interface was generated.
+
+| Repository | Applied evidence and presentation | PR | Merge commit |
+| --- | --- | --- | --- |
+| styayur | Minimal personal profile; maturity evidence and governance checks | [PR](https://github.com/styayur/styayur/pull/2) | `9214f6679b9ea379d3973d4f9b6e55702e6c8eb7` |
+| publishing-workbench | Real isolated Windows v0.2.1 native Preview screenshot; sample data and capture steps | [PR](https://github.com/styayur/publishing-workbench/pull/1) | `897d5b88fbfc806f95283e9d0fcd5c76cdc3ffc7` |
+| translation-kernel | Real Linux CI Chromium extension settings screenshot; empty API key; repeatable browser test | [PR](https://github.com/styayur/translation-kernel/pull/9) | `6a221457670b7a3871d00ff4ca40ae8952d32252` |
+| calligraphy-studio | Existing real workbench screenshot retained; decorative logo removed | [PR](https://github.com/styayur/calligraphy-studio/pull/29) | `d9319c1306b71ae61d80cce89635f81afba09382` |
+| stem-visual-explorer | Existing bilingual interface screenshots retained; repeated logo/technology badges removed | [PR](https://github.com/styayur/stem-visual-explorer/pull/24) | `ddb9e14e3f1f6e3209681e6ccb4af701e0d3addc` |
+| developer-security-workspace | Existing desktop trace screenshot retained; conservative Alpha statement | [PR](https://github.com/styayur/developer-security-workspace/pull/19) | `d1003e63381d9063e0369f0021a1c6f47a758a86` |
+| TinyTTS | Existing desktop screenshot retained; source preview and absent release accurately described | [PR](https://github.com/styayur/TinyTTS/pull/10) | `0b3c0ee26fc261100ce4f1648011be7683e7fe96` |
+| OmniRoute-PS | Actual example configuration-check output; no provider/inference success claim | [PR](https://github.com/styayur/OmniRoute-PS/pull/2) | `c3cdbf78d17515edd1b875be56d5affc9462417e` |
+
+Local Context Engine: existing and rebuilt Windows executables produced a blank
+WebView in the capture environment. A feature screenshot remains pending.
+[PR #15](https://github.com/styayur/local-context-engine/pull/15) records the
+limitation, retains actual CLI/DSL examples and architecture, removes the decorative
+app-icon hero and fixes the Chinese license badge to the existing MPL-2.0 LICENSE.
+An application icon has not been counted as a screenshot. CI/merge status for this
+follow-up must be checked separately.
+
+The two new screenshots have provenance and repeatable steps in each repository's
+`docs/README_SCREENSHOTS.md`. The extension capture demonstrates settings, not a
+successful live paid provider request. The Workbench screenshot demonstrates native
+preview, not a remote publish or production deployment. Existing screenshots were
+retained where no verified reason justified a new capture.
+
+README rendering was inspected in GitHub's browser view for the affected branches;
+real screenshot images resolved and core headings/links remained. Relative inline
+and HTML image paths were checked against pinned Git trees. External badges and
+reference-style images are not silently covered by that relative-path inventory.
+
+CLI/SDK projects with working existing installation/examples were retained without
+forced hero assets: Codex Mode Switcher, WHUT-Net (wutnet), TinySTT and IPA-first TTS.
+Translation Kernel uses its actual extension settings plus its existing SDK examples.
+Asset licensing follows the originating repository and attributed notices; no global
+portfolio policy re-licenses third-party or existing code/content.
+
+Website integration reuses these public screenshots in the private site; private
+source assets have not been published into public repositories. The Profile remains
+minimal and does not restore a logo-card matrix. A separate Workbench CMS PR handles
+manifest recognition, content types and screenshot management.
