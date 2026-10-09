@@ -1,0 +1,628 @@
+{
+  "reviewed_at": "2026-10-09",
+  "scope": "Phase 1.5 combined visual evidence and architecture amendment",
+  "repositories": [
+    {
+      "repository": "styayur/publishing-workbench",
+      "pr": "https://github.com/styayur/publishing-workbench/pull/4",
+      "state": "MERGED",
+      "head_commit": "7f1705e309b62082ef189ee076c5b7ddcb3526c5",
+      "merge_commit": {
+        "oid": "709b497b03d48cffa577024bda4c480db7cac9b8"
+      },
+      "merged_at": "2026-10-09T04:24:58Z",
+      "files": [
+        ".github/pull_request_template.md",
+        ".github/workflows/architecture.yml",
+        "README.md",
+        "docs/architecture/README.md",
+        "docs/architecture/evidence.json",
+        "docs/architecture/verify.py"
+      ],
+      "checks": [
+        {
+          "name": "verify",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/publishing-workbench/actions/runs/37882794745/job/113666045543"
+        },
+        {
+          "name": "windows",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/publishing-workbench/actions/runs/37882794756/job/113666045791"
+        },
+        {
+          "name": "windows",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/publishing-workbench/actions/runs/37882790678/job/113666031726"
+        }
+      ],
+      "github_readme_render": "Verified in actual GitHub branch README; retained product images loaded or Mermaid node labels rendered.",
+      "architecture_validation": "Local and CI source anchors, local references, Mermaid syntax, light/dark SVG XML and identical repeated light renders; source semantics manually reviewed."
+    },
+    {
+      "repository": "styayur/translation-kernel",
+      "pr": "https://github.com/styayur/translation-kernel/pull/10",
+      "state": "MERGED",
+      "head_commit": "20dac06643ac17d0ab07aedec84b44889fc26f7b",
+      "merge_commit": {
+        "oid": "9eac273018a4da8f3b4547d6a6adea61ffb54783"
+      },
+      "merged_at": "2026-10-09T04:14:00Z",
+      "files": [
+        ".github/pull_request_template.md",
+        ".github/workflows/architecture.yml",
+        "README.md",
+        "docs/architecture/README.md",
+        "docs/architecture/evidence.json",
+        "docs/architecture/verify.py"
+      ],
+      "checks": [
+        {
+          "name": "verify",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/translation-kernel/actions/runs/37882127729/job/113663920960"
+        },
+        {
+          "name": "verify",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/translation-kernel/actions/runs/37882127689/job/113663920850"
+        },
+        {
+          "name": "verify",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/translation-kernel/actions/runs/37882039355/job/113663640504"
+        }
+      ],
+      "github_readme_render": "Verified in actual GitHub branch README; retained product images loaded or Mermaid node labels rendered.",
+      "architecture_validation": "Local and CI source anchors, local references, Mermaid syntax, light/dark SVG XML and identical repeated light renders; source semantics manually reviewed."
+    },
+    {
+      "repository": "styayur/wutnet",
+      "pr": "https://github.com/styayur/wutnet/pull/2",
+      "state": "MERGED",
+      "head_commit": "4d2c9dff5ec74a6c3088d1655f19406a548e5760",
+      "merge_commit": {
+        "oid": "ca39e811a37367b049db98dfbd4553b5a54b2f47"
+      },
+      "merged_at": "2026-10-09T04:14:04Z",
+      "files": [
+        ".github/pull_request_template.md",
+        ".github/workflows/architecture.yml",
+        "README.md",
+        "docs/architecture/README.md",
+        "docs/architecture/evidence.json",
+        "docs/architecture/verify.py"
+      ],
+      "checks": [
+        {
+          "name": "verify",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/wutnet/actions/runs/37882131523/job/113663932628"
+        }
+      ],
+      "github_readme_render": "Verified in actual GitHub branch README; retained product images loaded or Mermaid node labels rendered.",
+      "architecture_validation": "Local and CI source anchors, local references, Mermaid syntax, light/dark SVG XML and identical repeated light renders; source semantics manually reviewed."
+    },
+    {
+      "repository": "styayur/ipa-first-tts",
+      "pr": "https://github.com/styayur/ipa-first-tts/pull/1",
+      "state": "MERGED",
+      "head_commit": "d6b7bda1b5a6adc5e380b8d613f097d60006e8fc",
+      "merge_commit": {
+        "oid": "7ac8f63d07308a2db25649bb0b1bc9073efa101d"
+      },
+      "merged_at": "2026-10-09T04:14:08Z",
+      "files": [
+        ".github/pull_request_template.md",
+        ".github/workflows/architecture.yml",
+        "README.md",
+        "docs/architecture/README.md",
+        "docs/architecture/evidence.json",
+        "docs/architecture/verify.py"
+      ],
+      "checks": [
+        {
+          "name": "verify",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/ipa-first-tts/actions/runs/37882134106/job/113663941903"
+        },
+        {
+          "name": "Core (ubuntu-latest)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/ipa-first-tts/actions/runs/37882134028/job/113663941474"
+        },
+        {
+          "name": "Core (windows-latest)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/ipa-first-tts/actions/runs/37882134028/job/113663941726"
+        },
+        {
+          "name": "Windows native build",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/ipa-first-tts/actions/runs/37882134028/job/113663941727"
+        }
+      ],
+      "github_readme_render": "Verified in actual GitHub branch README; retained product images loaded or Mermaid node labels rendered.",
+      "architecture_validation": "Local and CI source anchors, local references, Mermaid syntax, light/dark SVG XML and identical repeated light renders; source semantics manually reviewed."
+    },
+    {
+      "repository": "styayur/codex-mode-switcher",
+      "pr": "https://github.com/styayur/codex-mode-switcher/pull/1",
+      "state": "MERGED",
+      "head_commit": "a1f71d61e1f854f24a3d5b48eaccf19d1980de6b",
+      "merge_commit": {
+        "oid": "23ce1378926b1692f1d2014c7eb4eb8d6d5205b0"
+      },
+      "merged_at": "2026-10-09T04:14:13Z",
+      "files": [
+        ".github/pull_request_template.md",
+        ".github/workflows/architecture.yml",
+        "README.md",
+        "docs/README.zh-CN.md",
+        "docs/architecture/README.md",
+        "docs/architecture/evidence.json",
+        "docs/architecture/verify.py"
+      ],
+      "checks": [
+        {
+          "name": "verify",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/codex-mode-switcher/actions/runs/37882137230/job/113663951811"
+        },
+        {
+          "name": "Windows PowerShell syntax, lint and Pester",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/codex-mode-switcher/actions/runs/37882137206/job/113663952134"
+        },
+        {
+          "name": "Windows PowerShell syntax, lint and Pester",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/codex-mode-switcher/actions/runs/37882056490/job/113663694042"
+        }
+      ],
+      "github_readme_render": "Verified in actual GitHub branch README; retained product images loaded or Mermaid node labels rendered.",
+      "architecture_validation": "Local and CI source anchors, local references, Mermaid syntax, light/dark SVG XML and identical repeated light renders; source semantics manually reviewed."
+    },
+    {
+      "repository": "styayur/TinySTT",
+      "pr": "https://github.com/styayur/TinySTT/pull/2",
+      "state": "MERGED",
+      "head_commit": "95982a2d9cbc0f9b93074a04db47414035257f0d",
+      "merge_commit": {
+        "oid": "ad432486b01381b442e96f20f4b71c6a89072a40"
+      },
+      "merged_at": "2026-10-09T04:18:15Z",
+      "files": [
+        ".github/pull_request_template.md",
+        ".github/workflows/architecture.yml",
+        "README.md",
+        "docs/architecture/DEMONSTRATION.md",
+        "docs/architecture/README.md",
+        "docs/architecture/evidence.json",
+        "docs/architecture/verify.py"
+      ],
+      "checks": [
+        {
+          "name": "verify",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/TinySTT/actions/runs/37882639918/job/113665553499"
+        },
+        {
+          "name": "CodeForge regression",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/TinySTT/actions/runs/37882639946/job/113665641673"
+        },
+        {
+          "name": "windows",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/TinySTT/actions/runs/37882639914/job/113665553621"
+        }
+      ],
+      "github_readme_render": "Verified in actual GitHub branch README; retained product images loaded or Mermaid node labels rendered.",
+      "architecture_validation": "Local and CI source anchors, local references, Mermaid syntax, light/dark SVG XML and identical repeated light renders; source semantics manually reviewed."
+    },
+    {
+      "repository": "styayur/OmniRoute-PS",
+      "pr": "https://github.com/styayur/OmniRoute-PS/pull/3",
+      "state": "MERGED",
+      "head_commit": "af893a4f8a0795b8fea794d8cd81ba79e2bae06f",
+      "merge_commit": {
+        "oid": "d1b279b79c53c1ac1ccb4e85718648db0bafcb4d"
+      },
+      "merged_at": "2026-10-09T04:16:08Z",
+      "files": [
+        ".codeforge.toml",
+        ".github/pull_request_template.md",
+        ".github/workflows/architecture.yml",
+        ".github/workflows/codeforge-regression.yml",
+        "README.md",
+        "docs/architecture/README.md",
+        "docs/architecture/evidence.json",
+        "docs/architecture/verify.py"
+      ],
+      "checks": [
+        {
+          "name": "verify",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/OmniRoute-PS/actions/runs/37882633882/job/113665533567"
+        },
+        {
+          "name": "CodeForge regression",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/OmniRoute-PS/actions/runs/37882633949/job/113665534250"
+        },
+        {
+          "name": "windows-latest",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/OmniRoute-PS/actions/runs/37882633816/job/113665533775"
+        },
+        {
+          "name": "ubuntu-latest",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/OmniRoute-PS/actions/runs/37882633816/job/113665533552"
+        }
+      ],
+      "github_readme_render": "Verified in actual GitHub branch README; retained product images loaded or Mermaid node labels rendered.",
+      "architecture_validation": "Local and CI source anchors, local references, Mermaid syntax, light/dark SVG XML and identical repeated light renders; source semantics manually reviewed."
+    },
+    {
+      "repository": "styayur/LGXT-Assistant",
+      "pr": "https://github.com/styayur/LGXT-Assistant/pull/15",
+      "state": "MERGED",
+      "head_commit": "84b9b58eb2b7734534ab6c7f941e86943827c0ba",
+      "merge_commit": {
+        "oid": "8722d82bbd301c16f7e657ced881c43e394cd760"
+      },
+      "merged_at": "2026-10-09T04:14:18Z",
+      "files": [
+        "README.md"
+      ],
+      "checks": [
+        {
+          "name": "CodeForge regression",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/LGXT-Assistant/actions/runs/37882349455/job/113664621949"
+        },
+        {
+          "name": "Analyze (actions)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/LGXT-Assistant/actions/runs/37882347788/job/113664620197"
+        },
+        {
+          "name": "python",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/LGXT-Assistant/actions/runs/37882349420/job/113664622249"
+        },
+        {
+          "name": "Analyze (javascript-typescript)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/LGXT-Assistant/actions/runs/37882347788/job/113664620434"
+        },
+        {
+          "name": "Analyze (python)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/LGXT-Assistant/actions/runs/37882347788/job/113664620300"
+        },
+        {
+          "name": "frontend",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/LGXT-Assistant/actions/runs/37882349420/job/113664622021"
+        },
+        {
+          "name": "CodeQL",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/LGXT-Assistant/runs/113664726475"
+        }
+      ],
+      "github_readme_render": "Verified in actual GitHub branch README; retained product images loaded or Mermaid node labels rendered."
+    },
+    {
+      "repository": "styayur/mini-market",
+      "pr": "https://github.com/styayur/mini-market/pull/12",
+      "state": "MERGED",
+      "head_commit": "d19b10f9354371e94a9e371279fdfc1a4b96f1dd",
+      "merge_commit": {
+        "oid": "90f5751a91d2cbecd0ee976e2debed73fa62d299"
+      },
+      "merged_at": "2026-10-09T04:14:23Z",
+      "files": [
+        "README.md"
+      ],
+      "checks": [
+        {
+          "name": "verify",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/mini-market/actions/runs/37882356561/job/113664646206"
+        },
+        {
+          "name": "CodeForge regression",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/mini-market/actions/runs/37882356551/job/113664646143"
+        },
+        {
+          "name": "Analyze (actions)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/mini-market/actions/runs/37882354636/job/113664643755"
+        },
+        {
+          "name": "Analyze (javascript-typescript)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/mini-market/actions/runs/37882354636/job/113664643625"
+        },
+        {
+          "name": "Analyze (python)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/mini-market/actions/runs/37882354636/job/113664643816"
+        },
+        {
+          "name": "CodeQL",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/mini-market/runs/113664740542"
+        }
+      ],
+      "github_readme_render": "Verified in actual GitHub branch README; retained product images loaded or Mermaid node labels rendered."
+    },
+    {
+      "repository": "styayur/musical-spinningtop",
+      "pr": "https://github.com/styayur/musical-spinningtop/pull/7",
+      "state": "MERGED",
+      "head_commit": "1e6720439bdbc944da21775fec1629b292bc0747",
+      "merge_commit": {
+        "oid": "8a5ab02a93d225a224591724b64b809928fbc784"
+      },
+      "merged_at": "2026-10-09T04:14:28Z",
+      "files": [
+        "README.md"
+      ],
+      "checks": [
+        {
+          "name": "CodeForge regression",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/musical-spinningtop/actions/runs/37882365026/job/113664673638"
+        },
+        {
+          "name": "Analyze (actions)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/musical-spinningtop/actions/runs/37882362825/job/113664670294"
+        },
+        {
+          "name": "unit (3.9)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/musical-spinningtop/actions/runs/37882365071/job/113664674048"
+        },
+        {
+          "name": "Analyze (javascript-typescript)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/musical-spinningtop/actions/runs/37882362825/job/113664670225"
+        },
+        {
+          "name": "unit (3.12)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/musical-spinningtop/actions/runs/37882365071/job/113664674135"
+        },
+        {
+          "name": "Analyze (python)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/musical-spinningtop/actions/runs/37882362825/job/113664670021"
+        },
+        {
+          "name": "unit (3.14)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/musical-spinningtop/actions/runs/37882365071/job/113664673961"
+        },
+        {
+          "name": "browser",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/musical-spinningtop/actions/runs/37882365071/job/113664674109"
+        },
+        {
+          "name": "CodeQL",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/musical-spinningtop/runs/113664944341"
+        }
+      ],
+      "github_readme_render": "Verified in actual GitHub branch README; retained product images loaded or Mermaid node labels rendered."
+    },
+    {
+      "repository": "styayur/Nickspeare",
+      "pr": "https://github.com/styayur/Nickspeare/pull/5",
+      "state": "MERGED",
+      "head_commit": "8cbd82bbe014ceb2f1347130ad97283483b00dcf",
+      "merge_commit": {
+        "oid": "cfe5cc7ed3cfe5fc172f334e03b9a1c2b1d66298"
+      },
+      "merged_at": "2026-10-09T04:14:32Z",
+      "files": [
+        "README.md"
+      ],
+      "checks": [
+        {
+          "name": "CodeForge regression",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/Nickspeare/actions/runs/37882376310/job/113664709612"
+        },
+        {
+          "name": "Analyze (actions)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/Nickspeare/actions/runs/37882374741/job/113664706990"
+        },
+        {
+          "name": "python (3.9)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/Nickspeare/actions/runs/37882376343/job/113664708872"
+        },
+        {
+          "name": "python (3.9)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/Nickspeare/actions/runs/37882371940/job/113664695308"
+        },
+        {
+          "name": "Analyze (javascript-typescript)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/Nickspeare/actions/runs/37882374741/job/113664706956"
+        },
+        {
+          "name": "python (3.12)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/Nickspeare/actions/runs/37882376343/job/113664708753"
+        },
+        {
+          "name": "python (3.12)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/Nickspeare/actions/runs/37882371940/job/113664695387"
+        },
+        {
+          "name": "Analyze (python)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/Nickspeare/actions/runs/37882374741/job/113664706807"
+        },
+        {
+          "name": "python (3.14)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/Nickspeare/actions/runs/37882376343/job/113664708730"
+        },
+        {
+          "name": "python (3.14)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/Nickspeare/actions/runs/37882371940/job/113664695375"
+        },
+        {
+          "name": "browser",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/Nickspeare/actions/runs/37882376343/job/113664708485"
+        },
+        {
+          "name": "browser",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/Nickspeare/actions/runs/37882371940/job/113664695211"
+        },
+        {
+          "name": "CodeQL",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/Nickspeare/runs/113665050727"
+        }
+      ],
+      "github_readme_render": "Verified in actual GitHub branch README; retained product images loaded or Mermaid node labels rendered."
+    },
+    {
+      "repository": "styayur/windows-new-pc-setup",
+      "pr": "https://github.com/styayur/windows-new-pc-setup/pull/4",
+      "state": "MERGED",
+      "head_commit": "048fb13e36aa787c8749bb2fddf4d2b7f00a5786",
+      "merge_commit": {
+        "oid": "e1cf0b3ea841ab8e5cc5efbd21ecc27f27315196"
+      },
+      "merged_at": "2026-10-09T04:14:37Z",
+      "files": [
+        "README.md"
+      ],
+      "checks": [
+        {
+          "name": "CodeForge regression",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/windows-new-pc-setup/actions/runs/37882385202/job/113664736561"
+        },
+        {
+          "name": "Analyze (actions)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/windows-new-pc-setup/actions/runs/37882383798/job/113664736145"
+        },
+        {
+          "name": "windows-powershell",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/windows-new-pc-setup/actions/runs/37882385228/job/113664736809"
+        },
+        {
+          "name": "powershell-core",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/windows-new-pc-setup/actions/runs/37882385228/job/113664736631"
+        },
+        {
+          "name": "CodeQL",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/windows-new-pc-setup/runs/113664942769"
+        }
+      ],
+      "github_readme_render": "Verified in actual GitHub branch README; retained product images loaded or Mermaid node labels rendered."
+    }
+  ],
+  "limitations": [
+    "Local Context Engine native screenshot remains pending after blank WebView.",
+    "TinySTT native screenshot could not be captured: Windows helper access denied; actual sample-WAV CLI output is recorded instead.",
+    "No live campus login, paid-provider inference or microphone recognition is claimed by this documentation work.",
+    "Existing third-party asset provenance is not newly certified; app icons and license texts are unchanged.",
+    "Mermaid repeatability is scoped to the same installed toolchain; CLI entry version is pinned but transitive packages and Chrome are not."
+  ],
+  "ci_corrections": [
+    "OmniRoute CodeForge now selects the real Pester suite instead of autodetecting pytest from the new documentation verifier.",
+    "OmniRoute and TinySTT documentation verifiers use logging for diagnostic output; no CodeForge baseline or diagnostic was suppressed."
+  ],
+  "site_reverification": {
+    "public_routes": 17,
+    "same_host_assets": 32,
+    "failures": 0,
+    "private_draft_admin_probes_returning_404": 4,
+    "phases_2_to_4": "Previously merged and deployed; reverified without another deployment."
+  }
+}
