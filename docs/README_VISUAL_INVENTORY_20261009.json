@@ -1,0 +1,852 @@
+{
+  "date": "2026-10-09",
+  "method": "GitHub public owner API enumeration; fetched main Git trees; README inline/HTML images and SVG geometry/topology hashes; latest listed release metadata. Icons are not screenshots. Historical files preserved.",
+  "repositories": [
+    {
+      "repository": "calligraphy-studio",
+      "source_commit": "d9319c1306b71ae61d80cce89635f81afba09382",
+      "archived": false,
+      "local_images": [
+        {
+          "readme": "README.md",
+          "reference": "docs/japanese-workbench.png",
+          "exists": true
+        }
+      ],
+      "svg_signatures": [
+        {
+          "path": "docs/assets/brand/logo-mark.svg",
+          "sha256": "6e84e10b0b62e11e0670690276463470987fc9f2ef218ab1a31713e364b54ef2",
+          "topology": "svg rect rect path circle",
+          "geometryHash": "5fe8be7da355e907e027e123f16062eaedb4c69ad6710be39e793d12d36c7462",
+          "template96": true
+        },
+        {
+          "path": "docs/assets/brand/logo.svg",
+          "sha256": "faa81f92490e734b6926efa3d20758328baccd110f2ebfb3beada2ef8caf778c",
+          "topology": "svg rect rect path circle",
+          "geometryHash": "54e7e1a696fd3c06bcb03de76d4dbbc3ca3de752a88d001b34c633aab8d029c8",
+          "template96": true
+        }
+      ],
+      "release": {
+        "tag": "v0.7.1",
+        "url": "https://github.com/styayur/calligraphy-studio/releases/tag/v0.7.1",
+        "assets": [
+          "android-build-provenance.json",
+          "android-signing.json",
+          "CalligraphyStudio-Android-0.7.1.apk",
+          "CalligraphyStudio-Portable-0.7.1-x64.exe",
+          "CalligraphyStudio-Setup-0.7.1-x64.exe",
+          "CalligraphyStudio-Web-0.7.1.zip",
+          "release-manifest.json",
+          "SHA256SUMS.txt",
+          "web-build-provenance.json",
+          "windows-build-provenance.json",
+          "windows-signing.json"
+        ]
+      }
+    },
+    {
+      "repository": "codeforge-engine",
+      "source_commit": "517553d492f84ce334062c8bab1241be5a864137",
+      "archived": false,
+      "local_images": [
+        {
+          "readme": "README.md",
+          "reference": "docs/assets/screenshot.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "apps/desktop/src-tauri/icons/128x128.png",
+          "exists": true
+        }
+      ],
+      "svg_signatures": [],
+      "release": {
+        "tag": "v0.2.1",
+        "url": "https://github.com/styayur/codeforge-engine/releases/tag/v0.2.1",
+        "assets": [
+          "checksums.txt",
+          "CodeForge.Engine_0.2.1_amd64.AppImage",
+          "CodeForge.Engine_0.2.1_amd64.deb",
+          "CodeForge.Engine_0.2.1_x64-setup.exe",
+          "CodeForge.Engine_0.2.1_x64_en-US.msi"
+        ]
+      }
+    },
+    {
+      "repository": "codex-mode-switcher",
+      "source_commit": "5e99e50cebf50521b9da35969dcc533942615ec5",
+      "archived": false,
+      "local_images": [],
+      "svg_signatures": [],
+      "release": {
+        "tag": "v0.1.0",
+        "url": "https://github.com/styayur/codex-mode-switcher/releases/tag/v0.1.0",
+        "assets": [
+          "codex-mode-switcher-v0.1.0.zip",
+          "codex-mode.ps1",
+          "SHA256SUMS.txt"
+        ]
+      }
+    },
+    {
+      "repository": "developer-security-workspace",
+      "source_commit": "d1003e63381d9063e0369f0021a1c6f47a758a86",
+      "archived": false,
+      "local_images": [
+        {
+          "readme": "README.md",
+          "reference": "docs/assets/desktop-trace-v1.png",
+          "exists": true
+        }
+      ],
+      "svg_signatures": [
+        {
+          "path": "docs/assets/brand/logo-mark.svg",
+          "sha256": "7838e670e4deaea16034e15c144299dd2faec550644a4c441198cef02535b44b",
+          "topology": "svg rect rect path circle path",
+          "geometryHash": "3ec7be16c07c714ba860a3a88a14fed7bb62c41efd43aa2d0de36939b31c6be7",
+          "template96": true
+        },
+        {
+          "path": "docs/assets/brand/logo.svg",
+          "sha256": "bce1c11f7b22bd873116a8b851b745efbf52af537437a36687f4667ccaa56e62",
+          "topology": "svg rect rect path circle path",
+          "geometryHash": "cb0a39b51c8540e3e4b995608828a554ac6bb4c8d7f6cd97232e638810260199",
+          "template96": true
+        }
+      ],
+      "release": {
+        "tag": "v0.1.0-preview",
+        "url": "https://github.com/styayur/developer-security-workspace/releases/tag/untagged-5e17836ac0a2cd4cdb2f",
+        "assets": [
+          "Developer.Security.Workspace_0.1.0-preview_x64-setup.exe",
+          "SHA256SUMS.txt"
+        ]
+      }
+    },
+    {
+      "repository": "digital-garden-engine",
+      "source_commit": "0268a218dff2dc22f1c00fbfc106cddcdac941bd",
+      "archived": true,
+      "local_images": [
+        {
+          "readme": "README.md",
+          "reference": "docs/assets/demo.png",
+          "exists": true
+        }
+      ],
+      "svg_signatures": [
+        {
+          "path": "docs/assets/brand/logo-mark.svg",
+          "sha256": "52106341ad83a46451c4a1aaeb40faebd31021b357f34858d43a21809e7614f8",
+          "topology": "svg rect rect circle path circle circle circle circle",
+          "geometryHash": "ead15dd08f9a1a3ec337de86a191ef5a1232d7800e8bf62ec2eb0a0a102afa04",
+          "template96": true
+        }
+      ],
+      "release": {
+        "tag": "v0.1.3",
+        "url": "https://github.com/styayur/digital-garden-engine/releases/tag/v0.1.3",
+        "assets": []
+      }
+    },
+    {
+      "repository": "Echo-Loop",
+      "source_commit": "a28e2a31503e33065e25136b630763c880e98325",
+      "archived": false,
+      "local_images": [
+        {
+          "readme": "README.en.md",
+          "reference": "assets/icon/app-icon-1024-rounded.png",
+          "exists": true
+        },
+        {
+          "readme": "README.en.md",
+          "reference": "assets/badges/google-play-en.png",
+          "exists": true
+        },
+        {
+          "readme": "README.en.md",
+          "reference": "assets/screenshots/01-import.png",
+          "exists": true
+        },
+        {
+          "readme": "README.en.md",
+          "reference": "assets/screenshots/02-loop.png",
+          "exists": true
+        },
+        {
+          "readme": "README.en.md",
+          "reference": "assets/screenshots/03-reminder.png",
+          "exists": true
+        },
+        {
+          "readme": "README.en.md",
+          "reference": "assets/screenshots/04-intensive.png",
+          "exists": true
+        },
+        {
+          "readme": "README.en.md",
+          "reference": "assets/screenshots/05-analysis.png",
+          "exists": true
+        },
+        {
+          "readme": "README.en.md",
+          "reference": "assets/screenshots/06-retell.png",
+          "exists": true
+        },
+        {
+          "readme": "README.en.md",
+          "reference": "assets/screenshots/07-favorites.png",
+          "exists": true
+        },
+        {
+          "readme": "README.en.md",
+          "reference": "assets/screenshots/08-flashcard.png",
+          "exists": true
+        },
+        {
+          "readme": "README.en.md",
+          "reference": "assets/screenshots/09-freestyle.png",
+          "exists": true
+        },
+        {
+          "readme": "README.en.md",
+          "reference": "assets/icon/app-icon-1024-rounded.png",
+          "exists": true
+        },
+        {
+          "readme": "README.en.md",
+          "reference": "assets/badges/google-play-en.png",
+          "exists": true
+        },
+        {
+          "readme": "README.en.md",
+          "reference": "assets/qr/app-store.png",
+          "exists": true
+        },
+        {
+          "readme": "README.en.md",
+          "reference": "assets/qr/google-play.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "assets/icon/app-icon-1024-rounded.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "assets/badges/google-play-en.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "assets/screenshots/01-import.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "assets/screenshots/02-loop.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "assets/screenshots/03-reminder.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "assets/screenshots/04-intensive.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "assets/screenshots/05-analysis.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "assets/screenshots/06-retell.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "assets/screenshots/07-favorites.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "assets/screenshots/08-flashcard.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "assets/screenshots/09-freestyle.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "assets/icon/app-icon-1024-rounded.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "assets/badges/google-play-en.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "assets/qr/app-store.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "assets/qr/google-play.png",
+          "exists": true
+        }
+      ],
+      "svg_signatures": [],
+      "release": {
+        "tag": "v1.0.39",
+        "url": "https://github.com/styayur/Echo-Loop/releases/tag/v1.0.39",
+        "assets": [
+          "Echo-Loop-1.0.39-source.zip"
+        ]
+      }
+    },
+    {
+      "repository": "ipa-first-tts",
+      "source_commit": "fa8a3ab1e2010122619c791c6ed15fb946ace965",
+      "archived": false,
+      "local_images": [
+        {
+          "readme": "README.md",
+          "reference": "outputs/desktop.png",
+          "exists": true
+        }
+      ],
+      "svg_signatures": [],
+      "release": {
+        "tag": "v0.1.0",
+        "url": "https://github.com/styayur/ipa-first-tts/releases/tag/v0.1.0",
+        "assets": [
+          "ipa-first-tts-v0.1.0-corresponding-source.zip",
+          "ipa-first-tts-v0.1.0-windows-x64-offline.zip",
+          "release-checks.json",
+          "SHA256SUMS.txt"
+        ]
+      }
+    },
+    {
+      "repository": "LGXT-Assistant",
+      "source_commit": "b6b5ffcfb38ae2a89f04defbde1932d23578adf6",
+      "archived": false,
+      "local_images": [
+        {
+          "readme": "README.md",
+          "reference": "docs/screenshots/modern-dark-1440.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "docs/screenshots/modern-dark-1440.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "docs/screenshots/modern-settings-light.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "docs/assets/brand/logo-mark.svg",
+          "exists": true
+        }
+      ],
+      "svg_signatures": [
+        {
+          "path": "docs/assets/brand/logo-mark.svg",
+          "sha256": "fe4fba833036a5cbfd19697e1a4610c3cb5181feb45c5218e40fef7ae3ba77a8",
+          "topology": "svg rect rect path path",
+          "geometryHash": "8e72b4f82e1d4cac681b5eabc1d8c9ca2dd2c41397270dcae971bdc1ec6012f1",
+          "template96": true
+        },
+        {
+          "path": "docs/assets/brand/logo.svg",
+          "sha256": "e1b117653c16ec5144c7d29c51f3c181aeb9bd711d8aa761eb7c3a93c060c340",
+          "topology": "svg rect rect path path",
+          "geometryHash": "99600cbed1fa895311da49f051000c17bfab7eacd23ff9d9ee0d630365b9ec0f",
+          "template96": true
+        }
+      ],
+      "release": {
+        "tag": "v4.1.0-web",
+        "url": "https://github.com/styayur/LGXT-Assistant/releases/tag/v4.1.0-web",
+        "assets": [
+          "LGXT-Assistant-3.2.1-android.apk",
+          "LGXT-Assistant-Web.exe",
+          "WEB-SHA256SUMS.txt"
+        ]
+      }
+    },
+    {
+      "repository": "local-context-engine",
+      "source_commit": "6cc835ec30af2959958b04e47ede83e8d720c5a8",
+      "archived": false,
+      "local_images": [],
+      "svg_signatures": [],
+      "release": {
+        "tag": "v0.1.0",
+        "url": "https://github.com/styayur/local-context-engine/releases/tag/v0.1.0",
+        "assets": [
+          "local-context-engine-desktop-v0.1.0-setup.exe",
+          "local-context-engine-windows-x64-v0.1.0.zip",
+          "SHA256SUMS.txt"
+        ]
+      }
+    },
+    {
+      "repository": "mini-market",
+      "source_commit": "3f5ada76f5ac536386674044a837c538235d3c67",
+      "archived": false,
+      "local_images": [
+        {
+          "readme": "README.md",
+          "reference": "docs/storefront.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "docs/assets/brand/logo-mark.svg",
+          "exists": true
+        }
+      ],
+      "svg_signatures": [
+        {
+          "path": "docs/assets/brand/logo-mark.svg",
+          "sha256": "7289ae4e35083f7e6a03ba514625bc60de5f9d44372a7a8ad3097ec723b4c53d",
+          "topology": "svg rect rect path rect path circle",
+          "geometryHash": "e96e3cbde2460ae80c2ad5f0a65f4006047906406dd5a0fbd6a2d4df0c74f1ff",
+          "template96": true
+        },
+        {
+          "path": "docs/assets/brand/logo.svg",
+          "sha256": "6dbc083ce899af55a9153bd018cf507187b1a2a988449a7fc644cd1c684faf0c",
+          "topology": "svg rect rect path rect path circle",
+          "geometryHash": "7180b2e301c6dfc3c208601e465018c9591358f452136636aa156576a73d941f",
+          "template96": true
+        }
+      ],
+      "release": null
+    },
+    {
+      "repository": "musical-spinningtop",
+      "source_commit": "c69c60e6a72eced46b692a6004ac9ae815b1eb93",
+      "archived": false,
+      "local_images": [
+        {
+          "readme": "README.md",
+          "reference": "docs/assets/daily-card.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "docs/assets/brand/logo-mark.svg",
+          "exists": true
+        }
+      ],
+      "svg_signatures": [
+        {
+          "path": "docs/assets/brand/logo-mark.svg",
+          "sha256": "c1b22ded95452eba57ae61fd410544ffa60610eea877a58d3d5403b1f18c64ae",
+          "topology": "svg rect rect path path path",
+          "geometryHash": "6e37db3ac46bf72707a101b9b52ab6c8d74f4c51c3c2cf267a26007fb9ca00be",
+          "template96": true
+        },
+        {
+          "path": "docs/assets/brand/logo.svg",
+          "sha256": "5f2540c2f0657ab54f48205780a73e3ddefe8fcafce68b69ad8569fb51afdfaf",
+          "topology": "svg rect rect path path path",
+          "geometryHash": "56e31e9af117f4c455995ebb286aefed5ee713d06822472bdcd4e7bc8ce11cc4",
+          "template96": true
+        }
+      ],
+      "release": {
+        "tag": "v2.0.0",
+        "url": "https://github.com/styayur/musical-spinningtop/releases/tag/v2.0.0",
+        "assets": [
+          "musical-spinningtop-v2.0.0.zip",
+          "musical-spinningtop-website-v2.0.0.zip",
+          "SHA256SUMS.txt"
+        ]
+      }
+    },
+    {
+      "repository": "Nickspeare",
+      "source_commit": "7acada762749fe1bb4c5a8dca6356d4e95e3f7f4",
+      "archived": false,
+      "local_images": [
+        {
+          "readme": "README.md",
+          "reference": "docs/screenshot.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "docs/assets/brand/logo-mark.svg",
+          "exists": true
+        }
+      ],
+      "svg_signatures": [
+        {
+          "path": "docs/assets/brand/logo-mark.svg",
+          "sha256": "690f8405db68d9db1954ff28aaef61250e49c7c6f24211a095ced27c6ab5c2a7",
+          "topology": "svg rect rect path path path",
+          "geometryHash": "8cace9ee174957457bb9ce217af10d5d822acfd6c51117b13c15c69ade3de1dd",
+          "template96": true
+        },
+        {
+          "path": "docs/assets/brand/logo.svg",
+          "sha256": "f98bb50b5cfb073cba521f653326faf5ebe45f7ac70bb213dbf44b6bbb46512a",
+          "topology": "svg rect rect path path path",
+          "geometryHash": "575aa8487432afad2a357981d92f8b91f3eb52d3e68fdb868a6c72bab69b40b2",
+          "template96": true
+        }
+      ],
+      "release": {
+        "tag": "v1.0.0",
+        "url": "https://github.com/styayur/Nickspeare/releases/tag/v1.0.0",
+        "assets": [
+          "nickspeare-1.0.0-py3-none-any.whl"
+        ]
+      }
+    },
+    {
+      "repository": "OmniRoute-PS",
+      "source_commit": "c3cdbf78d17515edd1b875be56d5affc9462417e",
+      "archived": false,
+      "local_images": [],
+      "svg_signatures": [
+        {
+          "path": "assets/brand/logo-mark.svg",
+          "sha256": "68c7a1b80728615f3504369e1f220bb47b1e668708b2f4d105fe330b11ee9ee0",
+          "topology": "svg title defs linearGradient stop stop rect path path circle circle circle",
+          "geometryHash": "8a990f1f5636fc65cffc57b161153c616033b25f829a2332dacdbc4a46f2cf0d",
+          "template96": true
+        }
+      ],
+      "release": {
+        "tag": "v0.2.0",
+        "url": "https://github.com/styayur/OmniRoute-PS/releases/tag/v0.2.0",
+        "assets": [
+          "OmniRoute-PS-v0.2.0.zip",
+          "SHA256SUMS.txt"
+        ]
+      }
+    },
+    {
+      "repository": "publishing-workbench",
+      "source_commit": "2dfc1b516e1b0a544b067c70f87542a080ada7ab",
+      "archived": false,
+      "local_images": [
+        {
+          "readme": "README.md",
+          "reference": "docs/assets/desktop-preview-v0.2.1.png",
+          "exists": true
+        }
+      ],
+      "svg_signatures": [],
+      "release": {
+        "tag": "v0.2.1",
+        "url": "https://github.com/styayur/publishing-workbench/releases/tag/v0.2.1",
+        "assets": [
+          "dependency-license-texts.zip",
+          "publishing-workbench-v0.2.1-source.zip",
+          "publishing-workbench-v0.2.1-windows-x64.exe",
+          "publishing-workbench-v0.2.1-windows-x64.zip",
+          "SHA256SUMS.txt",
+          "third-party-licenses.json"
+        ]
+      }
+    },
+    {
+      "repository": "stem-visual-explorer",
+      "source_commit": "ddb9e14e3f1f6e3209681e6ccb4af701e0d3addc",
+      "archived": false,
+      "local_images": [
+        {
+          "readme": "README.md",
+          "reference": "docs/screenshot.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "docs/screenshot.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "docs/screenshot-zh.png",
+          "exists": true
+        },
+        {
+          "readme": "README.zh-CN.md",
+          "reference": "docs/screenshot-zh.png",
+          "exists": true
+        }
+      ],
+      "svg_signatures": [
+        {
+          "path": "docs/assets/brand/logo-mark.svg",
+          "sha256": "e270239f8af9583070594bc6dcec8e54175ffee4041b9fdbe6e40e99b8e21b50",
+          "topology": "svg rect rect circle path circle circle ellipse",
+          "geometryHash": "4ff9b90a21a650db6b5a51d0288f635dbb96bbfd062280d5b5009337996440da",
+          "template96": true
+        },
+        {
+          "path": "docs/assets/brand/logo.svg",
+          "sha256": "ebc03b8a162e344990c11336fa7ea54a3ada88ffc2798cc6d566f63a376b9133",
+          "topology": "svg rect rect circle path circle circle ellipse",
+          "geometryHash": "05fced1503b51094865e6e602ae33057d7b2d0f2b4878209c644b7764ce25e81",
+          "template96": true
+        }
+      ],
+      "release": {
+        "tag": "v0.2.0",
+        "url": "https://github.com/styayur/stem-visual-explorer/releases/tag/v0.2.0",
+        "assets": [
+          "SHA256SUMS.txt",
+          "stem-visual-explorer_0.2.0_windows-x64.zip",
+          "stem-visual-explorer_0.2.0_x64-setup.exe"
+        ]
+      }
+    },
+    {
+      "repository": "styayur.github.io",
+      "source_commit": "d63e4a4aa2b1e511180a94ef83d4d5f4e2df4ad4",
+      "archived": false,
+      "local_images": [],
+      "svg_signatures": [],
+      "release": null
+    },
+    {
+      "repository": "styayur",
+      "source_commit": "f78a8ab6df6c47b8f3b9bfde5bd4014edb4631b5",
+      "archived": false,
+      "local_images": [
+        {
+          "readme": "README.md",
+          "reference": "assets/brand/mark.svg",
+          "exists": true
+        }
+      ],
+      "svg_signatures": [
+        {
+          "path": "assets/brand/hero-dark.svg",
+          "sha256": "b4b27bddd4651003a988d92985c733f140c06ab74a2084ea4d13f38a8c06d0aa",
+          "topology": "svg rect text text text text",
+          "geometryHash": "07d9776b22c011e08211e1cc96349c10f3229a027ac099903a485d7134ac6325",
+          "template96": false
+        },
+        {
+          "path": "assets/brand/hero-light.svg",
+          "sha256": "138d4e96afdc358afcb30a9fe0be0ae8884313ae73c56ad62ae5a4490b0466b9",
+          "topology": "svg rect text text text text",
+          "geometryHash": "07d9776b22c011e08211e1cc96349c10f3229a027ac099903a485d7134ac6325",
+          "template96": false
+        },
+        {
+          "path": "assets/brand/mark.svg",
+          "sha256": "af1b318d56d4696bbd323b01ceddfcda9de22bb46ee4be845b30b80f94e4c0fc",
+          "topology": "svg rect rect path circle",
+          "geometryHash": "09f4512030d4a9501a6b149a27d6aebb5c57020a0e5681f34ca2c60c4abb40da",
+          "template96": true
+        },
+        {
+          "path": "assets/projects/calligraphy-studio.svg",
+          "sha256": "a98dda5601cb7be48ff570b722a2c5ee9695b2689b39fc2acced2ba9d689a04a",
+          "topology": "svg rect rect path circle",
+          "geometryHash": "71a052e4167910f2c36e0b84f3e427ec18ffd9c45abe2bfb14bd2b23c0687c49",
+          "template96": true
+        },
+        {
+          "path": "assets/projects/codeforge-engine.svg",
+          "sha256": "9beb5e4170e3e70b811786d419b093f467ac84cf583ac038755a4fc6157eb46a",
+          "topology": "svg rect rect path path path",
+          "geometryHash": "ec263cf91365c9bf922cfbde1179feeeada903c698154683113096a9d72e1dac",
+          "template96": true
+        },
+        {
+          "path": "assets/projects/developer-security-workspace.svg",
+          "sha256": "d1c0313f10436ae41ee010483e9f8ef3a9fbd43888e398199093667056fd548c",
+          "topology": "svg rect rect path circle path",
+          "geometryHash": "b62fc3334c7d5495167cd5d35fb604f03e0a55bd8747162148fb95e4e2c1d596",
+          "template96": true
+        },
+        {
+          "path": "assets/projects/local-context-engine.svg",
+          "sha256": "b2afdfefac6752601cb68ab37854eb19c0c131e24e7a875e809d94754fc94124",
+          "topology": "svg rect rect circle path path",
+          "geometryHash": "f049662862d16e361132dc0cd1daadb75bfca55b191fae83db356c0d6c35e9fe",
+          "template96": true
+        },
+        {
+          "path": "assets/projects/stem-visual-explorer.svg",
+          "sha256": "607eb055c507a5628be066bc6a536563a24e71d56b3cd918bc6e24f67daa1b8f",
+          "topology": "svg rect rect circle path circle circle ellipse",
+          "geometryHash": "e34dd9c59246831bb4a341f48609e6538ca4c3f727498343d1c853354cfd2d08",
+          "template96": true
+        },
+        {
+          "path": "assets/projects/tinytts.svg",
+          "sha256": "0cc43c4bbca12a2f19135c3a0840693ffbc8e70701a0719a962b085ee7d2f15d",
+          "topology": "svg rect rect rect path path",
+          "geometryHash": "0858a65d577d4decd9aa70fd3e28e862c69ea5e605fb7aebf67370d47507174f",
+          "template96": true
+        }
+      ],
+      "release": null
+    },
+    {
+      "repository": "TinySTT",
+      "source_commit": "ab3e795c02df5fe06bbca54d8844507b34097061",
+      "archived": false,
+      "local_images": [
+        {
+          "readme": "README.md",
+          "reference": "docs/assets/logo-mark.svg",
+          "exists": true
+        }
+      ],
+      "svg_signatures": [
+        {
+          "path": "docs/assets/logo-mark.svg",
+          "sha256": "624692711025bcd5b4bab18764672eb6c0100a73066b7b5e6b6903019f3068ba",
+          "topology": "svg defs linearGradient stop stop rect rect rect rect rect rect",
+          "geometryHash": "ffd359f0a1a09bcbd4f31a010e7d6637796c138177856ec06658cf94342eeb7f",
+          "template96": false
+        }
+      ],
+      "release": {
+        "tag": "v0.1.0",
+        "url": "https://github.com/styayur/TinySTT/releases/tag/v0.1.0",
+        "assets": [
+          "SHA256SUMS.txt",
+          "TinySTT-windows-x64-v0.1.0.zip"
+        ]
+      }
+    },
+    {
+      "repository": "TinyTTS",
+      "source_commit": "0b3c0ee26fc261100ce4f1648011be7683e7fe96",
+      "archived": false,
+      "local_images": [
+        {
+          "readme": "README.md",
+          "reference": "docs/assets/tinytts.png",
+          "exists": true
+        }
+      ],
+      "svg_signatures": [
+        {
+          "path": "docs/assets/brand/logo-mark.svg",
+          "sha256": "0cc43c4bbca12a2f19135c3a0840693ffbc8e70701a0719a962b085ee7d2f15d",
+          "topology": "svg rect rect rect path path",
+          "geometryHash": "0858a65d577d4decd9aa70fd3e28e862c69ea5e605fb7aebf67370d47507174f",
+          "template96": true
+        },
+        {
+          "path": "docs/assets/brand/logo.svg",
+          "sha256": "b812897a573d64c7b454480e83a23bfccb08529119398e4d4a64e32a61dfe815",
+          "topology": "svg rect rect rect path path",
+          "geometryHash": "4d25b5c3e9b2465e03e58385d94770abb09441254c0c93acf2229236d720c895",
+          "template96": true
+        }
+      ],
+      "release": null
+    },
+    {
+      "repository": "translation-kernel",
+      "source_commit": "6a221457670b7a3871d00ff4ca40ae8952d32252",
+      "archived": false,
+      "local_images": [
+        {
+          "readme": "README.md",
+          "reference": "docs/assets/extension-settings-v0.1.0.png",
+          "exists": true
+        }
+      ],
+      "svg_signatures": [],
+      "release": {
+        "tag": "v0.1.0",
+        "url": "https://github.com/styayur/translation-kernel/releases/tag/v0.1.0",
+        "assets": [
+          "SHA256SUMS.txt",
+          "translation-kernel-chromium-v0.1.0.zip",
+          "translation-kernel-sdk-v0.1.0.zip"
+        ]
+      }
+    },
+    {
+      "repository": "windows-new-pc-setup",
+      "source_commit": "3edad38041d5c37d20c643fb5fdb1171a9e624a8",
+      "archived": false,
+      "local_images": [
+        {
+          "readme": "README.md",
+          "reference": "docs/assets/preview.png",
+          "exists": true
+        },
+        {
+          "readme": "README.md",
+          "reference": "docs/assets/brand/logo-mark.svg",
+          "exists": true
+        }
+      ],
+      "svg_signatures": [
+        {
+          "path": "docs/assets/brand/logo-mark.svg",
+          "sha256": "d30fa088b7770a1399068cf7b1cfc8413ed92dc117d3e784dae545c53cde9e6b",
+          "topology": "svg rect rect rect path path rect",
+          "geometryHash": "5aa9ea08e36116c97ec3c546ecdc896ec7faf7a60c557e48e3c64fbb26359748",
+          "template96": true
+        },
+        {
+          "path": "docs/assets/brand/logo.svg",
+          "sha256": "a87fafb6e7f24347902a188981bd5b9e6d0701b44532e1d96fef832c1939c452",
+          "topology": "svg rect rect rect path path rect",
+          "geometryHash": "706f43f1c658d3176216869397e42b84106ffae2fd2207999f03e89264395d1e",
+          "template96": true
+        }
+      ],
+      "release": {
+        "tag": "v2.0.0",
+        "url": "https://github.com/styayur/windows-new-pc-setup/releases/tag/untagged-f41324140eb558bb1ab5",
+        "assets": [
+          "SetupNewPC-v2.0.0.zip",
+          "SHA256SUMS.txt"
+        ]
+      }
+    },
+    {
+      "repository": "wutnet",
+      "source_commit": "5b18ed5662041fc254e9ca5c13de9280548578ca",
+      "archived": false,
+      "local_images": [],
+      "svg_signatures": [],
+      "release": {
+        "tag": "v0.1.0-alpha.1",
+        "url": "https://github.com/styayur/wutnet/releases/tag/v0.1.0-alpha.1",
+        "assets": [
+          "SHA256SUMS.txt",
+          "whut-net.ps1"
+        ]
+      }
+    }
+  ]
+}

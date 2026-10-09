@@ -231,3 +231,61 @@ Website integration reuses these public screenshots in the private site; private
 source assets have not been published into public repositories. The Profile remains
 minimal and does not restore a logo-card matrix. A separate Workbench CMS PR handles
 manifest recognition, content types and screenshot management.
+
+
+## Architecture amendment and follow-up — 2026-10-09
+
+This extends the existing Phase 1.5 audit. The original inventory above is historical; the fresh API enumeration still contains 22 public repositories, including the now-archived digital-garden-engine. [Pinned current inventory](README_VISUAL_INVENTORY_20261009.json) records source commits, image paths, release assets and SVG signatures. No missing local inline/HTML image reference was found across those README files. External/reference-style links are not implied to be fully verified by that inventory.
+
+Seven priority projects receive one source-verified core Mermaid diagram in the README Architecture section. The marked Mermaid block is authoritative; `.mmd` and SVG are extracted/rendered only as temporary verification artifacts. No new decorative logo or app icon is created. GitDiagram returned initial diagrams for all seven public projects; its PowerShell analyses for wutnet, Codex Mode Switcher and OmniRoute-PS reported **zero source files read**. All final relationships were therefore checked locally against real source, rather than accepting generated claims.
+
+| Repository | Project Type | Existing Media / current treatment | Duplicate Risk | Missing Evidence | Proposed Action | Priority |
+| --- | --- | --- | --- | --- | --- | --- |
+| publishing-workbench | Tauri desktop CMS | Retain real v0.2.1 native Preview screenshot | Low | Newer CMS GUI capture is not a released-version claim | Add Tauri/Rust, SQLite, keyring, Publisher and recovery architecture | P1 |
+| translation-kernel | SDK / Chromium extension | Retain real extension settings and SDK examples | Low | Settings do not demonstrate provider translation quality | Add content/worker boundary, reversible DOM and Provider flow | P1 |
+| wutnet | Windows PowerShell CLI on main | Actual credential-free help output | Low | Live campus authentication needs an authorized campus environment | Diagram actual probes/session/DPAPI; explicitly no retry loop or Android on main | P1 |
+| ipa-first-tts | Rust CLI / loopback web GUI | Retain existing real UI; add actual G2P stdout | Low | No new full synthesis/quality claim | Diagram editable IPA to synthesis, then estimated alignment | P1 |
+| codex-mode-switcher | PowerShell configuration utility | Actual isolated Init/GPT/restore transcript | Low | No authenticated provider connection claimed | Diagram lock/state/backups/atomic replacement; retain Chinese entry | P1 |
+| TinySTT | Native Windows GUI plus WAV CLI | Actual unedited sample WAV recognition; remove decorative header emphasis | Medium | Native capture blocked by Windows access-denied; microphone path not exercised | Diagram capture/resampling/single ASR worker; explicitly no VAD | P1 |
+| OmniRoute-PS | PowerShell HTTP router | Retain actual config-check stdout | Low after prior logo removal | No live credentialed inference claim | Diagram canonical IR, model selection, scoring, transport and streaming boundary | P1 |
+| LGXT-Assistant | Desktop / local web / Android channels | Retain desktop screenshot, label desktop channel and remove duplicate occurrence | High to reduced | Desktop image is not evidence for web/Android channels | Remove shared tile and empty-link badges, preserve app branding | P1 |
+| mini-market | Static marketplace simulation | Retain storefront screenshot and live demo | High to reduced | No real payment/AI provisioning claim | Remove shared tile and empty-link badges | P1 |
+| musical-spinningtop | Browser / local musical picker | Retain daily-card screenshot and live demo | High to reduced | No new capture required by verified evidence | Remove shared tile and empty-link badges | P1 |
+| Nickspeare | Browser research tool | Retain composing-room screenshot, demo and provenance docs | High to reduced | No new capture required by verified evidence | Remove shared tile and empty-link badges | P1 |
+| windows-new-pc-setup | PowerShell provisioning | Retain preview image and existing WhatIf command | High to reduced | No system provisioning run performed for this docs change | Remove shared tile and empty-link badges | P1 |
+| local-context-engine | Desktop / CLI / MCP | Existing CLI/DSL and architecture retained; PR 15 merged with all checks green | Low | Functional native screenshot still pending after blank WebView | Keep explicit capture limitation; no fake screenshot | P1 pending capture |
+| calligraphy-studio, codeforge-engine, developer-security-workspace, Echo-Loop, stem-visual-explorer, TinyTTS | Existing GUI projects | Existing screenshot/documentation retained after prior targeted work | Already reduced / low | Historical image provenance limitations remain as recorded above | No unsupported redraw or recapture | P2 |
+| digital-garden-engine | Archived historical engine | Existing documentation and assets retained | No active README tile | Archived, not an active product to rebrand | Preserve historical evidence | P2 |
+| styayur.github.io | URL compatibility | Existing redirect and independent project demos | Low | No application screenshot appropriate | No change | P2 |
+| styayur | Minimal Profile / governance | Small existing personal mark; no project-logo matrix | Intentional single personal mark | No product screenshot appropriate | Update this audit and verification records only | P2 |
+
+### Verification and maintenance
+
+Each architecture PR adds `docs/architecture/evidence.json`, a readable source map and a documentation-only verifier. Local checks passed source anchors, referenced files, Mermaid syntax, SVG XML in light/dark themes and repeated byte-identical rendering. Source anchors detect renames/deletions; semantic correctness comes from reading call sites, not string matching. The Mermaid CLI entry version is pinned to 11.12.0; transitive npm packages and installed Chrome remain environment-dependent, so byte reproducibility is scoped to one installed toolchain.
+
+The GitHub branch READMEs rendered all seven actual Mermaid diagrams, including their node labels in GitHub's embedded renderer. Workbench, Translation Kernel and IPA-first TTS image elements loaded. The retained images in LGXT-Assistant, mini-market, musical-spinningtop, Nickspeare and windows-new-pc-setup also loaded in the actual GitHub pages after header cleanup. New CI is restricted to documentation changes; the PR checklist asks for diagram review on meaningful architecture/security/persistence changes rather than redrawing on every source edit. Existing application checks remain enabled.
+
+Native screenshot limitations are explicit: LCE previously rendered a blank WebView; this run's Windows helper returned `GetCursorPos: access denied (0x80070005)` and exposed no TinySTT window. TinySTT's real CLI demonstration uses the upstream model's bundled English sample, with executable/input SHA-256 recorded in its own documentation. Its recognized final word is left uncorrected; this is not an accuracy benchmark. No private recordings, credentials or files were published.
+
+Original application/installer icons, legal third-party marks, brand files and license texts remain unchanged. Existing asset provenance is not newly certified by removing a decorative image reference. Newly authored diagrams derive from public source and inherit each repository's existing documentation terms; GitDiagram artwork was not copied. Maintenance cost is source-map review and documentation rendering; no runtime diagram dependency or parallel SVG source is added.
+
+### Relation to Phases 2–4
+
+The earlier migration is complete, not waiting for another cutover. The final private-site PR 13 is merged at `b681172d9fdd514c3e9a2d12e02cdf839bff9bec` and its production workflow succeeded. A fresh public HTTP verification on 2026-10-09 checked 17 routes and 32 same-host assets with zero failures; four draft/private/admin probes still returned 404. Workbench screenshot-management/import changes remain merged; this documentation amendment does not create another release or deployment. Public project evidence remains the source for site previews. The Profile stays minimal.
+
+### Amendment pull requests
+
+Individual files, commit IDs, CI results and final merge states are recorded in [the amendment verification record](README_ARCHITECTURE_VERIFICATION.json).
+
+- [publishing-workbench](https://github.com/styayur/publishing-workbench/pull/4)
+- [translation-kernel](https://github.com/styayur/translation-kernel/pull/10)
+- [wutnet](https://github.com/styayur/wutnet/pull/2)
+- [ipa-first-tts](https://github.com/styayur/ipa-first-tts/pull/1)
+- [codex-mode-switcher](https://github.com/styayur/codex-mode-switcher/pull/1)
+- [TinySTT](https://github.com/styayur/TinySTT/pull/2)
+- [OmniRoute-PS](https://github.com/styayur/OmniRoute-PS/pull/3)
+- [LGXT-Assistant](https://github.com/styayur/LGXT-Assistant/pull/15)
+- [mini-market](https://github.com/styayur/mini-market/pull/12)
+- [musical-spinningtop](https://github.com/styayur/musical-spinningtop/pull/7)
+- [Nickspeare](https://github.com/styayur/Nickspeare/pull/5)
+- [windows-new-pc-setup](https://github.com/styayur/windows-new-pc-setup/pull/4)
