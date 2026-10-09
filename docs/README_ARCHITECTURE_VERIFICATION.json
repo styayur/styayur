@@ -5,10 +5,12 @@
     {
       "repository": "styayur/publishing-workbench",
       "pr": "https://github.com/styayur/publishing-workbench/pull/4",
-      "state": "OPEN",
+      "state": "MERGED",
       "head_commit": "7f1705e309b62082ef189ee076c5b7ddcb3526c5",
-      "merge_commit": null,
-      "merged_at": null,
+      "merge_commit": {
+        "oid": "709b497b03d48cffa577024bda4c480db7cac9b8"
+      },
+      "merged_at": "2026-10-09T04:24:58Z",
       "files": [
         ".github/pull_request_template.md",
         ".github/workflows/architecture.yml",
@@ -20,20 +22,20 @@
       "checks": [
         {
           "name": "verify",
-          "status": "IN_PROGRESS",
-          "conclusion": "",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
           "url": "https://github.com/styayur/publishing-workbench/actions/runs/37882794745/job/113666045543"
         },
         {
           "name": "windows",
-          "status": "IN_PROGRESS",
-          "conclusion": "",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
           "url": "https://github.com/styayur/publishing-workbench/actions/runs/37882794756/job/113666045791"
         },
         {
           "name": "windows",
-          "status": "IN_PROGRESS",
-          "conclusion": "",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
           "url": "https://github.com/styayur/publishing-workbench/actions/runs/37882790678/job/113666031726"
         }
       ],
@@ -198,10 +200,12 @@
     {
       "repository": "styayur/TinySTT",
       "pr": "https://github.com/styayur/TinySTT/pull/2",
-      "state": "OPEN",
+      "state": "MERGED",
       "head_commit": "95982a2d9cbc0f9b93074a04db47414035257f0d",
-      "merge_commit": null,
-      "merged_at": null,
+      "merge_commit": {
+        "oid": "ad432486b01381b442e96f20f4b71c6a89072a40"
+      },
+      "merged_at": "2026-10-09T04:18:15Z",
       "files": [
         ".github/pull_request_template.md",
         ".github/workflows/architecture.yml",
@@ -213,16 +217,16 @@
       ],
       "checks": [
         {
-          "name": "CodeForge regression",
-          "status": "IN_PROGRESS",
-          "conclusion": "",
-          "url": "https://github.com/styayur/TinySTT/actions/runs/37882639946/job/113665641673"
-        },
-        {
           "name": "verify",
           "status": "COMPLETED",
           "conclusion": "SUCCESS",
           "url": "https://github.com/styayur/TinySTT/actions/runs/37882639918/job/113665553499"
+        },
+        {
+          "name": "CodeForge regression",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/styayur/TinySTT/actions/runs/37882639946/job/113665641673"
         },
         {
           "name": "windows",
@@ -237,10 +241,12 @@
     {
       "repository": "styayur/OmniRoute-PS",
       "pr": "https://github.com/styayur/OmniRoute-PS/pull/3",
-      "state": "OPEN",
+      "state": "MERGED",
       "head_commit": "af893a4f8a0795b8fea794d8cd81ba79e2bae06f",
-      "merge_commit": null,
-      "merged_at": null,
+      "merge_commit": {
+        "oid": "d1b279b79c53c1ac1ccb4e85718648db0bafcb4d"
+      },
+      "merged_at": "2026-10-09T04:16:08Z",
       "files": [
         ".codeforge.toml",
         ".github/pull_request_template.md",
