@@ -49,6 +49,13 @@ and server errors remain **uncertain**, with no automatic document rewrite. Arti
 `portfolio-audit` records public evidence and counts, retained for 30 days. Failure
 to enumerate the complete public inventory fails the read job and blocks notification.
 
+Release observations record the website's expected tags, GitHub's observed formal
+and preview tags/dates, and the website registry digest. Malformed payloads are
+uncertain. If a list omits a newer known tag that its exact-tag endpoint still
+publishes, record inconsistent/stale list evidence instead of asserting that the
+website version is wrong. A full 100-entry release page requires pagination review
+before comparison. Genuine differences remain review findings with exact evidence.
+
 A separate notification job uses the previous successful scheduled/manual artifact.
 Findings need two successful audits **at least six hours apart**, no more than 21 days
 apart. It creates or updates one marker-owned tracking issue in this Profile hub,
