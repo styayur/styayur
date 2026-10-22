@@ -1,0 +1,477 @@
+{
+  "schemaVersion": 1,
+  "owner": "styayur",
+  "website": "https://styayur.co.uk",
+  "reviewedAt": "2026-10-22",
+  "repositories": [
+    {
+      "repository": "styayur/calligra",
+      "repositoryId": 1371635211,
+      "licenseSpdx": "GPL-3.0",
+      "licenseSha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "README.zh-CN.md",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [
+        {
+          "path": "apps/desktop/package.json",
+          "license": "GPL-3.0-or-later"
+        }
+      ],
+      "readmeCodeSha256": "dd3742596abcdba9cea83d63cbfa10c01bab18acd2042b7b2c6809c4688b6b42",
+      "visual": {
+        "kind": "image",
+        "path": "docs/japanese-workbench.png"
+      },
+      "npmDirectory": "apps/web"
+    },
+    {
+      "repository": "styayur/codeforge-engine",
+      "repositoryId": 1400085574,
+      "licenseSpdx": "Apache-2.0",
+      "licenseSha": "8fc9b81b7396973e2342c8596a5ee8a6dfa1c7b3",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "README.zh-CN.md",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [],
+      "readmeCodeSha256": "25032d08240e77de8987d4f8e00470bfcefcca55645ba31cffb3963e874b9514",
+      "visual": {
+        "kind": "text",
+        "reason": "CLI output, documented workflow or upstream artwork; no invented runtime screenshot required."
+      }
+    },
+    {
+      "repository": "styayur/codex-mode-switcher",
+      "repositoryId": 1403467202,
+      "licenseSpdx": "MIT",
+      "licenseSha": "02a545a1ed1e229c8be5785d3cd32ef7766b4209",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "docs/README.zh-CN.md",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [],
+      "readmeCodeSha256": "7ace813cbbd9c72ca9128effb959c5e0e33a6bd1a31c452b9f17b26788829123",
+      "visual": {
+        "kind": "text",
+        "reason": "CLI output, documented workflow or upstream artwork; no invented runtime screenshot required."
+      }
+    },
+    {
+      "repository": "styayur/developer-security-workspace",
+      "repositoryId": 1388710049,
+      "licenseSpdx": "AGPL-3.0",
+      "licenseSha": "0c97efd25b5974b974ed9a8a18207bc4f55bb338",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "README.zh-CN.md",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [],
+      "readmeCodeSha256": "17d73c2fa86042ebd8f6224ffdaeb1d6ba0cb48b1ecbec1def980486da57cbe4",
+      "visual": {
+        "kind": "image",
+        "path": "docs/assets/desktop-trace-v1.png"
+      }
+    },
+    {
+      "repository": "styayur/digital-garden-engine",
+      "repositoryId": 1399208491,
+      "licenseSpdx": "MPL-2.0",
+      "licenseSha": "ee6256cdb62a765749a71aae3abea32884301cd1",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "README.zh-CN.md",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [
+        {
+          "path": "package.json",
+          "license": "MPL-2.0"
+        }
+      ],
+      "readmeCodeSha256": "1f9e590873f9411f3f738b294e8881ce1de54ec679f5978eaa8e87a962705a6a",
+      "visual": {
+        "kind": "image",
+        "path": "docs/assets/demo.png"
+      }
+    },
+    {
+      "repository": "styayur/Echo-Loop",
+      "repositoryId": 1398594656,
+      "licenseSpdx": "AGPL-3.0",
+      "licenseSha": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "README.zh-CN.md"
+      ],
+      "manifestLicenses": [],
+      "readmeCodeSha256": "5aad8dc9d11322650de8e4ff6e183cf230b6a06124b8984902117a740e14a152",
+      "visual": {
+        "kind": "text",
+        "reason": "CLI output, documented workflow or upstream artwork; no invented runtime screenshot required."
+      }
+    },
+    {
+      "repository": "styayur/ipa-first-tts",
+      "repositoryId": 1409449480,
+      "licenseSpdx": "GPL-3.0",
+      "licenseSha": "94a9ed024d3859793618152ea559a168bbcbb5e2",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "README.zh-CN.md",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [],
+      "readmeCodeSha256": "598f6ad29bb5b89b16d58b7d27de71fbea4274e1f579a0c7ff1ab555a27960c2",
+      "visual": {
+        "kind": "image",
+        "path": "outputs/desktop.png"
+      }
+    },
+    {
+      "repository": "styayur/LGXT-Assistant",
+      "repositoryId": 1362863720,
+      "licenseSpdx": "AGPL-3.0",
+      "licenseSha": "0c97efd25b5974b974ed9a8a18207bc4f55bb338",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "README.zh-CN.md",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [],
+      "readmeCodeSha256": "3ec8731a6f7b598a93f17e305a3075d01ccb26baa6433fd120dab44664fb7d80",
+      "visual": {
+        "kind": "image",
+        "path": "docs/screenshots/modern-dark-1440.png"
+      }
+    },
+    {
+      "repository": "styayur/local-context-engine",
+      "repositoryId": 1399679894,
+      "licenseSpdx": "MPL-2.0",
+      "licenseSha": "ee6256cdb62a765749a71aae3abea32884301cd1",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "README.zh-CN.md",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [
+        {
+          "path": "apps/desktop/package.json",
+          "license": "MPL-2.0"
+        }
+      ],
+      "readmeCodeSha256": "50b84911ad14e29f626b8bcc51627fa367bdec4be97d578e8e99b01f1c09a911",
+      "visual": {
+        "kind": "text",
+        "reason": "CLI output, documented workflow or upstream artwork; no invented runtime screenshot required."
+      },
+      "npmDirectory": "apps/desktop"
+    },
+    {
+      "repository": "styayur/mini-market",
+      "repositoryId": 1364395119,
+      "licenseSpdx": "MPL-2.0",
+      "licenseSha": "ee6256cdb62a765749a71aae3abea32884301cd1",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "README.zh-CN.md",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [
+        {
+          "path": "package.json",
+          "license": "MPL-2.0"
+        }
+      ],
+      "readmeCodeSha256": "faf300484d2ec8bc6b7f095eaf49d5cd9e99c0f61cba749a4e3ff3da444e9ea2",
+      "visual": {
+        "kind": "image",
+        "path": "docs/storefront.png"
+      }
+    },
+    {
+      "repository": "styayur/musical-spinningtop",
+      "repositoryId": 1385662827,
+      "licenseSpdx": "AGPL-3.0",
+      "licenseSha": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "README.zh-CN.md",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [],
+      "readmeCodeSha256": "6bb5a82ef5c5d327474a318211b8da05002bbdef740fa738df2cde09241d3c8d",
+      "visual": {
+        "kind": "image",
+        "path": "docs/assets/daily-card.png"
+      }
+    },
+    {
+      "repository": "styayur/Nickspeare",
+      "repositoryId": 1386888456,
+      "licenseSpdx": "AGPL-3.0",
+      "licenseSha": "570d97a183f88ad02898c4279668b93e0657be71",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [],
+      "readmeCodeSha256": "c3630bacc420150f889859b88a332ae69ba9f7944722013defe25bf1a8926cd5",
+      "visual": {
+        "kind": "image",
+        "path": "docs/screenshot.png"
+      },
+      "reviewedReadmeCommit": "a8602c944ce56f5a0093860d5b323a3272a9765e"
+    },
+    {
+      "repository": "styayur/OmniRoute-PS",
+      "repositoryId": 1401962528,
+      "licenseSpdx": "Apache-2.0",
+      "licenseSha": "6b0b1270ff0ca8f03867efcd09ba6ddb6392b1e1",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "README.zh-CN.md",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [],
+      "readmeCodeSha256": "4e574eee119719050132440ce5037b720fa37abc2cbdf053d92350b68fb20756",
+      "visual": {
+        "kind": "text",
+        "reason": "CLI output, documented workflow or upstream artwork; no invented runtime screenshot required."
+      }
+    },
+    {
+      "repository": "styayur/publishing-workbench",
+      "repositoryId": 1409472340,
+      "licenseSpdx": "AGPL-3.0",
+      "licenseSha": "0ad25db4bd1d86c452db3f9602ccdbe172438f52",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "README.zh-CN.md"
+      ],
+      "manifestLicenses": [
+        {
+          "path": "package.json",
+          "license": "AGPL-3.0-only"
+        }
+      ],
+      "readmeCodeSha256": "12bb02f9a1e9c32455468768435c8d37e1cfece189ad984c47fc4eeb085e41ea",
+      "visual": {
+        "kind": "image",
+        "path": "docs/assets/desktop-preview-v0.2.1.png"
+      }
+    },
+    {
+      "repository": "styayur/stem-visual-explorer",
+      "repositoryId": 1393107744,
+      "licenseSpdx": "AGPL-3.0",
+      "licenseSha": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "README.zh-CN.md",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [
+        {
+          "path": "package.json",
+          "license": "AGPL-3.0-only"
+        }
+      ],
+      "readmeCodeSha256": "76b9494f1479f62357c5fc848b9381fbc172c4718357085d647c44b3e33201a1",
+      "visual": {
+        "kind": "image",
+        "path": "docs/screenshot.png"
+      }
+    },
+    {
+      "repository": "styayur/styayur",
+      "repositoryId": 1398635384,
+      "licenseSpdx": "CC-BY-4.0",
+      "licenseSha": "13ca539f377dc705af32b8d2ce89262298ea2f06",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE"
+      ],
+      "manifestLicenses": [],
+      "readmeCodeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "visual": {
+        "kind": "not-required",
+        "reason": "Profile/redirect or preserved historical guide."
+      }
+    },
+    {
+      "repository": "styayur/styayur.github.io",
+      "repositoryId": 1362258046,
+      "licenseSpdx": "GPL-3.0",
+      "licenseSha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "README.zh-CN.md"
+      ],
+      "manifestLicenses": [],
+      "readmeCodeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "visual": {
+        "kind": "not-required",
+        "reason": "Profile/redirect or preserved historical guide."
+      }
+    },
+    {
+      "repository": "styayur/TinySTT",
+      "repositoryId": 1402067510,
+      "licenseSpdx": "AGPL-3.0",
+      "licenseSha": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "README.zh-CN.md",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [],
+      "readmeCodeSha256": "95267741e993ba5d0f491cf628a9b5de9ade3224b14173da0f5d026ca1ab8c8d",
+      "visual": {
+        "kind": "text",
+        "reason": "CLI output, documented workflow or upstream artwork; no invented runtime screenshot required."
+      }
+    },
+    {
+      "repository": "styayur/TinyTTS",
+      "repositoryId": 1392894388,
+      "licenseSpdx": "GPL-3.0",
+      "licenseSha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "README.zh-CN.md",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [],
+      "readmeCodeSha256": "ce3c43d52942de3a7a59aee72e5c346dbd9d296b07d5e369c36a4fac9db1a673",
+      "visual": {
+        "kind": "image",
+        "path": "docs/assets/tinytts.png"
+      }
+    },
+    {
+      "repository": "styayur/translation-kernel",
+      "repositoryId": 1409441558,
+      "licenseSpdx": "MPL-2.0",
+      "licenseSha": "ee6256cdb62a765749a71aae3abea32884301cd1",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "README.zh-CN.md",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [],
+      "readmeCodeSha256": "9078bfe9e3f13b03239553a0aed2abcdc374480addc999f1f5a3227016a5e3cb",
+      "visual": {
+        "kind": "image",
+        "path": "docs/assets/extension-settings-v0.1.0.png"
+      }
+    },
+    {
+      "repository": "styayur/windows-new-pc-setup",
+      "repositoryId": 1378504882,
+      "licenseSpdx": "MIT",
+      "licenseSha": "02a545a1ed1e229c8be5785d3cd32ef7766b4209",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "docs/README.zh-CN.md",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [],
+      "readmeCodeSha256": "642435b542d5f1ef6daacd8b97fb8d5b083483aa097c5b078bea4d87e08a4117",
+      "visual": {
+        "kind": "text",
+        "reason": "CLI output, documented workflow or upstream artwork; no invented runtime screenshot required."
+      }
+    },
+    {
+      "repository": "styayur/wutnet",
+      "repositoryId": 1409885379,
+      "licenseSpdx": "MIT",
+      "licenseSha": "69a72e050e0e1cc11bcdc4a7fdd5923b2a218b1a",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "docs/README.zh-CN.md",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [],
+      "readmeCodeSha256": "17d21e0aad0d63f59a3dee35654030d2870cd1cbfbdd1505b799c05a09bc3610",
+      "visual": {
+        "kind": "text",
+        "reason": "CLI output, documented workflow or upstream artwork; no invented runtime screenshot required."
+      }
+    }
+  ],
+  "reviewedGovernanceCommits": [
+    "06de9796f60cf3c270b7ee62998a056aeb526ce3",
+    "08e2f3b074c4c9f3d426d13b607d8f2c4d071822",
+    "0923c6c9f6743ef4d05a53366864e85c03390a3b",
+    "0d0196661c103d61880c7bb1c5e65e7e2c5e7b3e",
+    "0d2f14f84193a0dd41c307943a27492b939c8401",
+    "0d529c8b3bb441f2ddd094edb9488b6c708e37f6",
+    "1508fbbefb0fbbb7a0c8cc5e8996372b3a939012",
+    "1b2edcb8e739f006948531c5659985170aa1a61e",
+    "2c9252366baeafdce7a6081c93c6dc6bd92914bf",
+    "2fb035397ae48b63d8aed81ff726f5210f968c7c",
+    "3f8ce3a82433a948b22ff20734f2a8294e3229e5",
+    "47c97ba0d69f2a7bc4fcd3bddcae064e5d2322d2",
+    "485797bd494fcaf7e48ce172ddddf5c5db9bab2b",
+    "4935dcf3d0b8aff14d990797ac7d4192e74cdefc",
+    "4d90f8770a84eccff32ca2777fe60393751e5673",
+    "52a855db0a34467abedc4dd073e31bf7bd24c114",
+    "61984e9c947053f72a0b53ccb055e7e249d6c023",
+    "629ac870a0b5f311dcb951f4df110f5076c241b2",
+    "68d9d35ff9a603f0df70a6b3cbabd2d0d5fbd997",
+    "6c843a1a05984bc2bb93c8e13227951a74fa2987",
+    "768180993c989d739a334e32026969584e3ed780",
+    "793761dcdba4746413703550f339e80d8329029b",
+    "7957eb6117cf16f9eef9e5be4a153ed023bbeaf9",
+    "799b290625cd275374be45e040430826b238090d",
+    "7c4d99b31782f96ebcf38e973c2b7cd163181554",
+    "83c55e2941bc3d5b1bc1b8c84843941c19a263db",
+    "8a5a51b16098dc3c2ba141c5ed0ccf037b5ebcfc",
+    "8d7be8510cba0d282ebf4fa9c084e533b392fa3b",
+    "956039c68f019c6c9ebe314ef0e5ceb4886e8904",
+    "a0ae286d1ef86d5e1b5a18ac202952a3ae4254a3",
+    "a71df3379e77e7bb71ae4ad73745a365a807aca7",
+    "a8602c944ce56f5a0093860d5b323a3272a9765e",
+    "aafd120c2f4f0f8cc5684aabc1212713c5a9880a",
+    "b2cbb810a59d294b260ab7c553052a89b8ce67e3",
+    "ba4822502b820b575ea298824321d0c84a4fb1e3",
+    "c37801868071931b29e8afb3541f4c7cd41a7e20",
+    "c652ac44e4514c8b758290496385669bf7644fa0",
+    "cb42320110aca1a4ef107952dd83a20a81fc8dc9",
+    "cbe315e7e33df6aceaf06a4f3b5a932009d77151",
+    "d51da251d8ad2919184b4887f86ced6ce4b8e839",
+    "de3aabbfa2b6d66350204ee1f511d90fd3557064",
+    "df61bae5f6a9c2bf95c6a7a75b7e9480ec10731f",
+    "e200900ff27c98807c7c1fad3e27c266282241da",
+    "f8b1459efd0d64674d9ec151e0e8e1e058931e7b"
+  ]
+}
