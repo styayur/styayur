@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 const data = JSON.parse(fs.readFileSync(new URL('../portfolio/maturity.json', import.meta.url)));
