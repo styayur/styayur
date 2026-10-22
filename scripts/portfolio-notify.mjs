@@ -58,5 +58,5 @@ if(process.argv[1] && import.meta.url===pathToFileURL(path.resolve(process.argv[
   const runUrl=process.env.GITHUB_RUN_ID?`https://github.com/styayur/styayur/actions/runs/${process.env.GITHUB_RUN_ID}`:undefined;
   const plan=notificationPlan(current,previous,issues,{runUrl});
   const result=await applyNotification(plan,{request});
-  console.log(JSON.stringify({action:plan.action,reason:plan.reason,number:result.number??plan.number}));
+  process.stdout.write(JSON.stringify({action:plan.action,reason:plan.reason,number:result.number??plan.number})+'\n');
 }

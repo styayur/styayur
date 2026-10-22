@@ -235,6 +235,6 @@ if(process.argv[1] && import.meta.url===pathToFileURL(path.resolve(process.argv[
   const output=process.argv.slice(2).find(arg=>!arg.startsWith('--'))??'.audit/current/report.json';
   const report=await auditPortfolio(policy,process.argv.includes('--gh')?{request:createGhClient()}:{});
   fs.mkdirSync(path.dirname(output),{recursive:true});fs.writeFileSync(output,JSON.stringify(report,null,2)+'\n');
-  console.log(JSON.stringify(report.checks));
+  process.stdout.write(JSON.stringify(report.checks)+'\n');
   if(!report.checks.inventoryComplete)process.exitCode=1;
 }
