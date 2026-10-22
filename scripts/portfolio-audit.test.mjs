@@ -3,8 +3,40 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { auditPortfolio, codeDigest, createClient, meaningfulCommit, safeLink } from './portfolio-audit.mjs';
 import { applyNotification, marker, notificationPlan } from './portfolio-notify.mjs';
+import { reviewReleases } from './portfolio-release-review.mjs';
 
 const readme='# Demo\n\n```sh\nnpm run build\n```\n';
+const release=(tag,publishedAt,prerelease=false)=>({tag_name:tag,published_at:publishedAt,draft:false,prerelease});
+
+test('formal releases and published previews remain separate and retain observed evidence',async()=>{
+  const formal=release('v1.0.0','2026-10-01T00:00:00Z');
+  const preview=release('v2.0.0-preview','2026-10-20T00:00:00Z',true);
+  const result=await reviewReleases({repository:'styayur/demo',formalRelease:{tag:'v1.0.0'}},[preview,formal],async()=>{throw Error('No lookup required');});
+  assert.equal(result.kind,'same');assert.equal(result.observation.observedFormal.tag,'v1.0.0');
+  assert.equal(result.observation.observedPreview.tag,'v2.0.0-preview');
+  assert.equal((await reviewReleases({previewRelease:{tag:'v2.0.0-preview'}},[preview],async()=>{})).kind,'same');
+});
+
+test('a genuinely newer formal publication requests review with exact expected and actual tags',async()=>{
+  const old=release('v1.0.0','2026-10-01T00:00:00Z'),latest=release('v1.1.0','2026-10-20T00:00:00Z');
+  const result=await reviewReleases({formalRelease:{tag:'v1.0.0'}},[old,latest],async()=>({kind:'ok',status:200,data:old}));
+  assert.equal(result.kind,'different');assert.equal(result.observation.expectedFormal,'v1.0.0');assert.equal(result.observation.observedFormal.tag,'v1.1.0');
+});
+
+test('a list omitting an independently retrievable newer known tag is uncertain',async()=>{
+  const known=release('v1.1.0','2026-10-20T00:00:00Z'),older=release('v1.0.0','2026-10-01T00:00:00Z');
+  for(const list of [[older],[]]) {
+    const result=await reviewReleases({formalRelease:{tag:'v1.1.0'}},list,async()=>({kind:'ok',status:200,data:known}));
+    assert.equal(result.kind,'uncertain');assert.equal(result.code,'release-list-stale');assert.equal(result.observation.confirmedKnownTag.tag,'v1.1.0');
+  }
+});
+
+test('malformed release payloads and failed confirmation never become a version defect',async()=>{
+  const result=await reviewReleases({formalRelease:{tag:'v1.1.0'}},[{tag:'v1.1.0'}],async()=>{throw Error('Do not infer fields');});
+  assert.equal(result.kind,'uncertain');assert.equal(result.code,'release-schema');
+  const failed=await reviewReleases({formalRelease:{tag:'v1.1.0'}},[],async()=>({kind:'uncertain',status:503}));
+  assert.equal(failed.kind,'uncertain');assert.equal(failed.code,'release-confirmation');
+});
 const repo={id:1,full_name:'styayur/demo',name:'demo',private:false,visibility:'public',owner:{login:'styayur'},description:'Demo',topics:['tools'],html_url:'https://github.com/styayur/demo',default_branch:'main',license:{spdx_id:'MIT'}};
 const policy={owner:'styayur',website:'https://example.org',repositories:[{repository:repo.full_name,repositoryId:1,licenseSpdx:'MIT',licenseSha:'license-sha',readmeCodeSha256:codeDigest(readme),requiredFiles:['README.md','LICENSE'],manifestLicenses:[],visual:{kind:'text'}}]};
 function fixture({markdown=readme,missingReadme=false,extraRepositories=[],unknownLink=false,externalStatus}={}){
@@ -34,7 +66,10 @@ test('public enumeration excludes private metadata and never follows a hidden ow
 });
 
 test('clean public fixture passes and missing README produces a concrete finding',async()=>{
-  assert.equal((await auditPortfolio(policy,fixture())).findings.length,0);
+  const clean=await auditPortfolio(policy,fixture());
+  assert.equal(clean.findings.length,0);
+  assert.equal(clean.releaseObservations.length,1);
+  assert.equal(clean.releaseObservations[0].repository,'styayur/demo');
   const report=await auditPortfolio(policy,fixture({missingReadme:true}));
   assert.equal(report.findings[0].code,'readme');
 });

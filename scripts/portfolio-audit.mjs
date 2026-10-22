@@ -5,6 +5,7 @@ import { createHash } from 'node:crypto';
 import { pathToFileURL } from 'node:url';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
+import { reviewReleases } from './portfolio-release-review.mjs';
 
 export const digest = value => createHash('sha256').update(value).digest('hex');
 export const codeDigest = markdown => digest([...markdown.replaceAll('\r\n','\n').matchAll(/```[^\n]*\n([\s\S]*?)```/g)].map(m=>m[1]).join('\n'));
@@ -81,9 +82,9 @@ export function meaningfulCommit(commit) {
 }
 
 export async function auditPortfolio(policy,{request=createClient(),now=new Date().toISOString()}={}) {
-  const report={schemaVersion:1,generatedAt:now,owner:policy.owner,publicRepositories:[],findings:[],uncertain:[],checks:{},limits:['Command blocks are fingerprinted for review; remote software is never executed.','Screenshots are checked for presence, not fabricated or regenerated.','Live provider, native device and private repository validation require separate authorized environments.']};
-  const add=(repository,code,message,evidence,severity='error')=>report.findings.push({id:digest(`${repository}:${code}`).slice(0,20),repository,code,message,evidence,severity});
-  const uncertain=(repository,code,status,evidence=[])=>report.uncertain.push({repository,code,status,evidence:evidence.length?evidence:[`https://github.com/${repository}`]});
+  const report={schemaVersion:1,generatedAt:now,owner:policy.owner,publicRepositories:[],findings:[],uncertain:[],releaseObservations:[],checks:{},limits:['Command blocks are fingerprinted for review; remote software is never executed.','Screenshots are checked for presence, not fabricated or regenerated.','Live provider, native device and private repository validation require separate authorized environments.']};
+  const add=(repository,code,message,evidence,severity='error',details)=>report.findings.push({id:digest(`${repository}:${code}`).slice(0,20),repository,code,message,evidence,severity,details});
+  const uncertain=(repository,code,status,evidence=[],details)=>report.uncertain.push({repository,code,status,evidence:evidence.length?evidence:[`https://github.com/${repository}`],details});
   const gh=async endpoint=>request('https://api.github.com'+endpoint,{api:true});
   const content=async(repo,file)=>{
     const response=await gh(`/repos/${repo}/contents/${file.split('/').map(encodeURIComponent).join('/')}`);
@@ -197,6 +198,7 @@ export async function auditPortfolio(policy,{request=createClient(),now=new Date
   }
   const site=await request(policy.website+'/portfolio.json');
   if(site.kind==='ok' && site.data?.repositories) {
+    report.websiteRegistrySha256=digest(JSON.stringify(site.data));
     const entries=site.data.repositories;
     const listed=new Set(entries.map(r=>r.repository));
     if(inventoryComplete) for(const name of publicNames)if(!listed.has(name))add(name,'website-missing','Public repository is missing from the controlled website registry.',[policy.website+'/portfolio.json']);
@@ -206,9 +208,15 @@ export async function auditPortfolio(policy,{request=createClient(),now=new Date
       if(!r.projectSlug)add(r.repository,'website-card','A public project lacks a controlled card reference.',[policy.website+'/projects/']);
       const releases=await gh(`/repos/${r.repository}/releases?per_page=100`);
       if(releases.kind==='ok') {
-        const formal=releases.data.filter(x=>!x.draft && !x.prerelease).sort((a,b)=>b.published_at.localeCompare(a.published_at))[0];
-        const preview=releases.data.filter(x=>!x.draft && x.prerelease).sort((a,b)=>b.published_at.localeCompare(a.published_at))[0];
-        if((formal?.tag_name??null)!==(r.formalRelease?.tag??null) || (!formal && (preview?.tag_name??null)!==(r.previewRelease?.tag??null)))add(r.repository,'website-release','A published release differs from the website snapshot; review labels and update evidence.',[policy.website+'/projects/',`https://github.com/${r.repository}/releases`],'review');
+        const evidence=[policy.website+'/projects/',`https://github.com/${r.repository}/releases`];
+        if(Array.isArray(releases.data) && releases.data.length>=100) {
+          uncertain(r.repository,'release-pagination',releases.status,evidence,{reason:'The release page reached its limit; complete pagination before comparing versions.'});
+        } else {
+          const review=await reviewReleases(r,releases.data,tag=>gh(`/repos/${r.repository}/releases/tags/${encodeURIComponent(tag)}`));
+          report.releaseObservations.push(review.observation);
+          if(review.kind==='different')add(r.repository,'website-release','Published release evidence differs from the controlled website snapshot; inspect the expected/observed tags before updating it.',evidence,'review',review.observation);
+          else if(review.kind==='uncertain')uncertain(r.repository,review.code,review.status,evidence,review.observation);
+        }
         if(r.releaseKind==='preview' && !r.previewRelease?.prerelease)add(r.repository,'preview-label','A preview is not explicitly marked prerelease.',[policy.website+'/portfolio.json']);
       } else uncertain(r.repository,'releases',releases.status);
       if(r.image)await queue(policy.website+r.image,r.repository,policy.website+'/projects/');
