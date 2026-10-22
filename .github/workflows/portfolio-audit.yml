@@ -1,0 +1,103 @@
+# SPDX-License-Identifier: MIT
+name: Weekly public portfolio audit
+on:
+  pull_request:
+    paths:
+      - scripts/**
+      - portfolio/**
+      - .github/workflows/portfolio-audit.yml
+  schedule:
+    - cron: '17 2 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+concurrency:
+  group: portfolio-public-audit
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/validate-portfolio.mjs
+      - run: node --test scripts/portfolio-audit.test.mjs
+
+  scan:
+    needs: test
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Load previous successful scheduled or manual audit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          mkdir -p .audit/previous
+          previous=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/portfolio-audit.yml/runs?per_page=100" --jq '[.workflow_runs[] | select(.conclusion == "success" and .head_branch == "main" and (.event == "schedule" or .event == "workflow_dispatch"))][0].id // empty')
+          if [ -n "$previous" ]; then
+            gh run download "$previous" --repo "$GITHUB_REPOSITORY" --name portfolio-audit --dir .audit/previous || echo 'Previous artifact unavailable; this run cannot confirm new alerts.'
+          fi
+      - name: Audit public repositories and website
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/portfolio-audit.mjs .audit/current/report.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: portfolio-audit
+          path: .audit/current/report.json
+          retention-days: 30
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        with:
+          name: portfolio-audit-previous
+          path: .audit/previous/report.json
+          retention-days: 7
+          if-no-files-found: ignore
+
+  notify:
+    needs: scan
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      actions: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/download-artifact@v4
+        with:
+          name: portfolio-audit
+          path: .audit/current
+      - name: Download previous evidence if present
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run download "$GITHUB_RUN_ID" --repo "$GITHUB_REPOSITORY" --name portfolio-audit-previous --dir .audit/previous || echo 'No previous evidence; no new issue will be created.'
+      - name: Deduplicate confirmed findings in one tracking issue
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/portfolio-notify.mjs
