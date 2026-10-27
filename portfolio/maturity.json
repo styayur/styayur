@@ -166,12 +166,12 @@
     {
       "repository": "styayur/mzk",
       "maturity": "Alpha",
-      "sourceCommit": "5bcd4f5a9892dac1600acee7a7e3889f02524e5b",
+      "sourceCommit": "a5bea8e2a30a7cf5b6a430ce6ef3918a8bd53652",
       "reviewedAt": "2026-10-27",
       "evidence": [
-        "https://github.com/styayur/mzk/tree/5bcd4f5a9892dac1600acee7a7e3889f02524e5b",
-        "https://github.com/styayur/mzk/blob/5bcd4f5a9892dac1600acee7a7e3889f02524e5b/docs/VERIFICATION.md",
-        "https://github.com/styayur/mzk/actions/runs/40444444805",
+        "https://github.com/styayur/mzk/tree/a5bea8e2a30a7cf5b6a430ce6ef3918a8bd53652",
+        "https://github.com/styayur/mzk/blob/a5bea8e2a30a7cf5b6a430ce6ef3918a8bd53652/docs/VERIFICATION.md",
+        "https://github.com/styayur/mzk/actions/runs/40444977386",
         "https://github.com/styayur/mzk/releases/tag/v0.1.0-alpha.1"
       ],
       "knownLimitations": [
