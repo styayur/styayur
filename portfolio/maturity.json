@@ -162,6 +162,30 @@
         "Audit clean installation and the main user workflow on supported platforms",
         "Record upgrade/recovery results, independent user feedback and unresolved defects"
       ]
+    },
+    {
+      "repository": "styayur/mzk",
+      "maturity": "Alpha",
+      "sourceCommit": "5bcd4f5a9892dac1600acee7a7e3889f02524e5b",
+      "reviewedAt": "2026-10-27",
+      "evidence": [
+        "https://github.com/styayur/mzk/tree/5bcd4f5a9892dac1600acee7a7e3889f02524e5b",
+        "https://github.com/styayur/mzk/blob/5bcd4f5a9892dac1600acee7a7e3889f02524e5b/docs/VERIFICATION.md",
+        "https://github.com/styayur/mzk/actions/runs/40444444805",
+        "https://github.com/styayur/mzk/releases/tag/v0.1.0-alpha.1"
+      ],
+      "knownLimitations": [
+        "Offline HTTP, IPC and synthetic process lifecycles are tested; real mpv/audio and online-to-playback acceptance remain unverified",
+        "No registered Jamendo client ID or mpv installation was available; official documentation demo client returned Suspended Application",
+        "Personal non-commercial Jamendo use and per-track licensing are separate from the MIT software license; binaries are unsigned"
+      ],
+      "unmetConditions": [
+        "Live provider playback, terminal-close survival with mpv, clean installation and latency percentiles have not been validated"
+      ],
+      "nextGradeRequirements": [
+        "Validate real provider playback and process recovery on Windows and Linux using registered credentials and trusted mpv",
+        "Record independent installation, upgrade and recovery evidence, measured cold/reuse latency and user feedback"
+      ]
     }
   ]
 }
