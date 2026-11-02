@@ -99,6 +99,35 @@ test('npm command paths respect reviewed prose context and cloned repository pre
   assert.ok(b.requests.some(u=>u.endsWith('/contents/apps/web/package.json')));
 });
 
+test('npm prefix options before and after run resolve the actual frontend manifest',async()=>{
+  for(const command of ['npm run build --prefix frontend','npm --prefix frontend run build','npm run build --prefix="frontend"']){
+    const f=fixture({markdown:'```powershell\n'+command+'\n```\n'});
+    const original=f.request;
+    f.request=async(url)=>url.endsWith('/contents/package.json')?{kind:'missing',status:404}:original(url);
+    const result=await auditPortfolio(policy,f);
+    assert.ok(f.requests.some(url=>url.endsWith('/contents/frontend/package.json')),command);
+    assert.ok(!result.findings.some(finding=>finding.code.startsWith('npm-manifest-')),command);
+  }
+});
+
+test('npm prefix cannot escape repository scope and script arguments are not npm options',async()=>{
+  const escaped=fixture({markdown:'```sh\nnpm run build --prefix ../outside\n```\n'});
+  const result=await auditPortfolio(policy,escaped);
+  assert.ok(result.uncertain.some(finding=>finding.code==='npm-command-context'));
+  assert.ok(!escaped.requests.some(url=>url.includes('outside')));
+  const forwarded=fixture({markdown:'```sh\nnpm run build -- --prefix outside\n```\n'});
+  await auditPortfolio(policy,forwarded);
+  assert.ok(forwarded.requests.some(url=>url.endsWith('/contents/package.json')));
+  assert.ok(!forwarded.requests.some(url=>url.includes('outside')));
+});
+
+test('a genuinely missing prefixed manifest still produces a concrete finding',async()=>{
+  const f=fixture({markdown:'```sh\nnpm run build --prefix frontend\n```\n'}),original=f.request;
+  f.request=async(url)=>url.endsWith('/contents/frontend/package.json')?{kind:'missing',status:404}:original(url);
+  const result=await auditPortfolio(policy,f);
+  assert.ok(result.findings.some(finding=>finding.code.startsWith('npm-manifest-')));
+});
+
 test('transient responses retry, remain uncertain and never receive a token outside GitHub API',async()=>{
   const observed=[];let calls=0;
   const request=createClient({token:'test-placeholder',sleep:async()=>{},fetchImpl:async(url,options)=>{
