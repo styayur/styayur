@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "owner": "styayur",
   "website": "https://styayur.co.uk",
-  "reviewedAt": "2026-10-22",
+  "reviewedAt": "2026-11-03",
   "repositories": [
     {
       "repository": "styayur/calligra",
@@ -106,23 +106,6 @@
       }
     },
     {
-      "repository": "styayur/Echo-Loop",
-      "repositoryId": 1398594656,
-      "licenseSpdx": "AGPL-3.0",
-      "licenseSha": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
-      "requiredFiles": [
-        "README.md",
-        "LICENSE",
-        "README.zh-CN.md"
-      ],
-      "manifestLicenses": [],
-      "readmeCodeSha256": "5aad8dc9d11322650de8e4ff6e183cf230b6a06124b8984902117a740e14a152",
-      "visual": {
-        "kind": "text",
-        "reason": "CLI output, documented workflow or upstream artwork; no invented runtime screenshot required."
-      }
-    },
-    {
       "repository": "styayur/ipa-first-tts",
       "repositoryId": 1409449480,
       "licenseSpdx": "GPL-3.0",
@@ -134,7 +117,7 @@
         "CONTRIBUTING.md"
       ],
       "manifestLicenses": [],
-      "readmeCodeSha256": "598f6ad29bb5b89b16d58b7d27de71fbea4274e1f579a0c7ff1ab555a27960c2",
+      "readmeCodeSha256": "8e24bad70932a485f77774c7c03a6bdd1ceb8028aa4494085f182056367589fb",
       "visual": {
         "kind": "image",
         "path": "outputs/desktop.png"
@@ -152,10 +135,10 @@
         "CONTRIBUTING.md"
       ],
       "manifestLicenses": [],
-      "readmeCodeSha256": "3ec8731a6f7b598a93f17e305a3075d01ccb26baa6433fd120dab44664fb7d80",
+      "readmeCodeSha256": "9b0a75226aa38fc218f77e3f27895b5e3b5311f4163714e42bf44414aa04eb0c",
       "visual": {
         "kind": "image",
-        "path": "docs/screenshots/modern-dark-1440.png"
+        "path": "docs/screenshots/assignment-desktop-fixture.png"
       }
     },
     {
@@ -282,29 +265,6 @@
       }
     },
     {
-      "repository": "styayur/stem-visual-explorer",
-      "repositoryId": 1393107744,
-      "licenseSpdx": "AGPL-3.0",
-      "licenseSha": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
-      "requiredFiles": [
-        "README.md",
-        "LICENSE",
-        "README.zh-CN.md",
-        "CONTRIBUTING.md"
-      ],
-      "manifestLicenses": [
-        {
-          "path": "package.json",
-          "license": "AGPL-3.0-only"
-        }
-      ],
-      "readmeCodeSha256": "76b9494f1479f62357c5fc848b9381fbc172c4718357085d647c44b3e33201a1",
-      "visual": {
-        "kind": "image",
-        "path": "docs/screenshot.png"
-      }
-    },
-    {
       "repository": "styayur/styayur",
       "repositoryId": 1398635384,
       "licenseSpdx": "CC-BY-4.0",
@@ -421,10 +381,132 @@
         "CONTRIBUTING.md"
       ],
       "manifestLicenses": [],
-      "readmeCodeSha256": "17d21e0aad0d63f59a3dee35654030d2870cd1cbfbdd1505b799c05a09bc3610",
+      "readmeCodeSha256": "7ecd089bbbee16506c32cfecc338a88996697636bd7d832d25e4a6062bf216ad",
       "visual": {
         "kind": "text",
         "reason": "CLI output, documented workflow or upstream artwork; no invented runtime screenshot required."
+      }
+    },
+    {
+      "repository": "styayur/trucli",
+      "repositoryId": 1431300746,
+      "licenseSpdx": "AGPL-3.0",
+      "licenseSha": "fe6b9036ba1818c79c15f802a586a9711ece2b97",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "README_zh-CN.md",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [],
+      "readmeCodeSha256": "38c19da49a23a33b83862e1b9cb76a582c8b5359842524176f38c6dfde778e53",
+      "visual": {
+        "kind": "text",
+        "reason": "Source and documented CLI or development workflows; no fabricated runtime screenshot or native acceptance claim."
+      }
+    },
+    {
+      "repository": "styayur/ripple",
+      "repositoryId": 1433866493,
+      "licenseSpdx": "MPL-2.0",
+      "licenseSha": "570135f7c18cc45c5a666d9370e4277c25ab08bc",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [
+        {
+          "path": "package.json",
+          "license": "MPL-2.0"
+        }
+      ],
+      "readmeCodeSha256": "751bc83fbb01badc55a0a3833db1de024269cf1fd6b2b31b26e1c202d0c9c933",
+      "visual": {
+        "kind": "image",
+        "path": "docs/screenshots/workspace-dark.png"
+      }
+    },
+    {
+      "repository": "styayur/gitpad-plus",
+      "repositoryId": 1440448445,
+      "licenseSpdx": "AGPL-3.0",
+      "licenseSha": "0c97efd25b5974b974ed9a8a18207bc4f55bb338",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "README.zh-CN.md",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [
+        {
+          "path": "package.json",
+          "license": "AGPL-3.0-only"
+        }
+      ],
+      "readmeCodeSha256": "be6d93e07234a1dd1ff378e63d95308a70ea2018a6c1c9c56ae27ccd50bc18e1",
+      "visual": {
+        "kind": "text",
+        "reason": "Source and documented CLI or development workflows; no fabricated runtime screenshot or native acceptance claim."
+      }
+    },
+    {
+      "repository": "styayur/glyphibe",
+      "repositoryId": 1435515075,
+      "licenseSpdx": "MPL-2.0",
+      "licenseSha": "ee6256cdb62a765749a71aae3abea32884301cd1",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "README.zh-CN.md",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [],
+      "readmeCodeSha256": "6ac02a7a32c86bda41c89b57d135789e93248b7a4b75aa56330c58ce0fff3363",
+      "visual": {
+        "kind": "image",
+        "path": "docs/images/native-frontier.png"
+      },
+      "npmDirectory": "apps/desktop"
+    },
+    {
+      "repository": "styayur/mzk",
+      "repositoryId": 1435188519,
+      "licenseSpdx": "MIT",
+      "licenseSha": "02a545a1ed1e229c8be5785d3cd32ef7766b4209",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "README.zh-CN.md"
+      ],
+      "manifestLicenses": [],
+      "readmeCodeSha256": "1bdcf3760efd46918e37d8f958c1f0edf2ddfc63a5f54d8fa3ee2cea6dff6bf4",
+      "visual": {
+        "kind": "text",
+        "reason": "Source and documented CLI or development workflows; no fabricated runtime screenshot or native acceptance claim."
+      }
+    },
+    {
+      "repository": "styayur/vextessera",
+      "repositoryId": 1393107744,
+      "licenseSpdx": "AGPL-3.0",
+      "licenseSha": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "README.zh-CN.md",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [
+        {
+          "path": "package.json",
+          "license": "AGPL-3.0-only"
+        }
+      ],
+      "readmeCodeSha256": "0e34b226bbf60e571266d643482b071b4db57e64a6f7f4f545ac955af098a870",
+      "visual": {
+        "kind": "image",
+        "path": "docs/vextessera/model-reader.png"
       }
     }
   ],
