@@ -135,9 +135,25 @@ export async function auditPortfolio(policy,{request=createClient(),now=new Date
       for(const line of block[1].split('\n')) {
         const cd=line.match(/^\s*cd\s+([\w./-]+)\s*$/);
         if(cd){const next=cd[1]===repo.name?'':cd[1].startsWith(repo.name+'/')?cd[1].slice(repo.name.length+1):cd[1];directory=path.posix.normalize(path.posix.join(directory,next));if(directory==='.')directory='';explicitDirectory=true;continue;}
-        const command=line.match(/^\s*npm\s+run\s+([\w:-]+)/);
+        const tokens=line.trim().match(/"[^"]*"|'[^']*'|\S+/g)??[];
+        let prefix=null,unsafeContext=tokens.some(token=>/[;&|<>`$]/.test(token));
+        const positional=[];
+        if(tokens[0]==='npm')for(let i=1;i<tokens.length;i++){
+          const token=tokens[i];
+          if(token==='--')break;
+          if(token==='--prefix')prefix=tokens[++i]??'';
+          else if(token.startsWith('--prefix='))prefix=token.slice('--prefix='.length);
+          else if(!token.startsWith('-'))positional.push(token);
+          else if(!['--silent','-s','--if-present'].includes(token))unsafeContext=true;
+        }
+        if(prefix!==null){
+          prefix=prefix.replace(/^(["'])(.*)\1$/,'$2').replaceAll('\\','/');
+          if(!/^[\w./-]+$/.test(prefix)||path.posix.isAbsolute(prefix))unsafeContext=true;
+        }
+        const command=tokens[0]==='npm'&&positional[0]==='run'&&/^[\w:-]+$/.test(positional[1]??'')?[null,positional[1]]:null;
         if(command && !directory.startsWith('..')) {
-          const context=explicitDirectory?directory:(p.npmDirectory??'');
+          const context=prefix!==null?path.posix.normalize(path.posix.join(directory,prefix)):(explicitDirectory?directory:(p.npmDirectory??''));
+          if(unsafeContext||context==='..'||context.startsWith('../')){uncertain(name,'npm-command-context',null);continue;}
           const manifestPath=context?context+'/package.json':'package.json';
           const manifest=await content(name,manifestPath);
           if(manifest.kind==='ok') {
