@@ -5,6 +5,8 @@ history and contributor records. This is a navigation/review register, not a
 new license grant or a complete installer dependency-notice bundle. Read each
 linked repository's actual terms before reusing or distributing its materials.
 
+Echo-Loop is retained only as inaccessible historical evidence. It is not an active project in this portfolio; see styayur/styayur issues #7 and #8 for the unresolved provenance and privacy boundary.
+
 | Repository | Existing terms / boundary | Decision |
 |---|---|---|
 | [calligra](https://github.com/styayur/calligra) | GPL-3.0-or-later application; independent font/data/software terms | Preserve existing GPL adoption; fix generated MIT labels and canonical source links, retain third-party receipts and old releases |
@@ -12,7 +14,7 @@ linked repository's actual terms before reusing or distributing its materials.
 | [codex-mode-switcher](https://github.com/styayur/codex-mode-switcher) | MIT | Preserve |
 | [developer-security-workspace](https://github.com/styayur/developer-security-workspace) | AGPL-3.0-only application; external scanner terms separate | Preserve; do not treat optional proprietary scanner licenses as the application's grant |
 | [digital-garden-engine](https://github.com/styayur/digital-garden-engine) | MPL-2.0 historical source | Preserve archive state and prior releases; correct public documentation only |
-| [Echo-Loop](https://github.com/styayur/Echo-Loop) | Upstream AGPL v3 family; external contributors | Preserve upstream terms and attribution; no fork-owner relicensing assumed |
+| Echo-Loop (historical; repository currently inaccessible) | Upstream AGPL v3 family recorded in preserved audit evidence; no active maintenance or distribution conclusion | Preserve historical terms and attribution; exclude from active portfolio and distribution decisions until the exact source revision is restored |
 | [ipa-first-tts](https://github.com/styayur/ipa-first-tts) | GPL-3.0-or-later application; MPL-2.0 crates; MIT scripts; CC BY 4.0 prose | Preserve component boundaries and model/native dependency terms |
 | [LGXT-Assistant](https://github.com/styayur/LGXT-Assistant) | AGPL-3.0-only | Preserve |
 | [local-context-engine](https://github.com/styayur/local-context-engine) | MPL-2.0 repository/workspace | Correct stale desktop npm MIT metadata to the already adopted MPL; preserve historical grants and dependency entries |
