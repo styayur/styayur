@@ -99,10 +99,10 @@
           "license": "MPL-2.0"
         }
       ],
-      "readmeCodeSha256": "1f9e590873f9411f3f738b294e8881ce1de54ec679f5978eaa8e87a962705a6a",
+      "readmeCodeSha256": "834cabb22d4652a6f4c0aa6816cfd55a282fc2d8cdf39ffdd3f800de4a202d5c",
       "visual": {
         "kind": "image",
-        "path": "docs/assets/demo.png"
+        "path": "docs/assets/editor.png"
       }
     },
     {
@@ -169,7 +169,7 @@
       "repository": "styayur/fitimart",
       "repositoryId": 1364395119,
       "licenseSpdx": "MPL-2.0",
-      "licenseSha": "ee6256cdb62a765749a71aae3abea32884301cd1",
+      "licenseSha": "43bbdb70921c6189ab2898505639490469f1373d",
       "requiredFiles": [
         "README.md",
         "LICENSE",
@@ -182,10 +182,10 @@
           "license": "MPL-2.0"
         }
       ],
-      "readmeCodeSha256": "faf300484d2ec8bc6b7f095eaf49d5cd9e99c0f61cba749a4e3ff3da444e9ea2",
+      "readmeCodeSha256": "ec0108c57d7195f2727f123c6747d0a3ed8856538a53baed71a72be5be1991f0",
       "visual": {
         "kind": "image",
-        "path": "docs/storefront.png"
+        "path": "docs/evidence/live-feeds.png"
       }
     },
     {
@@ -217,12 +217,12 @@
         "CONTRIBUTING.md"
       ],
       "manifestLicenses": [],
-      "readmeCodeSha256": "c3630bacc420150f889859b88a332ae69ba9f7944722013defe25bf1a8926cd5",
+      "readmeCodeSha256": "652fe55355b2bd7c1dcbcc4e111fb42f0c66b365eb48cac37ef5f30cf24b8307",
       "visual": {
         "kind": "image",
         "path": "docs/screenshot.png"
       },
-      "reviewedReadmeCommit": "a8602c944ce56f5a0093860d5b323a3272a9765e"
+      "reviewedReadmeCommit": "e0378f13b1dcf20426b157c73646c178e6e4dbde"
     },
     {
       "repository": "styayur/OmniRoute-PS",
@@ -327,7 +327,7 @@
         "CONTRIBUTING.md"
       ],
       "manifestLicenses": [],
-      "readmeCodeSha256": "ce3c43d52942de3a7a59aee72e5c346dbd9d296b07d5e369c36a4fac9db1a673",
+      "readmeCodeSha256": "dcdef34720b570b7d58a7bc524b41b872f267499d1bf03de8c160963a1a26cca",
       "visual": {
         "kind": "image",
         "path": "docs/assets/tinytts.png"
@@ -345,10 +345,10 @@
         "CONTRIBUTING.md"
       ],
       "manifestLicenses": [],
-      "readmeCodeSha256": "9078bfe9e3f13b03239553a0aed2abcdc374480addc999f1f5a3227016a5e3cb",
+      "readmeCodeSha256": "11ee4ac4a8b64bd86db2c3c20699ce3709a858903015bc6a225f0d523f5c6045",
       "visual": {
         "kind": "image",
-        "path": "docs/assets/extension-settings-v0.1.0.png"
+        "path": "docs/assets/extension-settings-v0.2.0-alpha.1.png"
       }
     },
     {
@@ -363,7 +363,7 @@
         "CONTRIBUTING.md"
       ],
       "manifestLicenses": [],
-      "readmeCodeSha256": "642435b542d5f1ef6daacd8b97fb8d5b083483aa097c5b078bea4d87e08a4117",
+      "readmeCodeSha256": "12669c9e3b36ff4df9dc1bd1d2d92907686f9ca708dbfdadeb336023e51835ff",
       "visual": {
         "kind": "text",
         "reason": "CLI output, documented workflow or upstream artwork; no invented runtime screenshot required."
@@ -507,6 +507,91 @@
       "visual": {
         "kind": "image",
         "path": "docs/vextessera/model-reader.png"
+      }
+    },
+    {
+      "repository": "styayur/petite-grace",
+      "repositoryId": 1451642496,
+      "licenseSpdx": "MIT",
+      "licenseSha": "815fc00be2c63d3f41475982378e253dd732b9b8",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "CONTRIBUTING.md",
+        "THIRD_PARTY_NOTICES.md"
+      ],
+      "manifestLicenses": [
+        {
+          "path": "package.json",
+          "license": "MIT"
+        }
+      ],
+      "readmeCodeSha256": "fdb80142ed831d3d8833e4d31fb4794a28b94b985faf5b5e53e8034aa3af4932",
+      "visual": {
+        "kind": "image",
+        "path": "docs/assets/screenshots/workspace.png"
+      }
+    },
+    {
+      "repository": "styayur/portfolio-governance",
+      "repositoryId": 1449400406,
+      "licenseSpdx": "MIT",
+      "licenseSha": "02a545a1ed1e229c8be5785d3cd32ef7766b4209",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "CONTRIBUTING.md"
+      ],
+      "manifestLicenses": [],
+      "readmeCodeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "visual": {
+        "kind": "text",
+        "reason": "Public governance automation and documented native controls; no product UI screenshot or runtime acceptance claim."
+      }
+    },
+    {
+      "repository": "styayur/Skimmer-Scraper",
+      "repositoryId": 1450106896,
+      "licenseSpdx": "MIT",
+      "licenseSha": "02a545a1ed1e229c8be5785d3cd32ef7766b4209",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "CREDITS.md"
+      ],
+      "manifestLicenses": [
+        {
+          "path": "package.json",
+          "license": "MIT"
+        }
+      ],
+      "readmeCodeSha256": "fa312c3f91464ea11bf53ebfa303d5fdcf939a18c4627c63323a2e114cbc6d8a",
+      "visual": {
+        "kind": "image",
+        "path": "evidence/phase-4-v0.1.0-title.png"
+      }
+    },
+    {
+      "repository": "styayur/terics",
+      "repositoryId": 1446492624,
+      "licenseSpdx": "MIT",
+      "licenseSha": "02a545a1ed1e229c8be5785d3cd32ef7766b4209",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "CONTRIBUTING.md",
+        "THIRD_PARTY_NOTICES.md"
+      ],
+      "manifestLicenses": [
+        {
+          "path": "package.json",
+          "license": "MIT"
+        }
+      ],
+      "readmeCodeSha256": "e504fb070606b0ad2af19e5f8e5c1caa378afb015b7bd64b4ce352ea7411ebc1",
+      "visual": {
+        "kind": "image",
+        "path": "docs/assets/v0.6-web-desktop.png"
       }
     }
   ],

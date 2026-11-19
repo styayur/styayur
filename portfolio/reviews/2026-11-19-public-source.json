@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-19",
+  "scope": "Public identity, exact license bytes, referenced visuals and installation-source review only. No release, runtime acceptance or maturity promotion.",
+  "baselineMain": "b15610722eefce35713d168e2502f5f875066ca0",
+  "inputAuditRun": "https://github.com/styayur/styayur/actions/runs/44507130161",
+  "reviewed": [
+    {
+      "repository": "styayur/petite-grace",
+      "repositoryId": 1451642496,
+      "sourceCommit": "c3548286ef1fbcf36e231fa4c1280a64dd5fe9fd",
+      "decision": "include-public-audit-record",
+      "review": "MIT source and package declaration; runtime/reference terms in THIRD_PARTY_NOTICES.md. Source userscript entry src/entrypoints/xiaoya.user.tsx and documented npm scripts exist. Screenshot is a local test-course fixture, not real Xiaoya acceptance. Source 0.5.0-rc.2 retains its real-platform NOT_VERIFIED limitation.",
+      "commandsExecuted": false,
+      "licenseSpdx": "MIT",
+      "licenseBlobSha": "815fc00be2c63d3f41475982378e253dd732b9b8",
+      "readmeBlobSha": "c9b0ce4f803b528f5433f475b684e0af0a527b8c",
+      "readmeCodeSha256": "fdb80142ed831d3d8833e4d31fb4794a28b94b985faf5b5e53e8034aa3af4932",
+      "evidence": [
+        "https://github.com/styayur/petite-grace/blob/c3548286ef1fbcf36e231fa4c1280a64dd5fe9fd/README.md",
+        "https://github.com/styayur/petite-grace/blob/c3548286ef1fbcf36e231fa4c1280a64dd5fe9fd/LICENSE",
+        "https://github.com/styayur/petite-grace/blob/c3548286ef1fbcf36e231fa4c1280a64dd5fe9fd/package.json",
+        "https://github.com/styayur/petite-grace/blob/c3548286ef1fbcf36e231fa4c1280a64dd5fe9fd/THIRD_PARTY_NOTICES.md",
+        "https://github.com/styayur/petite-grace/blob/c3548286ef1fbcf36e231fa4c1280a64dd5fe9fd/src/entrypoints/xiaoya.user.tsx"
+      ],
+      "visual": {
+        "path": "docs/assets/screenshots/workspace.png",
+        "gitBlobSha": "ca764f4ec7345ad815cbd7bce6bce5413699ee69",
+        "sha256": "2a2cbaaccd3237435423f8a815b23495766482e57d26148c471ab79d1236de09",
+        "review": "Inspected committed PNG; confirms documented image identity, not fresh runtime acceptance."
+      }
+    },
+    {
+      "repository": "styayur/terics",
+      "repositoryId": 1446492624,
+      "sourceCommit": "23046db491059c6d4cffca715f8d18e42a87bd7c",
+      "decision": "include-public-audit-record",
+      "review": "MIT source/package; THIRD_PARTY_NOTICES.md distinguishes runtime dependencies and MIT fixture attribution. Reviewed main.pyw Python 3.12/Tkinter entry, requirements, TypeScript connector and npm scripts. Source 0.6.0-rc.1; authenticated portal and Google OAuth/Calendar writes are not executed or certified by this review.",
+      "commandsExecuted": false,
+      "licenseSpdx": "MIT",
+      "licenseBlobSha": "02a545a1ed1e229c8be5785d3cd32ef7766b4209",
+      "readmeBlobSha": "f2ca533add3ec37e425256408e2d011eec7807ac",
+      "readmeCodeSha256": "e504fb070606b0ad2af19e5f8e5c1caa378afb015b7bd64b4ce352ea7411ebc1",
+      "evidence": [
+        "https://github.com/styayur/terics/blob/23046db491059c6d4cffca715f8d18e42a87bd7c/README.md",
+        "https://github.com/styayur/terics/blob/23046db491059c6d4cffca715f8d18e42a87bd7c/LICENSE",
+        "https://github.com/styayur/terics/blob/23046db491059c6d4cffca715f8d18e42a87bd7c/package.json",
+        "https://github.com/styayur/terics/blob/23046db491059c6d4cffca715f8d18e42a87bd7c/THIRD_PARTY_NOTICES.md",
+        "https://github.com/styayur/terics/blob/23046db491059c6d4cffca715f8d18e42a87bd7c/main.pyw",
+        "https://github.com/styayur/terics/blob/23046db491059c6d4cffca715f8d18e42a87bd7c/src/connectors/generic/generic-adapter.ts"
+      ],
+      "visual": {
+        "path": "docs/assets/v0.6-web-desktop.png",
+        "gitBlobSha": "b291ecc3a93c64f932d4a521fcf1f536bca29955",
+        "sha256": "9d4e864bcb752096400cc33e43f2d84bdc4e30f02102c92f1fa5ee7e26eb01ce",
+        "review": "Inspected committed PNG; confirms documented image identity, not fresh runtime acceptance."
+      }
+    },
+    {
+      "repository": "styayur/Skimmer-Scraper",
+      "repositoryId": 1450106896,
+      "sourceCommit": "876f836f0889c567b584021878552a5a6b485564",
+      "decision": "include-public-audit-record",
+      "review": "MIT source/package; CREDITS.md distinguishes procedural original geometry/audio, user-imported GLB data, MIT libraries and OFL fonts. Reviewed flightModel.ts and documented npm scripts. The referenced screenshot is historical v0.1.0 evidence, not new v0.2.0 acceptance; current GPU/runtime acceptance remains separate.",
+      "commandsExecuted": false,
+      "licenseSpdx": "MIT",
+      "licenseBlobSha": "02a545a1ed1e229c8be5785d3cd32ef7766b4209",
+      "readmeBlobSha": "476a7e6a20770386a03931e200b85a1029a14708",
+      "readmeCodeSha256": "fa312c3f91464ea11bf53ebfa303d5fdcf939a18c4627c63323a2e114cbc6d8a",
+      "evidence": [
+        "https://github.com/styayur/Skimmer-Scraper/blob/876f836f0889c567b584021878552a5a6b485564/README.md",
+        "https://github.com/styayur/Skimmer-Scraper/blob/876f836f0889c567b584021878552a5a6b485564/LICENSE",
+        "https://github.com/styayur/Skimmer-Scraper/blob/876f836f0889c567b584021878552a5a6b485564/package.json",
+        "https://github.com/styayur/Skimmer-Scraper/blob/876f836f0889c567b584021878552a5a6b485564/CREDITS.md",
+        "https://github.com/styayur/Skimmer-Scraper/blob/876f836f0889c567b584021878552a5a6b485564/src/flight/flightModel.ts"
+      ],
+      "visual": {
+        "path": "evidence/phase-4-v0.1.0-title.png",
+        "gitBlobSha": "3355533aceb284d088aa801ed72ad914a252b659",
+        "sha256": "e4347da0d71cc592a6216662ad1fc890607144d163a3bf689fa764fbb6643d1a",
+        "review": "Inspected committed PNG; confirms documented image identity, not fresh runtime acceptance."
+      }
+    },
+    {
+      "repository": "styayur/portfolio-governance",
+      "repositoryId": 1449400406,
+      "sourceCommit": "15a153c3a5336ab2fbb2229a0da8500c7709c75b",
+      "decision": "include-public-audit-record",
+      "review": "MIT public automation/notes repository, verified owner numeric identity and source audit_open_items.py. README has no fenced commands and accurately identifies native controls and retired historical workflows. Text evidence fits automation; inclusion does not restore retired gates or change ACTIVE/LOW_ACTIVITY lifecycle.",
+      "commandsExecuted": false,
+      "licenseSpdx": "MIT",
+      "licenseBlobSha": "02a545a1ed1e229c8be5785d3cd32ef7766b4209",
+      "readmeBlobSha": "fad78396a83a6e998feba14ceca1d18834b3c6cc",
+      "readmeCodeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "evidence": [
+        "https://github.com/styayur/portfolio-governance/blob/15a153c3a5336ab2fbb2229a0da8500c7709c75b/README.md",
+        "https://github.com/styayur/portfolio-governance/blob/15a153c3a5336ab2fbb2229a0da8500c7709c75b/LICENSE",
+        "https://github.com/styayur/portfolio-governance/blob/15a153c3a5336ab2fbb2229a0da8500c7709c75b/scripts/audit_open_items.py"
+      ]
+    },
+    {
+      "repository": "styayur/Nickspeare",
+      "repositoryId": 1386888456,
+      "sourceCommit": "e0378f13b1dcf20426b157c73646c178e6e4dbde",
+      "decision": "accept-reviewed-record-bytes",
+      "review": "Reviewed Python >=3.9 pyproject, __main__.py/cli.py entry and generate options; Node >=20 manifest (README CI Node22), extension build script, MV3 manifest and DATA_SOURCES.md. AGPL-3.0-or-later code is separate from Folger-derived CC-BY-NC-3.0 atlas. v1.0.0 wheel asset exists; current Python source 1.1.0 and extension 0.1.0-alpha.2 are independent. No PyPI/new release or unrestricted commercial dataset claim. Chromium/Edge unpacked extension only; Linux headed tests need display/Xvfb. No instructions executed.",
+      "commandsExecuted": false,
+      "licenseSpdx": "AGPL-3.0",
+      "licenseBlobSha": "570d97a183f88ad02898c4279668b93e0657be71",
+      "readmeBlobSha": "8e40772c6e96be9b9c52c1c7bbb4545410bb6f4d",
+      "readmeCodeSha256": "652fe55355b2bd7c1dcbcc4e111fb42f0c66b365eb48cac37ef5f30cf24b8307",
+      "evidence": [
+        "https://github.com/styayur/Nickspeare/blob/e0378f13b1dcf20426b157c73646c178e6e4dbde/README.md",
+        "https://github.com/styayur/Nickspeare/blob/e0378f13b1dcf20426b157c73646c178e6e4dbde/LICENSE",
+        "https://github.com/styayur/Nickspeare/blob/e0378f13b1dcf20426b157c73646c178e6e4dbde/package.json",
+        "https://github.com/styayur/Nickspeare/blob/e0378f13b1dcf20426b157c73646c178e6e4dbde/pyproject.toml",
+        "https://github.com/styayur/Nickspeare/blob/e0378f13b1dcf20426b157c73646c178e6e4dbde/DATA_SOURCES.md",
+        "https://github.com/styayur/Nickspeare/blob/e0378f13b1dcf20426b157c73646c178e6e4dbde/nickspeare/cli.py",
+        "https://github.com/styayur/Nickspeare/blob/e0378f13b1dcf20426b157c73646c178e6e4dbde/extension/manifest.json",
+        "https://github.com/styayur/Nickspeare/blob/e0378f13b1dcf20426b157c73646c178e6e4dbde/scripts/build-extension.mjs"
+      ],
+      "changedFields": [
+        "readmeCodeSha256",
+        "reviewedReadmeCommit"
+      ]
+    },
+    {
+      "repository": "styayur/TinyTTS",
+      "repositoryId": 1392894388,
+      "sourceCommit": "8619b1d62c74a1a725fb7e87924d69ba02a2d2db",
+      "decision": "accept-reviewed-record-bytes",
+      "review": "Reviewed Cargo bin TinyTTS and src/paths.rs/settings.rs: mutable config/models next to executable, default models/kokoro or explicit override. Windows 10/11 x64 stable MSVC requires C++ Build Tools/SDK; no published release exists. GPL-3.0-or-later app, Apache/MIT native libraries, espeak-ng and voice/model terms stay distinct. README hash 60703707bc05ccd48d60e1eb723f38b07d6e474795a0b6a588d7220400e0f7a4 and 349886476-byte model agree with model-provenance.md; no model download or inference run. Local sherpa-onnx-sys build backport retains 1.13.8 native ABI; mock tests are not native acceptance.",
+      "commandsExecuted": false,
+      "licenseSpdx": "GPL-3.0",
+      "licenseBlobSha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "readmeBlobSha": "0d5c35f7a8af57798f26d2ddc02425fcfd599b9f",
+      "readmeCodeSha256": "dcdef34720b570b7d58a7bc524b41b872f267499d1bf03de8c160963a1a26cca",
+      "evidence": [
+        "https://github.com/styayur/TinyTTS/blob/8619b1d62c74a1a725fb7e87924d69ba02a2d2db/README.md",
+        "https://github.com/styayur/TinyTTS/blob/8619b1d62c74a1a725fb7e87924d69ba02a2d2db/LICENSE",
+        "https://github.com/styayur/TinyTTS/blob/8619b1d62c74a1a725fb7e87924d69ba02a2d2db/Cargo.toml",
+        "https://github.com/styayur/TinyTTS/blob/8619b1d62c74a1a725fb7e87924d69ba02a2d2db/THIRD_PARTY_NOTICES.md",
+        "https://github.com/styayur/TinyTTS/blob/8619b1d62c74a1a725fb7e87924d69ba02a2d2db/docs/model-provenance.md",
+        "https://github.com/styayur/TinyTTS/blob/8619b1d62c74a1a725fb7e87924d69ba02a2d2db/src/paths.rs",
+        "https://github.com/styayur/TinyTTS/blob/8619b1d62c74a1a725fb7e87924d69ba02a2d2db/src/settings.rs",
+        "https://github.com/styayur/TinyTTS/blob/8619b1d62c74a1a725fb7e87924d69ba02a2d2db/third-party/sherpa-onnx-sys/BACKPORT.json"
+      ],
+      "changedFields": [
+        "readmeCodeSha256"
+      ]
+    },
+    {
+      "repository": "styayur/whinset",
+      "repositoryId": 1378504882,
+      "sourceCommit": "5e79a7a24fc0dd81c3db7be806e6645b07d1311d",
+      "decision": "accept-reviewed-record-bytes",
+      "review": "Reviewed Windows 11 RC2 README privilege disclosure, whinset.ps1 and Invoke-Whinset CLI dispatch, test/release script paths. plan and apply are distinct; apply requires agreement, can request UAC and change system/user state. README explicitly leaves real Windows 11 VM acceptance uncertified and disclaims automatic rollback/reboot continuation. MIT source; installed package terms separate. No installer, plan, apply or system change executed.",
+      "commandsExecuted": false,
+      "licenseSpdx": "MIT",
+      "licenseBlobSha": "02a545a1ed1e229c8be5785d3cd32ef7766b4209",
+      "readmeBlobSha": "73738c113bc84cf151b63bb183363378ba040e1c",
+      "readmeCodeSha256": "12669c9e3b36ff4df9dc1bd1d2d92907686f9ca708dbfdadeb336023e51835ff",
+      "evidence": [
+        "https://github.com/styayur/whinset/blob/5e79a7a24fc0dd81c3db7be806e6645b07d1311d/README.md",
+        "https://github.com/styayur/whinset/blob/5e79a7a24fc0dd81c3db7be806e6645b07d1311d/LICENSE",
+        "https://github.com/styayur/whinset/blob/5e79a7a24fc0dd81c3db7be806e6645b07d1311d/whinset.ps1",
+        "https://github.com/styayur/whinset/blob/5e79a7a24fc0dd81c3db7be806e6645b07d1311d/src/Whinset/10-Cli.ps1",
+        "https://github.com/styayur/whinset/blob/5e79a7a24fc0dd81c3db7be806e6645b07d1311d/scripts/Build-Release.ps1"
+      ],
+      "changedFields": [
+        "readmeCodeSha256"
+      ]
+    },
+    {
+      "repository": "styayur/fitimart",
+      "repositoryId": 1364395119,
+      "sourceCommit": "c6b2be8b8cd80e8c2dadd91537fd766d039344e2",
+      "decision": "accept-reviewed-record-bytes",
+      "review": "Reviewed package scripts and browser requirements/tests; Next static build supports explicit NEXT_PUBLIC_BASE_PATH=/fitimart. Source remains simulation-only: no real commerce/ownership; public feed/CORS/MyMemory services have independent availability/privacy/rights. Current live-feeds screenshot visibly shows subscription UI and dated public-feed observations, not a new live test. MPL-2.0 license differs only in CRLF vs LF; no terms changed. No install/build/browser commands executed.",
+      "commandsExecuted": false,
+      "licenseSpdx": "MPL-2.0",
+      "licenseBlobSha": "43bbdb70921c6189ab2898505639490469f1373d",
+      "readmeBlobSha": "35bca03a4c301842bd4ed98386cd64be84567f62",
+      "readmeCodeSha256": "ec0108c57d7195f2727f123c6747d0a3ed8856538a53baed71a72be5be1991f0",
+      "evidence": [
+        "https://github.com/styayur/fitimart/blob/c6b2be8b8cd80e8c2dadd91537fd766d039344e2/README.md",
+        "https://github.com/styayur/fitimart/blob/c6b2be8b8cd80e8c2dadd91537fd766d039344e2/LICENSE",
+        "https://github.com/styayur/fitimart/blob/c6b2be8b8cd80e8c2dadd91537fd766d039344e2/package.json",
+        "https://github.com/styayur/fitimart/blob/c6b2be8b8cd80e8c2dadd91537fd766d039344e2/scripts/requirements-browser.txt",
+        "https://github.com/styayur/fitimart/blob/c6b2be8b8cd80e8c2dadd91537fd766d039344e2/tests/pages-subpath.spec.py"
+      ],
+      "changedFields": [
+        "licenseSha",
+        "readmeCodeSha256",
+        "visual"
+      ],
+      "visual": {
+        "path": "docs/evidence/live-feeds.png",
+        "gitBlobSha": "b0d41ba4a096676f22efe5b50fb8d21a5d1924af",
+        "sha256": "d17eee17d8da259b76d15fe6bac7d119584e8ddf8e96494f86f66595cc6aa61b",
+        "review": "Inspected committed PNG; confirms documented image identity, not fresh runtime acceptance."
+      }
+    },
+    {
+      "repository": "styayur/rhizomaybor",
+      "repositoryId": 1399208491,
+      "sourceCommit": "ea4b97a399fc92dacf68f2e6467e95b4a7bdc2cb",
+      "decision": "accept-reviewed-record-bytes",
+      "review": "Reviewed root npm scripts and source tree for editor/project migration/build/export/desktop paths. Text placeholder <archive.7z> <project|website> is example syntax requiring substitution; audit command-context uncertainty remains visible. MPL-2.0 source; user content not relicensed, 7-Zip/unRAR, Muya, Tauri and other third-party terms remain separate. Current README references committed editor.png; historical demo path is no longer its screenshot. No native desktop/export/browser commands executed.",
+      "commandsExecuted": false,
+      "licenseSpdx": "MPL-2.0",
+      "licenseBlobSha": "ee6256cdb62a765749a71aae3abea32884301cd1",
+      "readmeBlobSha": "a5b0bd5439b0c8648c130950ce06001152d688db",
+      "readmeCodeSha256": "834cabb22d4652a6f4c0aa6816cfd55a282fc2d8cdf39ffdd3f800de4a202d5c",
+      "evidence": [
+        "https://github.com/styayur/rhizomaybor/blob/ea4b97a399fc92dacf68f2e6467e95b4a7bdc2cb/README.md",
+        "https://github.com/styayur/rhizomaybor/blob/ea4b97a399fc92dacf68f2e6467e95b4a7bdc2cb/LICENSE",
+        "https://github.com/styayur/rhizomaybor/blob/ea4b97a399fc92dacf68f2e6467e95b4a7bdc2cb/package.json",
+        "https://github.com/styayur/rhizomaybor/blob/ea4b97a399fc92dacf68f2e6467e95b4a7bdc2cb/docs/third-party-notices.md"
+      ],
+      "changedFields": [
+        "readmeCodeSha256",
+        "visual"
+      ],
+      "visual": {
+        "path": "docs/assets/editor.png",
+        "gitBlobSha": "d292be839e53847f5795fa3d73f7c31c4f7ebe95",
+        "sha256": "4cc48c37116e3ae56e34a63128fbacf87aa9024f3cac41cc187430712dab871b",
+        "review": "Inspected committed PNG; confirms documented image identity, not fresh runtime acceptance."
+      }
+    },
+    {
+      "repository": "styayur/ogleans",
+      "repositoryId": 1409441558,
+      "sourceCommit": "dc194ffd105f2177865809027e96d8e320ee33c6",
+      "decision": "accept-reviewed-record-bytes",
+      "review": "Reviewed pnpm@12.4.2 Node>=22.12 root scripts and workspace tree; README commands map to check/format/benchmark entries. License boundaries/NOTICE explicitly keep reusable packages/docs MPL-2.0 and browser app GPL-3.0-or-later with upstream terms retained. Current screenshot shows v0.2.0-alpha.1 settings with empty credential fields. Public README current links are reviewed; stale homepage metadata is outside this profile-only mutation and remains a separate owner follow-up. No provider requests, extension install or pnpm commands executed.",
+      "commandsExecuted": false,
+      "licenseSpdx": "MPL-2.0",
+      "licenseBlobSha": "ee6256cdb62a765749a71aae3abea32884301cd1",
+      "readmeBlobSha": "0000617ca132994109b2cb7735ab7f3b4292e771",
+      "readmeCodeSha256": "11ee4ac4a8b64bd86db2c3c20699ce3709a858903015bc6a225f0d523f5c6045",
+      "evidence": [
+        "https://github.com/styayur/ogleans/blob/dc194ffd105f2177865809027e96d8e320ee33c6/README.md",
+        "https://github.com/styayur/ogleans/blob/dc194ffd105f2177865809027e96d8e320ee33c6/LICENSE",
+        "https://github.com/styayur/ogleans/blob/dc194ffd105f2177865809027e96d8e320ee33c6/package.json",
+        "https://github.com/styayur/ogleans/blob/dc194ffd105f2177865809027e96d8e320ee33c6/docs/licensing.md",
+        "https://github.com/styayur/ogleans/blob/dc194ffd105f2177865809027e96d8e320ee33c6/NOTICE",
+        "https://github.com/styayur/ogleans/blob/dc194ffd105f2177865809027e96d8e320ee33c6/THIRD_PARTY.md",
+        "https://github.com/styayur/ogleans/blob/dc194ffd105f2177865809027e96d8e320ee33c6/apps/browser-extension/package.json"
+      ],
+      "changedFields": [
+        "readmeCodeSha256",
+        "visual"
+      ],
+      "visual": {
+        "path": "docs/assets/extension-settings-v0.2.0-alpha.1.png",
+        "gitBlobSha": "8eb29cbdffc79f1c8e3538c0374368fb5d92fb08",
+        "sha256": "d3f7da67ab607fb980a57ffe80c20bfc3d2d8f9b1af2cb810b8ab75ef9b74ff0",
+        "review": "Inspected committed PNG; confirms documented image identity, not fresh runtime acceptance."
+      }
+    }
+  ],
+  "licenseNormalization": {
+    "repository": "styayur/fitimart",
+    "oldSha": "ee6256cdb62a765749a71aae3abea32884301cd1",
+    "currentSha": "43bbdb70921c6189ab2898505639490469f1373d",
+    "sameAfterCrLfNormalization": true
+  },
+  "unchangedAlreadyIncluded": [
+    "styayur/ripple",
+    "styayur/mzk"
+  ],
+  "deferred": [
+    {
+      "repository": "styayur/siny",
+      "repositoryId": 1462484035,
+      "sourceCommit": "3832723aa7a928d27bb1329161bae59ed4ff610a",
+      "reason": "Root LICENSE returned 404 on public bootstrap main. Feature branch is not accepted source. No policy row, release advertisement, ignore rule or maturity promotion added."
+    },
+    {
+      "repository": "styayur/ogleans",
+      "reason": "Stale repository homepage points outside current public inventory. README source is not the trigger. Source/metadata follow-up belongs to its owner; profile detector remains unchanged."
+    }
+  ],
+  "unverified": [
+    "Installation and runtime instructions were reviewed against source, not executed.",
+    "External availability and platform/device acceptance are not implied by fingerprints.",
+    "Website /portfolio.json returned 404 in input audit; private website source remains out of scope.",
+    "Input glyphibe relative-link network status 0 and rhizomaybor npm-command-context uncertainty are not waived."
+  ],
+  "unchangedControls": [
+    "All detector logic, privacy boundaries, alert severities, native checks and rulesets",
+    "Historical portfolio/maturity.json and existing maturity evidence",
+    "Previous portfolio/reviews/2026-11-19.json review history",
+    "Existing known placeholders outside the explicitly reviewed visuals"
+  ]
+}
