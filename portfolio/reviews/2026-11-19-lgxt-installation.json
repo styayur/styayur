@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-19",
+  "scope": "LGXT public README installation commands, channel versions, APK identity and certificate/data migration only. No product mutation, visual baseline update or maturity promotion.",
+  "baselineMain": "0986aa1422d9b7a84834383544fe210e5608d9a1",
+  "inputAuditRun": "https://github.com/styayur/styayur/actions/runs/44545156638",
+  "reviewed": [
+    {
+      "repository": "styayur/LGXT-Assistant",
+      "repositoryId": 1362863720,
+      "sourceCommit": "abb2be7ce5778ff14e47e387657dae70ed4a968e",
+      "decision": "retain-existing-installation-fingerprint-after-public-source-review",
+      "commandsExecuted": false,
+      "deviceTestsExecutedByReviewer": false,
+      "readmeBlobSha": "c7dc14da27e9415fc91ef67887d52d83252c8b7a",
+      "readmeCodeSha256": "9b0a75226aa38fc218f77e3f27895b5e3b5311f4163714e42bf44414aa04eb0c",
+      "previousReadmeCodeSha256": "9b0a75226aa38fc218f77e3f27895b5e3b5311f4163714e42bf44414aa04eb0c",
+      "installationFingerprintChanged": false,
+      "commandReview": [
+        "README Python 3.13 pip requirements paths exist. Desktop default.pyw dispatches the WebView2-backed desktop entry; --legacy selects retained Tk UI. web_app.py is the private-loopback browser entry and requires the built frontend/dist. These Windows development commands are not Android APK installation commands.",
+        "npm ci --prefix frontend resolves the committed package lock. npm run build --prefix frontend maps to vite build in frontend/package.json; the postinstall security-backport script is explicitly present. Vite 8.3.5 declares Node ^20.19.0 || >=22.12.0, so the documented Node 22 line requires a supported 22.12+ minor. No npm install, postinstall or product command was executed by this reviewer.",
+        "English and Chinese README channel tables distinguish desktop 4.1.0, Windows web 4.2.0-web and the public Android 3.3.1 Beta. Android prerelease status, signed package/versionCode 5, SDK24/target36 and ARM64+x86_64 match source metadata and the public SDK/download receipts. Historical Windows channels were source-reviewed, not newly installed or promoted.",
+        "The active Android guide requires checksum/certificate verification, explicit HTTP compatibility consent and a verified external schema-1 note backup before uninstall. It does not promise full-state/credential migration. Session exports exclude credentials; a profile review neither tests nor stores account data."
+      ],
+      "sourceReceipts": [
+        {
+          "path": "README.md",
+          "gitBlobSha": "c7dc14da27e9415fc91ef67887d52d83252c8b7a",
+          "bytes": 8293,
+          "sha256": "4a517fa81311e3f3a2df2dc4c2643a0dd9a1b612f410463cc7b93f62f2549152",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/abb2be7ce5778ff14e47e387657dae70ed4a968e/README.md",
+          "readmeCodeSha256": "9b0a75226aa38fc218f77e3f27895b5e3b5311f4163714e42bf44414aa04eb0c"
+        },
+        {
+          "path": "README.zh-CN.md",
+          "gitBlobSha": "03e11e64b3d9ce50dd70c69a77fd0d22b2931919",
+          "bytes": 7474,
+          "sha256": "3c558f85a95e43ef9feb54a9bda1397a403de8aca130323cc7b44a4848d0b0ba",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/abb2be7ce5778ff14e47e387657dae70ed4a968e/README.zh-CN.md",
+          "readmeCodeSha256": "2b7a62d9fd4d6911951c989c8d97a14b16cce4ee848d1aaab88a0f2ce155f4d0"
+        },
+        {
+          "path": "docs/android-beta.md",
+          "gitBlobSha": "f8ecdda035413ef2bab41dd11911b9edd3a8f1a6",
+          "bytes": 5731,
+          "sha256": "7184d8668f1e1375009808f9fccbfda106879d22e7a2df62db2412a18ecfdcfb",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/abb2be7ce5778ff14e47e387657dae70ed4a968e/docs/android-beta.md"
+        },
+        {
+          "path": "docs/release-channels.md",
+          "gitBlobSha": "478a699c402d718dfd70a661e5729e4ae2615392",
+          "bytes": 5402,
+          "sha256": "a012000ffdedaf5989f76e93b500a93595d3613932275f50c9033281f7946e9c",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/abb2be7ce5778ff14e47e387657dae70ed4a968e/docs/release-channels.md"
+        },
+        {
+          "path": "docs/VERIFICATION.md",
+          "gitBlobSha": "d4a87ff26db870b28fde89a2b4ff90e7f87e7dc1",
+          "bytes": 27066,
+          "sha256": "9f63caac9af2ab509b2dca47c0d3940108cba10a2e2ba3e679dd55f74bacf9ed",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/abb2be7ce5778ff14e47e387657dae70ed4a968e/docs/VERIFICATION.md"
+        },
+        {
+          "path": "frontend/package.json",
+          "gitBlobSha": "7d18b0f7eb64e62ee40c17975e8f02095f40d9a7",
+          "bytes": 1110,
+          "sha256": "902f5129d6465071e4d90ffae62d965b744a4701bab7df7224a306d37d8f2f34",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/abb2be7ce5778ff14e47e387657dae70ed4a968e/frontend/package.json"
+        },
+        {
+          "path": "frontend/package-lock.json",
+          "gitBlobSha": "31c5196f93ce8fc109525947ac450b2287887396",
+          "bytes": 131914,
+          "sha256": "591eea27a236ceac02eb7570abb5b56777153291919bc8713593850367b4f5a7",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/abb2be7ce5778ff14e47e387657dae70ed4a968e/frontend/package-lock.json"
+        },
+        {
+          "path": "requirements.txt",
+          "gitBlobSha": "7007fbad6d114aef8fd9b049b2ff3debe098c270",
+          "bytes": 107,
+          "sha256": "53618d79e0e98de398ee447473e01953516a026b8cfb9cd4cf9b13a348879505",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/abb2be7ce5778ff14e47e387657dae70ed4a968e/requirements.txt"
+        },
+        {
+          "path": "requirements-dev.txt",
+          "gitBlobSha": "ea108f050f67bdd46cde94156edfa40217d1a0f6",
+          "bytes": 80,
+          "sha256": "e0fc6ee0d84a04663a42df95d24b9f2b39a63c1b78efd5d8e0798cf56be8f07f",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/abb2be7ce5778ff14e47e387657dae70ed4a968e/requirements-dev.txt"
+        },
+        {
+          "path": "default.pyw",
+          "gitBlobSha": "b553c9418aefb242b1539dfa8a51b84caabe8917",
+          "bytes": 645,
+          "sha256": "2a4f1f1da199f73570110ac5a37424cc9a8fff99379404cabc9a0bb2d54a843e",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/abb2be7ce5778ff14e47e387657dae70ed4a968e/default.pyw"
+        },
+        {
+          "path": "web_app.py",
+          "gitBlobSha": "19427afc482feb0ed4ba981bb7d99b64bc108f91",
+          "bytes": 6014,
+          "sha256": "e5c9e5a863cae7ebb3ab6e4489c948ecaac7d0856972455790002412aa7f5694",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/abb2be7ce5778ff14e47e387657dae70ed4a968e/web_app.py"
+        },
+        {
+          "path": "mobile/pyproject.toml",
+          "gitBlobSha": "082728539dbabc687c4ed8274f1930032ded0cb2",
+          "bytes": 994,
+          "sha256": "62d6a7f130bee8e74f55512742ebc68e472f44411ca596dc901a94b3b4f90c6f",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/abb2be7ce5778ff14e47e387657dae70ed4a968e/mobile/pyproject.toml"
+        },
+        {
+          "path": "pyproject.toml",
+          "gitBlobSha": "3e6e01ea31076fb818dc241aef3363318e61580c",
+          "bytes": 66,
+          "sha256": "d67b8bc736a1b60c6b0becc8e872f55a3c5523b1dec7df6e9a89acb75e748ab9",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/abb2be7ce5778ff14e47e387657dae70ed4a968e/pyproject.toml"
+        },
+        {
+          "path": "docs/evidence/android-3.3-release/APK-IDENTITY.json",
+          "gitBlobSha": "a5a1edbc43d774db5a098897a2e5f9939f472f78",
+          "bytes": 678,
+          "sha256": "12ae02842031e92e4a30a55e400d29ef25705187513e5f6174d961b61d2c77f2",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/abb2be7ce5778ff14e47e387657dae70ed4a968e/docs/evidence/android-3.3-release/APK-IDENTITY.json"
+        },
+        {
+          "path": "docs/evidence/android-3.3.1/publication.json",
+          "gitBlobSha": "2a65742d472423bc670266360a96d52fc483663f",
+          "bytes": 1268,
+          "sha256": "a496ac0c4475a40fbc8d7cfed4e6af670ba22ec9e501a79e6a532e97085eb23e",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/abb2be7ce5778ff14e47e387657dae70ed4a968e/docs/evidence/android-3.3.1/publication.json"
+        },
+        {
+          "path": "docs/evidence/android-3.3.1/independent-sdk-source.json",
+          "gitBlobSha": "36e1efa808cef1ce51dcfa52e8e6155346ebfaf1",
+          "bytes": 2043,
+          "sha256": "b49a3b4c4ada74f076df9ad7c0fe633432e94eccec5c0a5206fc7e3f1115123d",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/abb2be7ce5778ff14e47e387657dae70ed4a968e/docs/evidence/android-3.3.1/independent-sdk-source.json"
+        }
+      ],
+      "observedPublicAndroidBeta": {
+        "tag": "v3.3.1-android",
+        "sourceCommit": "9401d9d992807c6e8c808f99deb73acadf015c1f",
+        "url": "https://github.com/styayur/LGXT-Assistant/releases/tag/v3.3.1-android",
+        "prerelease": true,
+        "assets": [
+          {
+            "name": "ANDROID-GUIDE.md",
+            "size": 5629,
+            "digest": "sha256:3bdc0168701586d38c0881155f44b03cbb2a7b9198b79dfc583206c3430ae336",
+            "browser_download_url": "https://github.com/styayur/LGXT-Assistant/releases/download/v3.3.1-android/ANDROID-GUIDE.md"
+          },
+          {
+            "name": "APK-IDENTITY.json",
+            "size": 658,
+            "digest": "sha256:bcd11b770339a044088d99e1a58755b4b503e316cc69990e0ab141fae9f80e4f",
+            "browser_download_url": "https://github.com/styayur/LGXT-Assistant/releases/download/v3.3.1-android/APK-IDENTITY.json"
+          },
+          {
+            "name": "LGXT-Assistant-Android-v3.3.1.apk",
+            "size": 117305674,
+            "digest": "sha256:8b1da350c1cd9d089c52f8fbb65dbf289443c0a8f4f7dc462cda4fe4b201a4d1",
+            "browser_download_url": "https://github.com/styayur/LGXT-Assistant/releases/download/v3.3.1-android/LGXT-Assistant-Android-v3.3.1.apk"
+          },
+          {
+            "name": "LICENSE",
+            "size": 34255,
+            "digest": "sha256:79735a75d0274d2a5dcc240d11a0f81e34cfc3533939b7fce8e84e35a150a238",
+            "browser_download_url": "https://github.com/styayur/LGXT-Assistant/releases/download/v3.3.1-android/LICENSE"
+          },
+          {
+            "name": "NOTICE.md",
+            "size": 3097,
+            "digest": "sha256:710865329e24c48e43dec3baa8d4ebb0528228dffbda3333fbc7ff40f1295af5",
+            "browser_download_url": "https://github.com/styayur/LGXT-Assistant/releases/download/v3.3.1-android/NOTICE.md"
+          },
+          {
+            "name": "SHA256SUMS.txt",
+            "size": 499,
+            "digest": "sha256:81ebf59d78eaf197e83ce968b2d0ea2de016e68e9cf51c8ca26a83f8a5131cb7",
+            "browser_download_url": "https://github.com/styayur/LGXT-Assistant/releases/download/v3.3.1-android/SHA256SUMS.txt"
+          },
+          {
+            "name": "THIRD-PARTY.txt",
+            "size": 1495092,
+            "digest": "sha256:cbd582dec05084ae8e124dda2e5e51dca37331e554b6fce8826bbc898582d88b",
+            "browser_download_url": "https://github.com/styayur/LGXT-Assistant/releases/download/v3.3.1-android/THIRD-PARTY.txt"
+          }
+        ],
+        "apkIdentity": {
+          "apk": "LGXT-Assistant-Android-v3.3.1.apk",
+          "sha256": "8b1da350c1cd9d089c52f8fbb65dbf289443c0a8f4f7dc462cda4fe4b201a4d1",
+          "certificateSha256": "0ec0084b65aff166d379206ca244ea54904511e95573b15fd2159bd4bd604114",
+          "package": "io.github.styayur.lgxt_assistant_mobile",
+          "version": "3.3.1",
+          "versionCode": 5,
+          "abis": [
+            "arm64-v8a",
+            "x86_64"
+          ],
+          "sdk": [
+            "sdkVersion:'24'",
+            "targetSdkVersion:'36'"
+          ],
+          "sourceCommit": "9401d9d992807c6e8c808f99deb73acadf015c1f",
+          "debugTestOnly": false,
+          "fixture": false
+        },
+        "reviewMethod": "Reviewed existing independent anonymous-all-seven download and local Android SDK receipts, cross-checked their hashes/sizes/source against current public release metadata and pinned public publication/SDK receipts. This reviewer anonymously re-fetched only ANDROID-GUIDE.md, APK-IDENTITY.json and SHA256SUMS.txt; all six checksum entries match. No new seven-asset download or SDK command is claimed.",
+        "allSevenAssetsMatchPriorAnonymousReceiptsAndLiveMetadata": true,
+        "reviewerAnonymousDownloads": [
+          "ANDROID-GUIDE.md",
+          "APK-IDENTITY.json",
+          "SHA256SUMS.txt"
+        ],
+        "publishedReceipt": "https://github.com/styayur/LGXT-Assistant/blob/abb2be7ce5778ff14e47e387657dae70ed4a968e/docs/evidence/android-3.3.1/publication.json",
+        "publishedSdkReceipt": "https://github.com/styayur/LGXT-Assistant/blob/abb2be7ce5778ff14e47e387657dae70ed4a968e/docs/evidence/android-3.3.1/independent-sdk-source.json"
+      },
+      "certificateMigration": {
+        "package": "io.github.styayur.lgxt_assistant_mobile",
+        "currentCertificateSha256": "0ec0084b65aff166d379206ca244ea54904511e95573b15fd2159bd4bd604114",
+        "from330": {
+          "versionCode": 4,
+          "certificateSha256": "0ec0084b65aff166d379206ca244ea54904511e95573b15fd2159bd4bd604114",
+          "decision": "same-package same-certificate versionCode4-to-5 in-place update; keep a backup and do not uninstall"
+        },
+        "historical320CertificateSha256": "5292c0f518b1509952455aae35a3c4fd4db8356cc1d7f920d5fae39a61bfee25",
+        "historical321CertificateSha256": "26c318acad5518ef0344e68e54bfb976a9ea23ab1d26a324f1c88c024ee86f49",
+        "historicalDecision": "Different signing identities require a verified external backup, uninstall/reinstall, restore and comparison. Original 3.2.0/3.2.1 lacks question-document export; the current guide explicitly warns not to assume an export button or uninstall unverified valuable data. VersionCode does not bypass certificate matching."
+      },
+      "documentationNotes": [
+        "The immutable published ANDROID-GUIDE.md has correct 3.3.1/versionCode5 identification but retains a historical VersionCode4 sentence in its certificate-warning paragraph and discusses 3.2.1 there. The current pinned docs/android-beta.md says versionCode5 and covers 3.2.0/3.2.1. The current README links the latter migration guide. No historical release asset is overwritten or relabeled.",
+        "Dated 3.3.0 publication/preparation sections in release-channels.md and VERIFICATION.md are historical, not a claim that 3.3.1 is unavailable. Current README, current verification header and public release identity establish the observed Android version."
+      ]
+    }
+  ],
+  "retainedAuditFinding": {
+    "repository": "styayur/LGXT-Assistant",
+    "id": "b1d6cfcaafa14934a13a",
+    "code": "screenshot-reference",
+    "reason": "The actual input artifact has a stale screenshot-reference finding, not installation-review. Visual policy is outside this installation-only authorization and remains unchanged."
+  },
+  "retainedUncertainties": [
+    {
+      "repository": "styayur/glyphibe",
+      "code": "relative-link",
+      "status": 0
+    },
+    {
+      "repository": "styayur/rhizomaybor",
+      "code": "npm-command-context",
+      "status": null
+    }
+  ],
+  "unverified": [
+    "Real-account Android APK login/session restoration and incident root cause.",
+    "Physical ARM64/vendor device compatibility, real course/grade operations, paid providers and live OCR accuracy.",
+    "Windows development/install commands, Android installation and SDK verification were not executed by this profile reviewer; existing public native/synthetic evidence is separately attributed."
+  ],
+  "unchangedControls": [
+    "Entire audit-policy.json including every installation fingerprint and visual row",
+    "Detector logic, privacy guard, severities, native CI, CodeForge baseline and GitHub Rulesets",
+    "Historical maturity records, prior reviews, tags/releases/assets and license boundaries"
+  ]
+}
