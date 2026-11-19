@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-19",
+  "scope": "Review the currently referenced public LGXT Android preview and replace the stale desktop image path. No product acceptance or maturity promotion.",
+  "baselineMain": "6dda6209ec0fe4f9770f1d2ae4e50f50a016c72d",
+  "inputAuditRun": "https://github.com/styayur/styayur/actions/runs/44550275811",
+  "reviewed": [
+    {
+      "repository": "styayur/LGXT-Assistant",
+      "repositoryId": 1362863720,
+      "sourceCommit": "abb2be7ce5778ff14e47e387657dae70ed4a968e",
+      "decision": "Use the Android preview actually referenced by the current public README.",
+      "previousVisualPath": "docs/screenshots/assignment-desktop-fixture.png",
+      "visual": {
+        "kind": "image",
+        "path": "docs/screenshots/android-3.3.1-native-dashboard-fixture.png",
+        "gitBlobSha": "94f4c4e8067cc1baa11a884e1cc73fef510ffc4e",
+        "sha256": "7dfe79d9b530823809a8a7a77f2c00a0e03fe7ed51a1cc8ad64a518e0e21e327",
+        "width": 1080,
+        "height": 1920,
+        "method": "Visually inspected the existing committed PNG. Its local Git blob matches the pinned public GitHub contents response; no image was generated, edited or recaptured.",
+        "observations": [
+          "The image is a portrait Android task dashboard with safe-area/status/navigation bars, unfinished-work count, progress, assignment row and bottom navigation.",
+          "The visible fixture banner explicitly says synthetic acceptance data and no connection to the real platform. Course and assignment names are synthetic. The HTTP compatibility warning remains visible.",
+          "The current README references this exact path and labels the capture as an Android 15 emulator after encrypted synthetic-session restoration, not real courses or real-account login.",
+          "The capture belongs to the separate fixture acceptance flow. It is not presented as evidence that the distributed ordinary APK contains fixture data or that a personal account was accepted."
+        ]
+      },
+      "publicContext": [
+        "https://github.com/styayur/LGXT-Assistant/blob/abb2be7ce5778ff14e47e387657dae70ed4a968e/README.md",
+        "https://github.com/styayur/LGXT-Assistant/blob/abb2be7ce5778ff14e47e387657dae70ed4a968e/docs/screenshots/android-3.3.1-native-dashboard-fixture.png",
+        "https://github.com/styayur/LGXT-Assistant/actions/runs/44522507458"
+      ],
+      "privateAccountInformationUsed": false,
+      "newProductTestsExecuted": false,
+      "installationFingerprintChanged": false
+    }
+  ],
+  "retainedUncertainties": [
+    "Glyphibe relative-link network observation remains independent.",
+    "Rhizomaybor npm-command-context remains independent."
+  ],
+  "unverified": [
+    "Real-account Android APK login and encrypted-session restoration.",
+    "Physical ARM64/vendor device compatibility and historical incident root cause."
+  ],
+  "unchangedControls": [
+    "Audit detector, severities, privacy boundary, native CI and branch protections",
+    "Installation fingerprints, historical reviews and all eight maturity records",
+    "Product files, releases, tags, signatures and screenshot bytes"
+  ]
+}
