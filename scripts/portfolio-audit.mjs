@@ -213,14 +213,30 @@ export async function auditPortfolio(policy,{request=createClient(),now=new Date
     if(repo.homepage)await queue(repo.homepage,name,repo.html_url);
   }
   const site=await request(policy.website+'/portfolio.json');
-  if(site.kind==='ok' && site.data?.repositories) {
+  if(site.kind==='ok' && Array.isArray(site.data?.repositories)) {
     report.websiteRegistrySha256=digest(JSON.stringify(site.data));
     const entries=site.data.repositories;
     const listed=new Set(entries.map(r=>r.repository));
     if(inventoryComplete) for(const name of publicNames)if(!listed.has(name))add(name,'website-missing','Public repository is missing from the controlled website registry.',[policy.website+'/portfolio.json']);
     // Mask unknown entries, as a stale registry must not leak non-public identities.
     if(inventoryComplete && entries.some(r=>!publicNames.has(r.repository) || r.visibility!=='public'))add(policy.owner,'website-nonpublic','Website registry includes an entry outside the public inventory; investigate privately.',[policy.website+'/portfolio.json']);
-    for(const r of entries.filter(r=>publicNames.has(r.repository) && !r.excludedFromProjects)) {
+    const directory=policy.websitePresentation==='repository-directory';
+    if(directory) {
+      if(site.data.schemaVersion!==2 || site.data.presentation!=='repository-directory') uncertain(policy.owner,'website-registry-schema',site.status);
+      else {
+        const seen=new Set();
+        for(const r of entries.filter(r=>publicNames.has(r.repository))) {
+          const actual=repos.find(repo=>repo.full_name===r.repository);
+          if(seen.has(r.repository) || r.repositoryId!==actual.id || r.url!==`https://github.com/${r.repository}` ||
+              r.projectSlug!==actual.name || typeof r.archived!=='boolean' || r.excludedFromProjects===true) {
+            add(r.repository,'website-directory','Static directory identity, URL or project reference differs from the public repository.',[policy.website+'/portfolio.json']);
+          }
+          seen.add(r.repository);
+        }
+      }
+    } else if(policy.websitePresentation && policy.websitePresentation!=='curated-projects') {
+      uncertain(policy.owner,'website-registry-schema',site.status);
+    } else for(const r of entries.filter(r=>publicNames.has(r.repository) && !r.excludedFromProjects)) {
       if(!r.projectSlug)add(r.repository,'website-card','A public project lacks a controlled card reference.',[policy.website+'/projects/']);
       const releases=await gh(`/repos/${r.repository}/releases?per_page=100`);
       if(releases.kind==='ok') {

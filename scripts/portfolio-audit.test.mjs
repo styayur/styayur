@@ -205,3 +205,33 @@ test('a nonpublic confirmed target is refused before any issue write',()=>{
   current.findings=[{...finding,repository:'styayur/hidden-example'}];
   assert.throws(()=>notificationPlan(current,previous,[]));
 });
+
+
+test('declared static directory checks inventory and identity without inventing curated release labels',async()=>{
+  const f=fixture(),original=f.request;
+  f.request=async url=>url.endsWith('/portfolio.json')?{kind:'ok',status:200,data:{schemaVersion:2,presentation:'repository-directory',repositories:[{repository:repo.full_name,repositoryId:1,visibility:'public',url:repo.html_url,projectSlug:'demo',archived:false}]}}:original(url);
+  const report=await auditPortfolio({...policy,websitePresentation:'repository-directory'},f);
+  assert.equal(report.findings.length,0);
+  assert.equal(report.uncertain.length,0);
+  assert.equal(report.releaseObservations.length,0);
+  assert.ok(!f.requests.some(url=>url.includes('/releases?')));
+});
+
+test('static directories retain missing and nonpublic inventory checks without leaking identities',async()=>{
+  const f=fixture(),original=f.request;
+  f.request=async url=>url.endsWith('/portfolio.json')?{kind:'ok',status:200,data:{schemaVersion:2,presentation:'repository-directory',repositories:[{repository:'styayur/hidden-example',visibility:'private'}]}}:original(url);
+  const report=await auditPortfolio({...policy,websitePresentation:'repository-directory'},f);
+  assert.ok(report.findings.some(f=>f.code==='website-missing'));
+  assert.ok(report.findings.some(f=>f.code==='website-nonpublic'));
+  assert.ok(!JSON.stringify(report).includes('hidden-example'));
+});
+
+test('static directory schema and numeric identity mismatches never become clean evidence',async()=>{
+  for(const bad of [{schemaVersion:1},{presentation:'other'},{row:{repositoryId:99}},{row:{url:'https://other.invalid'}},{row:{excludedFromProjects:true}}]) {
+    const f=fixture(),original=f.request;
+    const data={schemaVersion:2,presentation:'repository-directory',repositories:[{repository:repo.full_name,repositoryId:1,visibility:'public',url:repo.html_url,projectSlug:'demo',archived:false,...bad.row}],...Object.fromEntries(Object.entries(bad).filter(([k])=>k!=='row'))};
+    f.request=async url=>url.endsWith('/portfolio.json')?{kind:'ok',status:200,data}:original(url);
+    const report=await auditPortfolio({...policy,websitePresentation:'repository-directory'},f);
+    assert.ok(report.findings.some(f=>f.code==='website-directory') || report.uncertain.some(f=>f.code==='website-registry-schema'));
+  }
+});
