@@ -1,0 +1,66 @@
+{
+  "reviewedAt": "2026-11-19",
+  "scope": "Only listed identity and byte-format records; no release or product maturity promotion.",
+  "renames": [
+    {
+      "repositoryId": 1399208491,
+      "before": "styayur/digital-garden-engine",
+      "after": "styayur/rhizomaybor"
+    },
+    {
+      "repositoryId": 1364395119,
+      "before": "styayur/mini-market",
+      "after": "styayur/fitimart"
+    },
+    {
+      "repositoryId": 1409441558,
+      "before": "styayur/translation-kernel",
+      "after": "styayur/ogleans"
+    },
+    {
+      "repositoryId": 1378504882,
+      "before": "styayur/windows-new-pc-setup",
+      "after": "styayur/whinset"
+    }
+  ],
+  "licenses": [
+    {
+      "repository": "styayur/developer-security-workspace",
+      "oldSha": "0c97efd25b5974b974ed9a8a18207bc4f55bb338",
+      "currentSha": "4a58c382f41858a22329ac960f6ab6b2b9a4ac33",
+      "sameNormalized": true
+    },
+    {
+      "repository": "styayur/LGXT-Assistant",
+      "oldSha": "0c97efd25b5974b974ed9a8a18207bc4f55bb338",
+      "currentSha": "4a58c382f41858a22329ac960f6ab6b2b9a4ac33",
+      "sameNormalized": true
+    },
+    {
+      "repository": "styayur/musical-spinningtop",
+      "oldSha": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+      "currentSha": "1468d07c88d6a48dae9360ed0094955b54370224",
+      "sameNormalized": true
+    },
+    {
+      "repository": "styayur/styayur",
+      "oldSha": "13ca539f377dc705af32b8d2ce89262298ea2f06",
+      "currentSha": "ac354f4cd1008bf46233aed5312cb3d7acb4f910",
+      "sameNormalized": true
+    },
+    {
+      "repository": "styayur/mzk",
+      "oldSha": "02a545a1ed1e229c8be5785d3cd32ef7766b4209",
+      "currentSha": "0961deaa4c4e71d42ba0c0cbb6aae679b11122ea",
+      "sameNormalized": true
+    }
+  ],
+  "unchangedControls": [
+    "Exact repository numeric identity",
+    "Exact LICENSE Git blob hash after explicit review",
+    "Installation command fingerprints",
+    "Private-link boundary",
+    "Required files and manifests",
+    "Native CI and Rulesets"
+  ]
+}
