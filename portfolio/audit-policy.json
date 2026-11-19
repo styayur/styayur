@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "owner": "styayur",
   "website": "https://styayur.co.uk",
-  "reviewedAt": "2026-11-03",
+  "reviewedAt": "2026-11-19",
   "repositories": [
     {
       "repository": "styayur/calligra",
@@ -68,7 +68,7 @@
       "repository": "styayur/developer-security-workspace",
       "repositoryId": 1388710049,
       "licenseSpdx": "AGPL-3.0",
-      "licenseSha": "0c97efd25b5974b974ed9a8a18207bc4f55bb338",
+      "licenseSha": "4a58c382f41858a22329ac960f6ab6b2b9a4ac33",
       "requiredFiles": [
         "README.md",
         "LICENSE",
@@ -83,7 +83,7 @@
       }
     },
     {
-      "repository": "styayur/digital-garden-engine",
+      "repository": "styayur/rhizomaybor",
       "repositoryId": 1399208491,
       "licenseSpdx": "MPL-2.0",
       "licenseSha": "ee6256cdb62a765749a71aae3abea32884301cd1",
@@ -127,7 +127,7 @@
       "repository": "styayur/LGXT-Assistant",
       "repositoryId": 1362863720,
       "licenseSpdx": "AGPL-3.0",
-      "licenseSha": "0c97efd25b5974b974ed9a8a18207bc4f55bb338",
+      "licenseSha": "4a58c382f41858a22329ac960f6ab6b2b9a4ac33",
       "requiredFiles": [
         "README.md",
         "LICENSE",
@@ -166,7 +166,7 @@
       "npmDirectory": "apps/desktop"
     },
     {
-      "repository": "styayur/mini-market",
+      "repository": "styayur/fitimart",
       "repositoryId": 1364395119,
       "licenseSpdx": "MPL-2.0",
       "licenseSha": "ee6256cdb62a765749a71aae3abea32884301cd1",
@@ -192,7 +192,7 @@
       "repository": "styayur/musical-spinningtop",
       "repositoryId": 1385662827,
       "licenseSpdx": "AGPL-3.0",
-      "licenseSha": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+      "licenseSha": "1468d07c88d6a48dae9360ed0094955b54370224",
       "requiredFiles": [
         "README.md",
         "LICENSE",
@@ -268,7 +268,7 @@
       "repository": "styayur/styayur",
       "repositoryId": 1398635384,
       "licenseSpdx": "CC-BY-4.0",
-      "licenseSha": "13ca539f377dc705af32b8d2ce89262298ea2f06",
+      "licenseSha": "ac354f4cd1008bf46233aed5312cb3d7acb4f910",
       "requiredFiles": [
         "README.md",
         "LICENSE"
@@ -334,7 +334,7 @@
       }
     },
     {
-      "repository": "styayur/translation-kernel",
+      "repository": "styayur/ogleans",
       "repositoryId": 1409441558,
       "licenseSpdx": "MPL-2.0",
       "licenseSha": "ee6256cdb62a765749a71aae3abea32884301cd1",
@@ -352,7 +352,7 @@
       }
     },
     {
-      "repository": "styayur/windows-new-pc-setup",
+      "repository": "styayur/whinset",
       "repositoryId": 1378504882,
       "licenseSpdx": "MIT",
       "licenseSha": "02a545a1ed1e229c8be5785d3cd32ef7766b4209",
@@ -473,7 +473,7 @@
       "repository": "styayur/mzk",
       "repositoryId": 1435188519,
       "licenseSpdx": "MIT",
-      "licenseSha": "02a545a1ed1e229c8be5785d3cd32ef7766b4209",
+      "licenseSha": "0961deaa4c4e71d42ba0c0cbb6aae679b11122ea",
       "requiredFiles": [
         "README.md",
         "LICENSE",
