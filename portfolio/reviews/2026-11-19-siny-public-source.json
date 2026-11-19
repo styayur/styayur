@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-19",
+  "scope": "Public Siny identity, license bytes, installation source and text-only visual policy. No maturity promotion or product mutation.",
+  "baselineMain": "822bd4163b2f9b0af5a7d31dc73a59e38beebe3e",
+  "inputAuditRun": "https://github.com/styayur/styayur/actions/runs/44542931082",
+  "reviewed": [
+    {
+      "repository": "styayur/siny",
+      "repositoryId": 1462484035,
+      "sourceCommit": "ddfd4b3ebaa0e22a447f98a4b6d059325413792c",
+      "decision": "include-public-audit-record",
+      "commandsExecuted": false,
+      "licenseSpdx": "AGPL-3.0",
+      "licenseBlobSha": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+      "readmeBlobSha": "a52a95965ecf931c30c5efd48d4281b97d243d06",
+      "readmeCodeSha256": "d482a56f22e34691cc8deae73d3d5126c9453d3ba1f98313c8b74724be038ec3",
+      "review": "Actual protected main and public numeric identity inspected. Full root AGPL-3.0 text matches imported TinySTT; root GPL-3.0 text matches imported TinyTTS. Cargo manifests retain AGPL-3.0-only for new Siny/core/TinySTT and GPL-3.0-or-later for TinyTTS; original/native/model terms remain distinct. Windows x64 MSVC 14.51+ source instructions map to the workspace GUI/headless features and hash-bound ORT 1.28.3 / sherpa 1.13.8 SDK loader. Model preparation is explicit, bounded and hash-pinned; models are separate runtime inputs. Commands and inference were inspected, not executed by this reviewer. README has no referenced screenshot; text-only visual policy does not claim runtime acceptance or legacy parity.",
+      "sourceReceipts": [
+        {
+          "path": "README.md",
+          "gitBlobSha": "a52a95965ecf931c30c5efd48d4281b97d243d06",
+          "bytes": 4170,
+          "sha256": "9fd0e64e6175afdd6e1acec8246cf8ad6d87b535002577ecdc16edb813684800",
+          "url": "https://github.com/styayur/siny/blob/ddfd4b3ebaa0e22a447f98a4b6d059325413792c/README.md",
+          "readmeCodeSha256": "d482a56f22e34691cc8deae73d3d5126c9453d3ba1f98313c8b74724be038ec3",
+          "referencedImages": []
+        },
+        {
+          "path": "LICENSE",
+          "gitBlobSha": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+          "bytes": 34523,
+          "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+          "url": "https://github.com/styayur/siny/blob/ddfd4b3ebaa0e22a447f98a4b6d059325413792c/LICENSE"
+        },
+        {
+          "path": "LICENSE-GPL-3.0",
+          "gitBlobSha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+          "bytes": 35149,
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "url": "https://github.com/styayur/siny/blob/ddfd4b3ebaa0e22a447f98a4b6d059325413792c/LICENSE-GPL-3.0"
+        },
+        {
+          "path": "Cargo.toml",
+          "gitBlobSha": "6a29bcec546139759e9641c92f7078bc3c5b66c2",
+          "bytes": 683,
+          "sha256": "40ef365518a773ed7f05d92e9a63ad15d23d7e74da439d7c167d26a21af8a8ff",
+          "url": "https://github.com/styayur/siny/blob/ddfd4b3ebaa0e22a447f98a4b6d059325413792c/Cargo.toml"
+        },
+        {
+          "path": "crates/siny/Cargo.toml",
+          "gitBlobSha": "88ea42055687f029226d237c30f4ca2c4dfd8f7a",
+          "bytes": 801,
+          "sha256": "5b2b67fd946c865833ec5300a48866f635b1e40925f8b966e05cca8173f79ea6",
+          "url": "https://github.com/styayur/siny/blob/ddfd4b3ebaa0e22a447f98a4b6d059325413792c/crates/siny/Cargo.toml"
+        },
+        {
+          "path": "crates/siny-core/Cargo.toml",
+          "gitBlobSha": "21c5d1d5a595505bd6e03a9ced3d601ba6c7bdca",
+          "bytes": 158,
+          "sha256": "7810b888360e03ce5da3ddaae3bc969b6b99749321b6edb08b3612b0320ce753",
+          "url": "https://github.com/styayur/siny/blob/ddfd4b3ebaa0e22a447f98a4b6d059325413792c/crates/siny-core/Cargo.toml"
+        },
+        {
+          "path": "crates/tinytts/Cargo.toml",
+          "gitBlobSha": "637c90150d51bdca3f88d19a6c04dd9598473d06",
+          "bytes": 1523,
+          "sha256": "92463f42f54d51c44385dfa175daa7baa2c48f4bee3f4e10a041cc537b48ecc9",
+          "url": "https://github.com/styayur/siny/blob/ddfd4b3ebaa0e22a447f98a4b6d059325413792c/crates/tinytts/Cargo.toml"
+        },
+        {
+          "path": "crates/tinystt/Cargo.toml",
+          "gitBlobSha": "03c87ed467d09ca761faabf600411e448cb63268",
+          "bytes": 1383,
+          "sha256": "fa1085b4ecbc870cfed54b2dcd92a49fb50453fd7b734679c6484103711040d1",
+          "url": "https://github.com/styayur/siny/blob/ddfd4b3ebaa0e22a447f98a4b6d059325413792c/crates/tinystt/Cargo.toml"
+        },
+        {
+          "path": "THIRD_PARTY_NOTICES.md",
+          "gitBlobSha": "ba6c6319368386751efbd230acf217949a6cad48",
+          "bytes": 1756,
+          "sha256": "0642c0f8965afc334a0fca2099afbc63ed36eea6497e128016d5b8f13c1042b1",
+          "url": "https://github.com/styayur/siny/blob/ddfd4b3ebaa0e22a447f98a4b6d059325413792c/THIRD_PARTY_NOTICES.md"
+        },
+        {
+          "path": "docs/acceptance.md",
+          "gitBlobSha": "87b3143d8b83124807ce5419d89b589cc253651d",
+          "bytes": 3155,
+          "sha256": "f227d6e13ab182a3d1776dc7f5afe3ae88551c381a8b451cdc282ec6faa1745f",
+          "url": "https://github.com/styayur/siny/blob/ddfd4b3ebaa0e22a447f98a4b6d059325413792c/docs/acceptance.md"
+        },
+        {
+          "path": "docs/native-sdk.json",
+          "gitBlobSha": "81d64dff1b0c62cac16c22e6756097b1c15b598d",
+          "bytes": 2837,
+          "sha256": "78bc6df850f0046134952156de1870905c2ba949a045b6736bc3267ec7c75f72",
+          "url": "https://github.com/styayur/siny/blob/ddfd4b3ebaa0e22a447f98a4b6d059325413792c/docs/native-sdk.json"
+        },
+        {
+          "path": "scripts/prepare_native.py",
+          "gitBlobSha": "5e11e7d5661f287468e6bf2811a7641fa02af614",
+          "bytes": 4972,
+          "sha256": "ae2feb56abff7694234856e9834c95b9acb84e4bd30cab8a8b0d6703b10525fd",
+          "url": "https://github.com/styayur/siny/blob/ddfd4b3ebaa0e22a447f98a4b6d059325413792c/scripts/prepare_native.py"
+        },
+        {
+          "path": "scripts/check_acceptance.py",
+          "gitBlobSha": "f0e9ee2351022a136cbcf24e6831b8484f0f7bb9",
+          "bytes": 1544,
+          "sha256": "a81ff7158c17b189c744b5d2c2fe092b056ecfbbe68966766581db44f9723419",
+          "url": "https://github.com/styayur/siny/blob/ddfd4b3ebaa0e22a447f98a4b6d059325413792c/scripts/check_acceptance.py"
+        },
+        {
+          "path": "scripts/prepare_model.py",
+          "gitBlobSha": "37135f753da880ca700c93457a1676eddc79d89e",
+          "bytes": 2811,
+          "sha256": "306fb5f06cb8c9f33584d23f89e750c806ac2beb867c23cac1f50d48845995fc",
+          "url": "https://github.com/styayur/siny/blob/ddfd4b3ebaa0e22a447f98a4b6d059325413792c/scripts/prepare_model.py"
+        },
+        {
+          "path": "scripts/prepare_sensevoice.py",
+          "gitBlobSha": "4155b11c9a9f46cd3484e1f57381e68af794c9f2",
+          "bytes": 2859,
+          "sha256": "789ba2a59bd52af384efbcad794ef2dcb493b29d9039d9374fc45452e3380ea8",
+          "url": "https://github.com/styayur/siny/blob/ddfd4b3ebaa0e22a447f98a4b6d059325413792c/scripts/prepare_sensevoice.py"
+        },
+        {
+          "path": "crates/siny/src/main.rs",
+          "gitBlobSha": "b83632938aadc7e2a01a23aab0fdca480633500d",
+          "bytes": 737,
+          "sha256": "e87b4d62376ce3fe2bb01ffa1f320199305c60dfb29a468c28581320db18c1cf",
+          "url": "https://github.com/styayur/siny/blob/ddfd4b3ebaa0e22a447f98a4b6d059325413792c/crates/siny/src/main.rs"
+        }
+      ],
+      "visual": {
+        "kind": "text",
+        "reason": "Reviewed source/build and offline model instructions for the Windows x64 alpha; README references no screenshot. No fabricated UI visual, device acceptance or legacy replacement claim."
+      },
+      "observedPublicPreview": {
+        "tag": "v0.1.0-alpha.1",
+        "url": "https://github.com/styayur/siny/releases/tag/v0.1.0-alpha.1",
+        "applicationCommit": "ddfd4b3ebaa0e22a447f98a4b6d059325413792c",
+        "validation": "https://github.com/styayur/siny/actions/runs/44524660035",
+        "releaseWorkflow": "https://github.com/styayur/siny/actions/runs/44529180464",
+        "reviewScope": "Existing publication observed; this policy change creates no tag/release and does not add a curated maturity/release row."
+      }
+    }
+  ],
+  "unverified": [
+    "Commands, models and physical devices were not executed by this profile reviewer.",
+    "Unsigned alpha and documented Windows 10, legacy parity, real microphone/output and human listening/WER limitations remain visible.",
+    "GitHub manifest-license detector supports JSON package declarations; Cargo license strings were inspected manually and are not represented as JSON manifests."
+  ],
+  "unchangedControls": [
+    "websitePresentation=repository-directory",
+    "Eight historical maturity records and prior review records",
+    "Detector logic, privacy boundaries, severities, native CI, security gates and rulesets",
+    "Private governance board visibility and private website source"
+  ]
+}

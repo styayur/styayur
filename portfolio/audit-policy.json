@@ -594,6 +594,31 @@
         "kind": "image",
         "path": "docs/assets/v0.6-web-desktop.png"
       }
+    },
+    {
+      "repository": "styayur/siny",
+      "repositoryId": 1462484035,
+      "licenseSpdx": "AGPL-3.0",
+      "licenseSha": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+      "requiredFiles": [
+        "README.md",
+        "LICENSE",
+        "LICENSE-GPL-3.0",
+        "THIRD_PARTY_NOTICES.md",
+        "Cargo.toml",
+        "crates/siny/Cargo.toml",
+        "crates/siny-core/Cargo.toml",
+        "crates/tinystt/LICENSE",
+        "crates/tinytts/LICENSE",
+        "docs/acceptance.md",
+        "docs/native-sdk.json"
+      ],
+      "manifestLicenses": [],
+      "readmeCodeSha256": "d482a56f22e34691cc8deae73d3d5126c9453d3ba1f98313c8b74724be038ec3",
+      "visual": {
+        "kind": "text",
+        "reason": "Reviewed source/build and offline model instructions for the Windows x64 alpha; README references no screenshot. No fabricated UI visual, device acceptance or legacy replacement claim."
+      }
     }
   ],
   "reviewedGovernanceCommits": [
