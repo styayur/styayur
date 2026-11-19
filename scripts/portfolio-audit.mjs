@@ -228,7 +228,7 @@ export async function auditPortfolio(policy,{request=createClient(),now=new Date
         for(const r of entries.filter(r=>publicNames.has(r.repository))) {
           const actual=repos.find(repo=>repo.full_name===r.repository);
           if(seen.has(r.repository) || r.repositoryId!==actual.id || r.url!==`https://github.com/${r.repository}` ||
-              r.projectSlug!==actual.name || typeof r.archived!=='boolean' || r.excludedFromProjects===true) {
+              r.projectSlug!==actual.name || r.archived!==(actual.archived===true) || r.excludedFromProjects===true) {
             add(r.repository,'website-directory','Static directory identity, URL or project reference differs from the public repository.',[policy.website+'/portfolio.json']);
           }
           seen.add(r.repository);

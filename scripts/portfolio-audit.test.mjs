@@ -227,7 +227,7 @@ test('static directories retain missing and nonpublic inventory checks without l
 });
 
 test('static directory schema and numeric identity mismatches never become clean evidence',async()=>{
-  for(const bad of [{schemaVersion:1},{presentation:'other'},{row:{repositoryId:99}},{row:{url:'https://other.invalid'}},{row:{excludedFromProjects:true}}]) {
+  for(const bad of [{schemaVersion:1},{presentation:'other'},{row:{repositoryId:99}},{row:{url:'https://other.invalid'}},{row:{excludedFromProjects:true}},{row:{archived:true}}]) {
     const f=fixture(),original=f.request;
     const data={schemaVersion:2,presentation:'repository-directory',repositories:[{repository:repo.full_name,repositoryId:1,visibility:'public',url:repo.html_url,projectSlug:'demo',archived:false,...bad.row}],...Object.fromEntries(Object.entries(bad).filter(([k])=>k!=='row'))};
     f.request=async url=>url.endsWith('/portfolio.json')?{kind:'ok',status:200,data}:original(url);
