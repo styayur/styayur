@@ -1,0 +1,448 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-20",
+  "reviewState": "DRAFT: public-source and publisher provenance reviewed; independent anonymous download/SDK receipt pending",
+  "scope": "LGXT Android3.3.2 public source, installation, version/certificate migration and SDK privacy backport only. No maturity promotion or new real-account/native test execution by this profile reviewer.",
+  "baselineMain": "0831a2c5692cad07832205e8c0bf7ac00cf35fa9",
+  "inputAuditRun": "https://github.com/styayur/styayur/actions/runs/44664281490",
+  "reviewed": [
+    {
+      "repository": "styayur/LGXT-Assistant",
+      "repositoryId": 1362863720,
+      "releaseSourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+      "sourceReviewedCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+      "decision": "review-published-3.3.2-provenance-and-retain-command-fingerprint",
+      "productCommandsExecutedByReviewer": false,
+      "apkDownloadsByReviewer": 0,
+      "nativeOrRealAccountTestsExecutedByReviewer": false,
+      "readme": {
+        "path": "README.md",
+        "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+        "gitBlobSha": "c7dc14da27e9415fc91ef67887d52d83252c8b7a",
+        "bytes": 8293,
+        "sha256": "4a517fa81311e3f3a2df2dc4c2643a0dd9a1b612f410463cc7b93f62f2549152",
+        "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/README.md",
+        "readmeCodeSha256": "9b0a75226aa38fc218f77e3f27895b5e3b5311f4163714e42bf44414aa04eb0c"
+      },
+      "rootLicense": {
+        "path": "LICENSE",
+        "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+        "gitBlobSha": "4a58c382f41858a22329ac960f6ab6b2b9a4ac33",
+        "bytes": 34255,
+        "sha256": "79735a75d0274d2a5dcc240d11a0f81e34cfc3533939b7fce8e84e35a150a238",
+        "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/LICENSE"
+      },
+      "installationFingerprintChanged": false,
+      "visualPolicyChanged": false,
+      "visual": {
+        "kind": "image",
+        "path": "docs/screenshots/android-3.3.1-native-dashboard-fixture.png"
+      },
+      "sourceReview": [
+        "The immutable-source mobile manifest declares3.3.2/code6 with the existing io.github.styayur.lgxt_assistant_mobile package. Public prerelease452382967 and tag resolve to this exact850dab5 source; all seven API asset digests match the explicitly supplied publisher publication receipt.",
+        "Current README development commands retain the prior reviewed code fingerprint and Windows/web entry points. Python3.13 requirements, frontend lock/build and Android Flet1.1.2 paths remain distinct from installing a signed Android release. These commands were source-reviewed, not executed here.",
+        "Pinned Flutter3.47.9 revision c197ca5199e9ee5661e865596c9c07294dfab51c copies enableIMEPersonalizedLearning without losing false after a one-field backport. Public upstream bytes independently reproduce patched SHA25634b57e5153642fcf4f4dc47b57e44ceb60f5affb3f5ca349b061aad421fe265f. Original SDK/license/source/output identities and Flet-selected/generated SDK/lock/APK/workflow bindings fail closed; AutofillGroup, masking/reveal and no-suggestion options remain.",
+        "Application AGPL and retained Flutter BSD-3-Clause scopes are separate. SDK license bytes match upstream; no project or third-party grant is changed. Release notices remain required.",
+        "The actual3.3.2 publisher gate requires ordinary and synthetic native reports for exact signed/fixture bytes,3.3.1 in-place upgrade and historical signing incompatibility, file-picker backup/restore, synthetic encrypted-session cold restoration/logout, and empty protected EditorInfo privacy before field injection. Source checks alone do not execute or independently qualify those runtime cases."
+      ],
+      "observedPublicAndroidBeta": {
+        "release": {
+          "id": 452382967,
+          "tag_name": "v3.3.2-android",
+          "html_url": "https://github.com/styayur/LGXT-Assistant/releases/tag/v3.3.2-android",
+          "draft": false,
+          "prerelease": true,
+          "published_at": "2026-11-20T07:22:37Z",
+          "target_commitish": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "assets": [
+            {
+              "id": 770871689,
+              "name": "ANDROID-GUIDE.md",
+              "size": 7116,
+              "digest": "sha256:c965eee9653d0a51e0294c6d0beef6074488c896f9e40a9e7248d2c8b802e170",
+              "browser_download_url": "https://github.com/styayur/LGXT-Assistant/releases/download/v3.3.2-android/ANDROID-GUIDE.md"
+            },
+            {
+              "id": 770871742,
+              "name": "APK-IDENTITY.json",
+              "size": 658,
+              "digest": "sha256:6f75a8690f2c3ed91968b25d7c42e962c6ac006aa4d971ae52cbc1c9c2229243",
+              "browser_download_url": "https://github.com/styayur/LGXT-Assistant/releases/download/v3.3.2-android/APK-IDENTITY.json"
+            },
+            {
+              "id": 770871770,
+              "name": "LGXT-Assistant-Android-v3.3.2.apk",
+              "size": 117305674,
+              "digest": "sha256:15767eaaabe03c7efb4f9340b52fad2414ef9a72a2227ddbffd8d5a2a60bed6f",
+              "browser_download_url": "https://github.com/styayur/LGXT-Assistant/releases/download/v3.3.2-android/LGXT-Assistant-Android-v3.3.2.apk"
+            },
+            {
+              "id": 770871945,
+              "name": "LICENSE",
+              "size": 34255,
+              "digest": "sha256:79735a75d0274d2a5dcc240d11a0f81e34cfc3533939b7fce8e84e35a150a238",
+              "browser_download_url": "https://github.com/styayur/LGXT-Assistant/releases/download/v3.3.2-android/LICENSE"
+            },
+            {
+              "id": 770871985,
+              "name": "NOTICE.md",
+              "size": 3558,
+              "digest": "sha256:14514368c28fba9f9c8719ac7ab571f04184a7aaf9f6f0540668c18d83b094f2",
+              "browser_download_url": "https://github.com/styayur/LGXT-Assistant/releases/download/v3.3.2-android/NOTICE.md"
+            },
+            {
+              "id": 770872025,
+              "name": "SHA256SUMS.txt",
+              "size": 499,
+              "digest": "sha256:95548769c056f6c884bfa55236a311bf24600b167b6a6bbfee12fd54dae47a6c",
+              "browser_download_url": "https://github.com/styayur/LGXT-Assistant/releases/download/v3.3.2-android/SHA256SUMS.txt"
+            },
+            {
+              "id": 770872048,
+              "name": "THIRD-PARTY.txt",
+              "size": 1495092,
+              "digest": "sha256:cbd582dec05084ae8e124dda2e5e51dca37331e554b6fce8826bbc898582d88b",
+              "browser_download_url": "https://github.com/styayur/LGXT-Assistant/releases/download/v3.3.2-android/THIRD-PARTY.txt"
+            }
+          ]
+        },
+        "tagObject": {
+          "sha": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "type": "commit",
+          "url": "https://api.github.com/repos/styayur/LGXT-Assistant/git/commits/850dab5e96f8914da513a0084863c90a35e6e2dd"
+        },
+        "version": "3.3.2",
+        "versionCode": 6,
+        "package": "io.github.styayur.lgxt_assistant_mobile",
+        "apkSha256": "15767eaaabe03c7efb4f9340b52fad2414ef9a72a2227ddbffd8d5a2a60bed6f",
+        "certificateSha256PublisherVerified": "0ec0084b65aff166d379206ca244ea54904511e95573b15fd2159bd4bd604114",
+        "publisherPublication": {
+          "verified": true,
+          "tag": "v3.3.2-android",
+          "url": "https://github.com/styayur/LGXT-Assistant/releases/tag/v3.3.2-android",
+          "source": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "assets": [
+            "ANDROID-GUIDE.md",
+            "APK-IDENTITY.json",
+            "LGXT-Assistant-Android-v3.3.2.apk",
+            "LICENSE",
+            "NOTICE.md",
+            "SHA256SUMS.txt",
+            "THIRD-PARTY.txt"
+          ],
+          "draft": false,
+          "buildRun": "44688476350",
+          "acceptanceRun": "44688476350",
+          "validatedHead": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "certificateSha256": "0ec0084b65aff166d379206ca244ea54904511e95573b15fd2159bd4bd604114",
+          "hashes": {
+            "ANDROID-GUIDE.md": "c965eee9653d0a51e0294c6d0beef6074488c896f9e40a9e7248d2c8b802e170",
+            "APK-IDENTITY.json": "6f75a8690f2c3ed91968b25d7c42e962c6ac006aa4d971ae52cbc1c9c2229243",
+            "LGXT-Assistant-Android-v3.3.2.apk": "15767eaaabe03c7efb4f9340b52fad2414ef9a72a2227ddbffd8d5a2a60bed6f",
+            "LICENSE": "79735a75d0274d2a5dcc240d11a0f81e34cfc3533939b7fce8e84e35a150a238",
+            "NOTICE.md": "14514368c28fba9f9c8719ac7ab571f04184a7aaf9f6f0540668c18d83b094f2",
+            "SHA256SUMS.txt": "95548769c056f6c884bfa55236a311bf24600b167b6a6bbfee12fd54dae47a6c",
+            "THIRD-PARTY.txt": "cbd582dec05084ae8e124dda2e5e51dca37331e554b6fce8826bbc898582d88b"
+          }
+        },
+        "publisherBuildRun": {
+          "id": 44688476350,
+          "head_sha": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/styayur/LGXT-Assistant/actions/runs/44688476350"
+        },
+        "publisherJobs": [
+          {
+            "name": "validate-request",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "build-apk",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "input-fidelity",
+            "status": "completed",
+            "conclusion": "skipped"
+          },
+          {
+            "name": "sign-apk",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "emulator",
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "reviewMethod": "Public API release/tag/source metadata and the explicitly supplied publisher receipt were read and source-hashed. No APK or native artifact was downloaded again by this reviewer. The publisher verified its own uploaded/downloaded bytes; this is not the pending independent parent anonymous/SDK receipt."
+      },
+      "independentPublicVerification": {
+        "status": "NOT_VERIFIED",
+        "pending": "Parent is independently downloading all seven public assets without auth/cookies and running local Android SDK checks. Keep this PR draft and do not merge or claim final review completion until the supplied receipt is checked."
+      },
+      "migrationReview": {
+        "certificateSha256": "0ec0084b65aff166d379206ca244ea54904511e95573b15fd2159bd4bd604114",
+        "samePackageAndCertificateAs331": true,
+        "from331": "Code5 to code6 is a same-key in-place update; back up notes and do not uninstall to preserve app-private data. Runtime evidence must match actual signed bytes.",
+        "historical320321": "Different signing identities require verified external schema1 note backup, uninstall/reinstall, restore and comparison. Code6 does not bypass certificate matching. Earlier releases without question-document export must not be assumed to provide an export button.",
+        "exportScope": "Schema1 note/question backups exclude credentials, encrypted sessions, all preferences and a full application-state migration guarantee."
+      },
+      "historicalSyntheticDiagnosis": {
+        "sourceCommit": "720e4ec4e90d92ed72df2e28a51c721ec4823adb",
+        "fixtureOnly": true,
+        "package": "io.github.styayur.lgxt_input_fidelity",
+        "apkSha256": "6f373680fc8a9e260ebe70d26192437ae5615abee96de853fe512980a0fbf52e",
+        "nativePositiveCases": 8,
+        "nativeNegativeCases": 3,
+        "passwordPrivacyProbes": 9,
+        "browserCases": 6,
+        "typingDelayMs": 25,
+        "workflow": {
+          "id": 44680061737,
+          "head_sha": "720e4ec4e90d92ed72df2e28a51c721ec4823adb",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/styayur/LGXT-Assistant/actions/runs/44680061737",
+          "event": "workflow_dispatch"
+        },
+        "artifactDigest": "sha256:d24028338e0e1025db8ac560396526ba09dbd261516fb5ad6d02cadf201616c3",
+        "scope": "The older source720 test-only matrix is preserved as SDK/input diagnostic evidence. It is not the public3.3.2 APK or new real-account qualification. New3.3.2 strict/raw evidence remains separately attributable to its own source and artifacts."
+      },
+      "sourceDocumentationObservations": [
+        "At tag source850dab5, README Android download text/table still points to the valid older3.3.1 release, while docs/android-beta.md and versioned release notes describe3.3.2/code6. The live3.3.2 public release is authoritative; this discrepancy is recorded instead of treating the older table as the latest release or rewriting historical release assets.",
+        "The retained README screenshot is explicitly the3.3.1 native synthetic fixture. It is not relabelled as a new3.3.2 account/device screenshot. New fixture diagnostic images are public synthetic evidence, not personal screenshots."
+      ],
+      "sourceReceipts": [
+        {
+          "path": "README.md",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "c7dc14da27e9415fc91ef67887d52d83252c8b7a",
+          "bytes": 8293,
+          "sha256": "4a517fa81311e3f3a2df2dc4c2643a0dd9a1b612f410463cc7b93f62f2549152",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/README.md",
+          "readmeCodeSha256": "9b0a75226aa38fc218f77e3f27895b5e3b5311f4163714e42bf44414aa04eb0c"
+        },
+        {
+          "path": "README.zh-CN.md",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "03e11e64b3d9ce50dd70c69a77fd0d22b2931919",
+          "bytes": 7474,
+          "sha256": "3c558f85a95e43ef9feb54a9bda1397a403de8aca130323cc7b44a4848d0b0ba",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/README.zh-CN.md",
+          "readmeCodeSha256": "2b7a62d9fd4d6911951c989c8d97a14b16cce4ee848d1aaab88a0f2ce155f4d0"
+        },
+        {
+          "path": "LICENSE",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "4a58c382f41858a22329ac960f6ab6b2b9a4ac33",
+          "bytes": 34255,
+          "sha256": "79735a75d0274d2a5dcc240d11a0f81e34cfc3533939b7fce8e84e35a150a238",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/LICENSE"
+        },
+        {
+          "path": "NOTICE.md",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "f03e4134736c99e9acea1e0143e9147e18c4b950",
+          "bytes": 3558,
+          "sha256": "14514368c28fba9f9c8719ac7ab571f04184a7aaf9f6f0540668c18d83b094f2",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/NOTICE.md"
+        },
+        {
+          "path": "docs/android-beta.md",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "7fb911b80655125764a8752065c3a0b53ca6383d",
+          "bytes": 7116,
+          "sha256": "c965eee9653d0a51e0294c6d0beef6074488c896f9e40a9e7248d2c8b802e170",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/docs/android-beta.md"
+        },
+        {
+          "path": "docs/release-channels.md",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "478a699c402d718dfd70a661e5729e4ae2615392",
+          "bytes": 5402,
+          "sha256": "a012000ffdedaf5989f76e93b500a93595d3613932275f50c9033281f7946e9c",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/docs/release-channels.md"
+        },
+        {
+          "path": "docs/VERIFICATION.md",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "fbefff3310a39927de7b8852a5a0a79a449c2a83",
+          "bytes": 30338,
+          "sha256": "8ce744610e211bfe7a0ad60a678d754534fd712ab5e189cdee9a3046386212c4",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/docs/VERIFICATION.md"
+        },
+        {
+          "path": "docs/releases/v3.3.2-android.md",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "cfef173406c4ce2d563001aa2226fd48d7fd2112",
+          "bytes": 1830,
+          "sha256": "43352122a31e11b1890ad7e6f51b6c9d63b103c3b3fd5497f57a68b092a81712",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/docs/releases/v3.3.2-android.md"
+        },
+        {
+          "path": "docs/input-fidelity.md",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "9f959db423f3efc89dc4a0da7ebc9e4df4a5a578",
+          "bytes": 4472,
+          "sha256": "83aa9605f3d72cf14d35d3519cadfb0bca7559714498d521541a61f6046b754e",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/docs/input-fidelity.md"
+        },
+        {
+          "path": "packaging/flutter/README.md",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "c8828ffc0f6cc4ad796c0cca722d21ab4c689b67",
+          "bytes": 2114,
+          "sha256": "6d909521a4a071bad32db85d3a16ad53d940c3b770da73a32d4cb9ff1ba1385e",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/packaging/flutter/README.md"
+        },
+        {
+          "path": "packaging/flutter/LICENSE.flutter",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "aea51a336a305bd31e4e50af448679ed0c73b95e",
+          "bytes": 1519,
+          "sha256": "a598db94b6290ffbe10b5ecf911057b6a943351c727fdda9e5f2891d68700a20",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/packaging/flutter/LICENSE.flutter"
+        },
+        {
+          "path": "packaging/flutter/autofill-backport.json",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "a281d43a989a3ef32a5c38038e9ca2a2fb1ff145",
+          "bytes": 735,
+          "sha256": "60406d3fec74dae641095361793f633094c226e8d2129ea2de66e6885730c1f8",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/packaging/flutter/autofill-backport.json"
+        },
+        {
+          "path": "packaging/flutter/autofill-learning.patch",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "4b0f571db6b211e9cac1e99e3c9ed0dd23295e78",
+          "bytes": 776,
+          "sha256": "533dba2fb8d140945bf243e35fdd4460993d7910acdba9dbf6e4e66e7e0012e1",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/packaging/flutter/autofill-learning.patch"
+        },
+        {
+          "path": "mobile/pyproject.toml",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "2af1ec89ca19999e70e94cd651f0ea4b2d4922d5",
+          "bytes": 994,
+          "sha256": "2a1a46962bb4d7ff7f198c1b379d67654a74fe29395e7295e40dc59847b6c2ef",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/mobile/pyproject.toml"
+        },
+        {
+          "path": "mobile/src/main.py",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "eb30d49d5defe0257a2065919737ae988259144d",
+          "bytes": 50179,
+          "sha256": "c269c5bda4fe5806e2dc81204001cac599b02c8e47d42c8242168cd86bcd000b",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/mobile/src/main.py"
+        },
+        {
+          "path": "mobile/requirements.txt",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "470e37be5ef9eaace80b0e4a05778d5cfc561ad8",
+          "bytes": 177,
+          "sha256": "486fafd3b780b800b7c2ef6d82624e23a6b3c0578c85e156405ae54d690f30bb",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/mobile/requirements.txt"
+        },
+        {
+          "path": "frontend/package.json",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "8f7e8ec3b9240b56c94b33325a8732f04e7d4862",
+          "bytes": 1070,
+          "sha256": "b788cec9ad6a733e7281ff933f02668509223e72d5e161d2183caeb0260892fa",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/frontend/package.json"
+        },
+        {
+          "path": "frontend/package-lock.json",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "32312a53c50f3753e8569988897ffa7299a4aafd",
+          "bytes": 132712,
+          "sha256": "11397748903ac9a557aff0d5665d2ce28fb440bea10fd18103228642651220b4",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/frontend/package-lock.json"
+        },
+        {
+          "path": "scripts/check_android_device.py",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "1ca75aae6a49fdada179e5a65e09c25493b564b8",
+          "bytes": 20368,
+          "sha256": "f8bec3141d559efd5407f2d5ed7a95b04eac19b0740e84227a0d378a83812865",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/scripts/check_android_device.py"
+        },
+        {
+          "path": "scripts/publish_android_beta.py",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "0d7085a3a26200c234d3c1626003e8f3a410adcc",
+          "bytes": 12040,
+          "sha256": "b43a4fe6c1729bb3650b70930d5b5ec6666b3ed48921fbc9843128891f066951",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/scripts/publish_android_beta.py"
+        },
+        {
+          "path": "scripts/verify_release.py",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "36630970ce214c3c89e25c25e6e7c69e190639e6",
+          "bytes": 5086,
+          "sha256": "029955af66945f25084f92dfffb451a9a4545bb0ac9ef46a2058192f7ab7a560",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/scripts/verify_release.py"
+        },
+        {
+          "path": ".github/workflows/android-apk.yml",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "1565b3d85bb1151400f612ec10eb5b5c5e7f4802",
+          "bytes": 22238,
+          "sha256": "19c0926594b8b9b46b35e4f1932227db5f28bdd5f76382d0bcdfef6d35740504",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/.github/workflows/android-apk.yml"
+        },
+        {
+          "path": ".github/workflows/android-release-acceptance.yml",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "acd753c1552b16ede09bccf88f999d6c1143f66a",
+          "bytes": 7088,
+          "sha256": "0d59883e7ac104a8671c24fd3e9487d51cb2b73ab995f8cfbff6cbeec9118c67",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/.github/workflows/android-release-acceptance.yml"
+        },
+        {
+          "path": ".github/workflows/publish-android-beta.yml",
+          "sourceCommit": "850dab5e96f8914da513a0084863c90a35e6e2dd",
+          "gitBlobSha": "f35e4148ec653d66be65a77e55f2a3340704fc32",
+          "bytes": 1971,
+          "sha256": "38b99304087be0772b05909d2e6aafbf817f79be4e999c572cb11593ec7f9473",
+          "url": "https://github.com/styayur/LGXT-Assistant/blob/850dab5e96f8914da513a0084863c90a35e6e2dd/.github/workflows/publish-android-beta.yml"
+        }
+      ]
+    }
+  ],
+  "retainedUncertainties": [
+    {
+      "repository": "styayur/glyphibe",
+      "code": "relative-link",
+      "status": 0
+    },
+    {
+      "repository": "styayur/rhizomaybor",
+      "code": "npm-command-context",
+      "status": null
+    },
+    {
+      "repository": "styayur",
+      "code": "website-registry",
+      "status": 403
+    }
+  ],
+  "unverified": [
+    "Independent parent seven-asset anonymous download and local SDK receipt is pending; this draft is not final acceptance.",
+    "New3.3.2 actual-account login/restoration/logout remains NOT_VERIFIED. Authorized3.3.1 account evidence applies only to its original immutable APK.",
+    "The original CUA bulk-input anomaly remains unattributed; a confirmed separate SDK privacy defect does not identify that original cause.",
+    "Physical ARM64/vendor keyboards, full upstream course availability, paid providers and OCR accuracy remain unverified."
+  ],
+  "unchangedControls": [
+    "Entire audit-policy.json, including installation/visual fingerprints and privacy/static-directory guards",
+    "All8historical maturity records and earlier dated reviews",
+    "Detector/severity/CodeForge baseline/native CI/normal protections/licenses",
+    "Independent Siny final migration remains blocked; its local preparation is not included here"
+  ],
+  "mergePrecondition": "Independent anonymous public download and local SDK receipt must be checked and recorded before readiness/normal merge. Never treat this draft, a skipped input-fidelity job, a fixture or publisher-only receipt as that independent result."
+}
