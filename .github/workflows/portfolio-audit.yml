@@ -55,7 +55,7 @@ jobs:
           if [ -n "$previous" ]; then
             gh run download "$previous" --repo "$GITHUB_REPOSITORY" --name portfolio-audit --dir .audit/previous || echo 'Previous artifact unavailable; this run cannot confirm new alerts.'
           fi
-      - name: Audit public repositories and website
+      - name: Audit public repositories and their linked pages
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: node scripts/portfolio-audit.mjs .audit/current/report.json

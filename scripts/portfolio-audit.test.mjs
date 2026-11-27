@@ -38,14 +38,13 @@ test('malformed release payloads and failed confirmation never become a version 
   assert.equal(failed.kind,'uncertain');assert.equal(failed.code,'release-confirmation');
 });
 const repo={id:1,full_name:'styayur/demo',name:'demo',private:false,visibility:'public',owner:{login:'styayur'},description:'Demo',topics:['tools'],html_url:'https://github.com/styayur/demo',default_branch:'main',license:{spdx_id:'MIT'}};
-const policy={owner:'styayur',website:'https://example.org',repositories:[{repository:repo.full_name,repositoryId:1,licenseSpdx:'MIT',licenseSha:'license-sha',readmeCodeSha256:codeDigest(readme),requiredFiles:['README.md','LICENSE'],manifestLicenses:[],visual:{kind:'text'}}]};
+const policy={owner:'styayur',repositories:[{repository:repo.full_name,repositoryId:1,licenseSpdx:'MIT',licenseSha:'license-sha',readmeCodeSha256:codeDigest(readme),requiredFiles:['README.md','LICENSE'],manifestLicenses:[],visual:{kind:'text'}}]};
 function fixture({markdown=readme,missingReadme=false,extraRepositories=[],unknownLink=false,externalStatus}={}){
   const requests=[];
   const request=async(url)=>{
     requests.push(url);
     if(url==='https://example.org/guide')return {kind:externalStatus===404?'missing':externalStatus===503?'uncertain':'ok',status:externalStatus??200};
     if(url.includes('/users/styayur/repos?'))return {kind:'ok',status:200,data:[repo,...extraRepositories]};
-    if(url.endsWith('/portfolio.json'))return {kind:'ok',status:200,data:{repositories:[{repository:repo.full_name,visibility:'public',projectSlug:'demo',releaseKind:'none',substantiveUpdatedAt:'2026-10-20'}]}};
     if(url.includes('/commits?') || url.includes('/releases?'))return {kind:'ok',status:200,data:[]};
     if(url.endsWith('/contents/README.md'))return missingReadme?{kind:'missing',status:404}:{kind:'ok',status:200,data:{encoding:'base64',content:Buffer.from(markdown+(unknownLink?'\n[Internal](https://github.com/styayur/hidden-example)':'')).toString('base64')}};
     if(url.endsWith('/contents/LICENSE'))return {kind:'ok',status:200,data:{sha:'license-sha',encoding:'base64',content:Buffer.from('MIT').toString('base64')}};
@@ -68,8 +67,9 @@ test('public enumeration excludes private metadata and never follows a hidden ow
 test('clean public fixture passes and missing README produces a concrete finding',async()=>{
   const clean=await auditPortfolio(policy,fixture());
   assert.equal(clean.findings.length,0);
-  assert.equal(clean.releaseObservations.length,1);
-  assert.equal(clean.releaseObservations[0].repository,'styayur/demo');
+  assert.equal(clean.releaseObservations.length,0);
+  assert.equal(clean.inventorySource,'https://api.github.com/users/styayur/repos');
+  assert.match(clean.reviewedPolicySha256,/^[a-f0-9]{64}$/);
   const report=await auditPortfolio(policy,fixture({missingReadme:true}));
   assert.equal(report.findings[0].code,'readme');
 });
@@ -207,31 +207,30 @@ test('a nonpublic confirmed target is refused before any issue write',()=>{
 });
 
 
-test('declared static directory checks inventory and identity without inventing curated release labels',async()=>{
-  const f=fixture(),original=f.request;
-  f.request=async url=>url.endsWith('/portfolio.json')?{kind:'ok',status:200,data:{schemaVersion:2,presentation:'repository-directory',repositories:[{repository:repo.full_name,repositoryId:1,visibility:'public',url:repo.html_url,projectSlug:'demo',archived:false}]}}:original(url);
-  const report=await auditPortfolio({...policy,websitePresentation:'repository-directory'},f);
+test('audit uses GitHub and reviewed local policy without a website data endpoint',async()=>{
+  const f=fixture();
+  const report=await auditPortfolio(policy,f);
   assert.equal(report.findings.length,0);
   assert.equal(report.uncertain.length,0);
-  assert.equal(report.releaseObservations.length,0);
-  assert.ok(!f.requests.some(url=>url.includes('/releases?')));
+  assert.ok(f.requests.length>0);
+  assert.ok(f.requests.every(url=>url.startsWith('https://api.github.com/')));
 });
 
-test('static directories retain missing and nonpublic inventory checks without leaking identities',async()=>{
-  const f=fixture(),original=f.request;
-  f.request=async url=>url.endsWith('/portfolio.json')?{kind:'ok',status:200,data:{schemaVersion:2,presentation:'repository-directory',repositories:[{repository:'styayur/hidden-example',visibility:'private'}]}}:original(url);
-  const report=await auditPortfolio({...policy,websitePresentation:'repository-directory'},f);
-  assert.ok(report.findings.some(f=>f.code==='website-missing'));
-  assert.ok(report.findings.some(f=>f.code==='website-nonpublic'));
+test('reviewed identities missing from the public inventory require review without leaking names',async()=>{
+  const f=fixture();
+  const report=await auditPortfolio({...policy,repositories:[...policy.repositories,{...policy.repositories[0],repository:'styayur/hidden-example'}]},f);
+  assert.ok(report.findings.some(f=>f.code==='reviewed-repository-unavailable'));
   assert.ok(!JSON.stringify(report).includes('hidden-example'));
+  assert.ok(!f.requests.some(url=>url.includes('hidden-example')));
 });
 
-test('static directory schema and numeric identity mismatches never become clean evidence',async()=>{
-  for(const bad of [{schemaVersion:1},{presentation:'other'},{row:{repositoryId:99}},{row:{url:'https://other.invalid'}},{row:{excludedFromProjects:true}},{row:{archived:true}}]) {
-    const f=fixture(),original=f.request;
-    const data={schemaVersion:2,presentation:'repository-directory',repositories:[{repository:repo.full_name,repositoryId:1,visibility:'public',url:repo.html_url,projectSlug:'demo',archived:false,...bad.row}],...Object.fromEntries(Object.entries(bad).filter(([k])=>k!=='row'))};
-    f.request=async url=>url.endsWith('/portfolio.json')?{kind:'ok',status:200,data}:original(url);
-    const report=await auditPortfolio({...policy,websitePresentation:'repository-directory'},f);
-    assert.ok(report.findings.some(f=>f.code==='website-directory') || report.uncertain.some(f=>f.code==='website-registry-schema'));
-  }
+test('GitHub identity drift and incomplete inventory never become clean evidence',async()=>{
+  const drift=await auditPortfolio({...policy,repositories:[{...policy.repositories[0],repositoryId:99}]},fixture());
+  assert.ok(drift.findings.some(f=>f.code==='repository-identity'));
+  const f=fixture(),original=f.request;
+  f.request=async url=>url.includes('/users/')?{kind:'uncertain',status:503}:original(url);
+  const report=await auditPortfolio(policy,f);
+  assert.equal(report.checks.inventoryComplete,false);
+  assert.ok(report.uncertain.some(f=>f.code==='public-inventory'));
+  assert.ok(!report.findings.some(f=>f.code==='reviewed-repository-unavailable'));
 });
