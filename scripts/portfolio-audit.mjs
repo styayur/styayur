@@ -5,7 +5,6 @@ import { createHash } from 'node:crypto';
 import { pathToFileURL } from 'node:url';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
-import { reviewReleases } from './portfolio-release-review.mjs';
 
 export const digest = value => createHash('sha256').update(value).digest('hex');
 export const codeDigest = markdown => digest([...markdown.replaceAll('\r\n','\n').matchAll(/```[^\n]*\n([\s\S]*?)```/g)].map(m=>m[1]).join('\n'));
@@ -52,7 +51,7 @@ export function createClient({token=process.env.GITHUB_TOKEN,fetchImpl=fetch,sle
         }
         result={kind:response.ok?'ok':[404,410].includes(response.status)?'missing':'uncertain',status:response.status};
         if (response.ok) {
-          if(api || target.pathname.endsWith('/portfolio.json'))result.data=await response.json();
+          if(api)result.data=await response.json();
           else await response.body?.cancel();
           break;
         }
@@ -212,57 +211,13 @@ export async function auditPortfolio(policy,{request=createClient(),now=new Date
     }
     if(repo.homepage)await queue(repo.homepage,name,repo.html_url);
   }
-  const site=await request(policy.website+'/portfolio.json');
-  if(site.kind==='ok' && Array.isArray(site.data?.repositories)) {
-    report.websiteRegistrySha256=digest(JSON.stringify(site.data));
-    const entries=site.data.repositories;
-    const listed=new Set(entries.map(r=>r.repository));
-    if(inventoryComplete) for(const name of publicNames)if(!listed.has(name))add(name,'website-missing','Public repository is missing from the controlled website registry.',[policy.website+'/portfolio.json']);
-    // Mask unknown entries, as a stale registry must not leak non-public identities.
-    if(inventoryComplete && entries.some(r=>!publicNames.has(r.repository) || r.visibility!=='public'))add(policy.owner,'website-nonpublic','Website registry includes an entry outside the public inventory; investigate privately.',[policy.website+'/portfolio.json']);
-    const directory=policy.websitePresentation==='repository-directory';
-    if(directory) {
-      if(site.data.schemaVersion!==2 || site.data.presentation!=='repository-directory') uncertain(policy.owner,'website-registry-schema',site.status);
-      else {
-        const seen=new Set();
-        for(const r of entries.filter(r=>publicNames.has(r.repository))) {
-          const actual=repos.find(repo=>repo.full_name===r.repository);
-          if(seen.has(r.repository) || r.repositoryId!==actual.id || r.url!==`https://github.com/${r.repository}` ||
-              r.projectSlug!==actual.name || r.archived!==(actual.archived===true) || r.excludedFromProjects===true) {
-            add(r.repository,'website-directory','Static directory identity, URL or project reference differs from the public repository.',[policy.website+'/portfolio.json']);
-          }
-          seen.add(r.repository);
-        }
-      }
-    } else if(policy.websitePresentation && policy.websitePresentation!=='curated-projects') {
-      uncertain(policy.owner,'website-registry-schema',site.status);
-    } else for(const r of entries.filter(r=>publicNames.has(r.repository) && !r.excludedFromProjects)) {
-      if(!r.projectSlug)add(r.repository,'website-card','A public project lacks a controlled card reference.',[policy.website+'/projects/']);
-      const releases=await gh(`/repos/${r.repository}/releases?per_page=100`);
-      if(releases.kind==='ok') {
-        const evidence=[policy.website+'/projects/',`https://github.com/${r.repository}/releases`];
-        if(Array.isArray(releases.data) && releases.data.length>=100) {
-          uncertain(r.repository,'release-pagination',releases.status,evidence,{reason:'The release page reached its limit; complete pagination before comparing versions.'});
-        } else {
-          const review=await reviewReleases(r,releases.data,tag=>gh(`/repos/${r.repository}/releases/tags/${encodeURIComponent(tag)}`));
-          report.releaseObservations.push(review.observation);
-          if(review.kind==='different')add(r.repository,'website-release','Published release evidence differs from the controlled website snapshot; inspect the expected/observed tags before updating it.',evidence,'review',review.observation);
-          else if(review.kind==='uncertain')uncertain(r.repository,review.code,review.status,evidence,review.observation);
-        }
-        if(r.releaseKind==='preview' && !r.previewRelease?.prerelease)add(r.repository,'preview-label','A preview is not explicitly marked prerelease.',[policy.website+'/portfolio.json']);
-      } else uncertain(r.repository,'releases',releases.status);
-      if(r.image)await queue(policy.website+r.image,r.repository,policy.website+'/projects/');
-      if(r.displayReleaseUrl)await queue(r.displayReleaseUrl,r.repository,policy.website+'/projects/');
-      const commits=await gh(`/repos/${r.repository}/commits?per_page=10`);
-      if(commits.kind==='ok') {
-        for(const c of commits.data.filter(c=>c.commit?.committer?.date?.slice(0,10)>r.substantiveUpdatedAt && c.parents?.length<=1 && !(policy.reviewedGovernanceCommits??[]).includes(c.sha) && !/\[bot\]|dependabot|renovate/i.test(c.author?.login??''))) {
-          const detail=await gh(`/repos/${r.repository}/commits/${c.sha}`);
-          if(detail.kind==='ok' && meaningfulCommit(detail.data)) {add(r.repository,'website-source-date','A newer substantive source change needs review against the website update date.',[policy.website+'/projects/',c.html_url],'review');break;}
-          if(detail.kind!=='ok')uncertain(r.repository,'source-date',detail.status);
-        }
-      } else uncertain(r.repository,'source-date',commits.status);
-    }
-  } else uncertain(policy.owner,'website-registry',site.status);
+  // GitHub supplies the public inventory; this repository owns its reviewed policy.
+  // A writing website is no longer a second project directory or data service.
+  report.inventorySource=`https://api.github.com/users/${policy.owner}/repos`;
+  report.reviewedPolicySha256=digest(JSON.stringify(policy));
+  if(inventoryComplete) for(const name of expected.keys())if(!publicNames.has(name)) {
+    add(policy.owner,'reviewed-repository-unavailable','A reviewed repository is absent from the public inventory; investigate its policy privately.',[report.inventorySource],'review');
+  }
   const links=[...external.entries()];let next=0;
   await Promise.all(Array.from({length:4},async()=>{while(next<links.length){const [url,{repo,evidence}]=links[next++];const response=await request(url);const evidenceLinks=[evidence,new URL(url).origin+new URL(url).pathname];if(response.kind==='missing')add(repo,'external-link-'+digest(url).slice(0,8),'A public README/homepage/release/preview link returned confirmed 404/410.',evidenceLinks);else if(response.kind!=='ok')uncertain(repo,'external-link-'+digest(url).slice(0,8),response.status,evidenceLinks);}}));
   report.findings=[...new Map(report.findings.map(f=>[f.id,f])).values()].sort((a,b)=>a.id.localeCompare(b.id));
